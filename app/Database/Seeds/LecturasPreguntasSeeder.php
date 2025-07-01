@@ -1,6 +1,5 @@
 <?php
 
-
 // app/Database/Seeds/LecturasPreguntasSeeder.php
 namespace App\Database\Seeds;
 

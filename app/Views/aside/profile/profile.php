@@ -70,13 +70,14 @@
         background: #FFA500;
     }
 </style>
+
 <div class="container mt-5">
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="profile-card">
                 <div class="profile-header">
                     <img src="<?= base_url('img/undraw_profile.svg'); ?>" alt="Foto de Perfil">
-                    <h3><?= esc($user['name'] .' '. $user['last_name']?? 'Usuario Desconocido') ?></h3>
+                    <h3><?= esc($user['name'] ?? 'Usuario Desconocido') ?></h3>
                     <p><?= esc($user['role_name'] ?? 'No especificado') ?></p>
                 </div>
                 <div class="profile-details">

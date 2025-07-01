@@ -10,10 +10,9 @@ class RolesSeeder extends Seeder
     public function run()
     {
         $data = [
-            ['nombre' => 'Administrador'],
             ['nombre' => 'Docente'],
-            ['nombre' => 'Estudiante'],
-        ];
+    
+            ['nombre' => 'Estudiante']    ,    ];
 
         $this->db->table('roles')->insertBatch($data);
     }

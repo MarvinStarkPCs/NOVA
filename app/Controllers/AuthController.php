@@ -3,7 +3,6 @@
 namespace App\Controllers;
 
 use App\Models\UserModel;
-$HOLA;
 class AuthController extends BaseController
 {
     public function index()
@@ -19,7 +18,7 @@ class AuthController extends BaseController
         // Redirige según el rol del usuario
         return ($session->get('role_id') == 1) 
             ? redirect()->to('/admin/dashboard') 
-            : redirect()->to('/client/dashboard');
+            : redirect()->to('/estudiante/dashboard');
     }
     
  
@@ -52,7 +51,7 @@ class AuthController extends BaseController
 
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('password');
-
+log_message('info', "Intento de inicio de sesión para el usuario: {$email}");
         $userModel = new UserModel();
         $user = $userModel->login($email, $password);
 
@@ -60,7 +59,7 @@ class AuthController extends BaseController
             $session = session();
             $session->set([
                 'login' => true,
-                'id_user' => $user['id_user'],
+                'id_user' => $user['id'],
                 'name' => $user['name'],
                 'last_name' => $user['last_name'],
                 'email' => $user['email'],
@@ -69,9 +68,9 @@ class AuthController extends BaseController
 
 
         // Redirige según el rol del usuario
-        return ($session->get('role_id') == 1) 
+        return ($session->get('role_id') == 1 ) 
         ? redirect()->to('/admin/dashboard') 
-        : redirect()->to('/client/dashboard');
+        : redirect()->to('/estudiante/dashboard');
             
         } else {
             return redirect()->back()->with('error', 'Correo electrónico o contraseña incorrectos.');

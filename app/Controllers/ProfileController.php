@@ -13,7 +13,7 @@ class ProfileController extends BaseController
 
         $userModel = new UserManagementModel();
         $userData = $userModel->getUsers($userId);
-
+log_message('info', 'User data retrieved: ' . json_encode($userData));
         return view('aside/profile/profile', ['user' => $userData]);
     }
 }

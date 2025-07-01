@@ -1,0 +1,367 @@
+INFO - 2025-06-23 06:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 06:31:58 --> CodeIgniter\Exceptions\ModelException: You cannot use "getCompiledSelect()" in "App\Models\UserManagementModel". This is a method of the Query Builder Class.
+[Method: GET, Route: admin/profile]
+in SYSTEMPATH\Model.php on line 948.
+ 1 SYSTEMPATH\Model.php(948): CodeIgniter\Exceptions\ModelException::forMethodNotAvailable('App\\Models\\UserManagementModel', 'getCompiledSelect()')
+ 2 SYSTEMPATH\Model.php(928): CodeIgniter\Model->checkBuilderMethod('getCompiledSelect')
+ 3 APPPATH\Models\UserManagementModel.php(32): CodeIgniter\Model->__call('getCompiledSelect', [])
+ 4 APPPATH\Controllers\ProfileController.php(15): App\Models\UserManagementModel->getUsers('1')
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ProfileController->index()
+ 6 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+ 7 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-23 06:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 06:32:40 --> Resultado de la consulta: 
+INFO - 2025-06-23 06:32:40 --> User data retrieved: null
+INFO - 2025-06-23 06:34:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:34:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:34:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:34:09 --> Usuario autenticado con role_id: 
+INFO - 2025-06-23 06:34:11 --> El método authenticate fue llamado
+INFO - 2025-06-23 06:34:11 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-06-23 06:34:11 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-06-23 06:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:34:11 --> Usuario autenticado con role_id: 
+INFO - 2025-06-23 06:34:30 --> El método authenticate fue llamado
+INFO - 2025-06-23 06:34:30 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-06-23 06:34:30 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-06-23 06:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:34:30 --> Usuario autenticado con role_id: 
+INFO - 2025-06-23 06:34:37 --> El método authenticate fue llamado
+INFO - 2025-06-23 06:34:37 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-06-23 06:34:37 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-06-23 06:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 06:34:43 --> Resultado de la consulta: Array
+(
+    [id] => 1
+    [name] => Admin
+    [email] => admin@admin.com
+    [email_verified_at] => 
+    [created_at] => 2025-06-23 06:34:27
+    [role_name] => Administrador
+)
+
+INFO - 2025-06-23 06:34:43 --> User data retrieved: {"id":"1","name":"Admin","email":"admin@admin.com","email_verified_at":null,"created_at":"2025-06-23 06:34:27","role_name":"Administrador"}
+INFO - 2025-06-23 06:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:35:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 06:39:00 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home.php"
+[Method: GET, Route: estudiante/menu]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\MenuController.php(13): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MenuController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MenuController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-23 06:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:39:02 --> Usuario autenticado con role_id: 1
+INFO - 2025-06-23 06:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:39:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:40:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:43:19 --> Iniciando el método addUser()
+INFO - 2025-06-23 06:43:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:45:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:45:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:45:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 06:45:39 --> Iniciando el método addUser()
+INFO - 2025-06-23 06:45:39 --> Configuración SMTP obtenida: Array
+(
+    [id_config] => 1
+    [config_key] => smtp_config
+    [config_value] => {"host":"smtp.gmail.com","username":"admin@d4fadmin.com","port":"234","smtp_password":"erftWERTwert ","security":"tls"}
+    [description] => 
+    [created_at] => 2025-06-23 05:54:34
+    [updated_at] => 2025-06-23 05:54:41
+)
+
+INFO - 2025-06-23 06:45:39 --> Configuración SMTP obtenida en librari: Array
+(
+    [host] => smtp.gmail.com
+    [username] => admin@d4fadmin.com
+    [port] => 234
+    [smtp_password] => erftWERTwert 
+    [security] => tls
+)
+
+ERROR - 2025-06-23 06:45:44 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): Unable to connect to smtp.gmail.com:234 (Se produjo un error durante el intento de conexión ya que la parte conectada no respondió adecuadamente tras un periodo de tiempo, o bien se produjo un error en la conexión establecida ya que el host conectado no ha podido responder) in C:\laragon\www\NOVA\system\Email\Email.php:1896
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fsockopen(): Un...', 'C:\\laragon\\www\\...', 1896)
+#1 C:\laragon\www\NOVA\system\Email\Email.php(1896): fsockopen('smtp.gmail.com', 234, NULL, NULL, 5)
+#2 C:\laragon\www\NOVA\system\Email\Email.php(1809): CodeIgniter\Email\Email->SMTPConnect()
+#3 C:\laragon\www\NOVA\system\Email\Email.php(1694): CodeIgniter\Email\Email->sendWithSmtp()
+#4 C:\laragon\www\NOVA\system\Email\Email.php(1589): CodeIgniter\Email\Email->spoolEmail()
+#5 C:\laragon\www\NOVA\app\Libraries\SendEmail.php(66): CodeIgniter\Email\Email->send()
+#6 C:\laragon\www\NOVA\app\Controllers\UserManagementController.php(72): App\Libraries\SendEmail->send('marvin.santos@s...', 'Bienvenido a Sc...', '<html><body><p>...')
+#7 C:\laragon\www\NOVA\system\CodeIgniter.php(933): App\Controllers\UserManagementController->addUser()
+#8 C:\laragon\www\NOVA\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserManagementController))
+#9 C:\laragon\www\NOVA\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\laragon\www\NOVA\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#11 C:\laragon\www\NOVA\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\laragon\www\NOVA\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 {main}
+ERROR - 2025-06-23 06:45:44 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2025-06-23 06:45:44 --> 
+ERROR - 2025-06-23 06:45:44 --> Error al enviar el correo: Unable to send email using SMTP. Your server might not be configured to send mail using this method.<br><pre>Date: Mon, 23 Jun 2025 06:45:39 +0000
+From: &quot;SCOPECAPITAL&quot; &lt;admin@d4fadmin.com&gt;
+Return-Path: &lt;admin@d4fadmin.com&gt;
+To: marvin.santos@soy.sena.edu.co
+Subject: =?UTF-8?Q?Bienvenido=20a=20Scope=20Capital?=
+Reply-To: &lt;admin@d4fadmin.com&gt;
+User-Agent: CodeIgniter
+X-Sender: admin@d4fadmin.com
+X-Mailer: CodeIgniter
+X-Priority: 3 (Normal)
+Message-ID: &lt;6858f813d4a807.53349855@d4fadmin.com&gt;
+Mime-Version: 1.0
+
+</pre>
+INFO - 2025-06-23 06:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 08:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 08:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 08:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 08:14:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 08:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 08:25:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 08:27:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 08:28:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 08:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 08:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 08:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 08:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 08:30:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 08:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 08:30:15 --> Acceso a la vista de cambio de contraseña.
+INFO - 2025-06-23 08:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 10:18:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 10:18:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 10:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 10:18:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 10:18:09 --> Usuario autenticado con role_id: 
+INFO - 2025-06-23 10:18:25 --> El método authenticate fue llamado
+INFO - 2025-06-23 10:18:25 --> Intento de inicio de sesión para el usuario: admin@docente.com
+INFO - 2025-06-23 10:18:25 --> Intento de inicio de sesión para el usuario: admin@docente.com
+INFO - 2025-06-23 10:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 10:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 10:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 10:18:25 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home.php"
+[Method: GET, Route: estudiante/menu]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\MenuController.php(13): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\MenuController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MenuController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-23 10:20:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 10:53:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 10:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 10:53:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 10:53:44 --> Usuario autenticado con role_id: 
+INFO - 2025-06-23 10:53:49 --> El método authenticate fue llamado
+INFO - 2025-06-23 10:53:49 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-06-23 10:53:49 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-06-23 10:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 10:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 10:53:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 10:53:58 --> ErrorException: Undefined variable $grupos
+[Method: GET, Route: admin/usermanagement]
+in APPPATH\Views\security\UserManagement\modals\Create.php on line 69.
+ 1 APPPATH\Views\security\UserManagement\modals\Create.php(69): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $grupos', 'C:\\laragon\\www\\NOVA\\app\\Views\\security\\UserManagement\\modals\\Create.php', 69)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\NOVA\\app\\Views\\security\\UserManagement\\modals\\Create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('security/UserManagement/modals/Create', [], true)
+ 5 APPPATH\Views\security\UserManagement\UserManagement.php(73): view('security/UserManagement/modals/Create')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\NOVA\\app\\Views\\security\\UserManagement\\UserManagement.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('security/UserManagement/UserManagement', [], true)
+ 9 APPPATH\Controllers\UserManagementController.php(21): view('security/UserManagement/UserManagement', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserManagementController->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserManagementController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-23 10:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-23 12:15:04 --> mysqli_sql_exception: Table 'grados' already exists in C:\laragon\www\NOVA\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\NOVA\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `g...', 0)
+#1 C:\laragon\www\NOVA\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `g...')
+#2 C:\laragon\www\NOVA\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `g...')
+#3 C:\laragon\www\NOVA\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `g...')
+#4 C:\laragon\www\NOVA\app\Database\Migrations\2025-06-23-103411_CreateGruposTable.php(16): CodeIgniter\Database\Forge->createTable('grados')
+#5 C:\laragon\www\NOVA\system\Database\MigrationRunner.php(867): App\Database\Migrations\CreateGruposTable->up()
+#6 C:\laragon\www\NOVA\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\NOVA\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\NOVA\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\NOVA\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\NOVA\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\laragon\www\NOVA\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\laragon\www\NOVA\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\laragon\www\NOVA\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#14 C:\laragon\www\NOVA\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 C:\laragon\www\NOVA\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+ERROR - 2025-06-23 12:16:07 --> mysqli_sql_exception: Table 'grados' already exists in C:\laragon\www\NOVA\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\NOVA\system\Database\MySQLi\Connection.php(312): mysqli->query('CREATE TABLE `g...', 0)
+#1 C:\laragon\www\NOVA\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `g...')
+#2 C:\laragon\www\NOVA\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `g...')
+#3 C:\laragon\www\NOVA\system\Database\Forge.php(570): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `g...')
+#4 C:\laragon\www\NOVA\app\Database\Migrations\2025-06-23-103411_CreateGruposTable.php(16): CodeIgniter\Database\Forge->createTable('grados')
+#5 C:\laragon\www\NOVA\system\Database\MigrationRunner.php(867): App\Database\Migrations\CreateGruposTable->up()
+#6 C:\laragon\www\NOVA\system\Database\MigrationRunner.php(183): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 C:\laragon\www\NOVA\system\Commands\Database\Migrate.php(85): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 C:\laragon\www\NOVA\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 C:\laragon\www\NOVA\system\CLI\BaseCommand.php(119): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 C:\laragon\www\NOVA\system\Commands\Database\MigrateRefresh.php(87): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 C:\laragon\www\NOVA\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 C:\laragon\www\NOVA\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 C:\laragon\www\NOVA\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#14 C:\laragon\www\NOVA\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#15 C:\laragon\www\NOVA\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#16 {main}
+INFO - 2025-06-23 12:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 12:20:23 --> BadMethodCallException: Call to undefined method App\Models\UserManagementModel::getTableData
+[Method: GET, Route: admin/usermanagement]
+in SYSTEMPATH\Model.php on line 932.
+ 1 APPPATH\Controllers\UserManagementController.php(19): CodeIgniter\Model->__call('getTableData', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserManagementController->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserManagementController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-23 12:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-06-23 12:29:10 --> ErrorException: Undefined array key "grado"
+[Method: GET, Route: admin/usermanagement]
+in APPPATH\Views\security\UserManagement\modals\Create.php on line 71.
+ 1 APPPATH\Views\security\UserManagement\modals\Create.php(71): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "grado"', 'C:\\laragon\\www\\NOVA\\app\\Views\\security\\UserManagement\\modals\\Create.php', 71)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\NOVA\\app\\Views\\security\\UserManagement\\modals\\Create.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('security/UserManagement/modals/Create', [], true)
+ 5 APPPATH\Views\security\UserManagement\UserManagement.php(73): view('security/UserManagement/modals/Create')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\NOVA\\app\\Views\\security\\UserManagement\\UserManagement.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('security/UserManagement/UserManagement', [], true)
+ 9 APPPATH\Controllers\UserManagementController.php(24): view('security/UserManagement/UserManagement', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserManagementController->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserManagementController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-06-23 12:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 12:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 12:34:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:01:44 --> Usuario autenticado con role_id: 
+INFO - 2025-06-23 17:01:47 --> El método authenticate fue llamado
+INFO - 2025-06-23 17:01:47 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-06-23 17:01:47 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-06-23 17:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:01:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:01:47 --> Usuario autenticado con role_id: 
+INFO - 2025-06-23 17:02:02 --> El método authenticate fue llamado
+INFO - 2025-06-23 17:02:02 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-06-23 17:02:02 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-06-23 17:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:02:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:02:24 --> Resultado de la consulta: Array
+(
+    [id] => 1
+    [name] => Admin
+    [email] => admin@admin.com
+    [email_verified_at] => 
+    [created_at] => 2025-06-23 12:17:08
+    [role_name] => Administrador
+)
+
+INFO - 2025-06-23 17:02:24 --> User data retrieved: {"id":"1","name":"Admin","email":"admin@admin.com","email_verified_at":null,"created_at":"2025-06-23 12:17:08","role_name":"Administrador"}
+INFO - 2025-06-23 17:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:05:21 --> Acceso a la vista de cambio de contraseña.
+INFO - 2025-06-23 17:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:05:21 --> Acceso a la vista de cambio de contraseña.
+INFO - 2025-06-23 17:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:12:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:12:12 --> Usuario autenticado con role_id: 
+INFO - 2025-06-23 17:12:22 --> El método authenticate fue llamado
+INFO - 2025-06-23 17:12:22 --> Intento de inicio de sesión para el usuario: admin@docente.com
+INFO - 2025-06-23 17:12:22 --> Intento de inicio de sesión para el usuario: admin@docente.com
+INFO - 2025-06-23 17:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:17:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:18:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:18:36 --> Usuario autenticado con role_id: 2
+INFO - 2025-06-23 17:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:18:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:21:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 17:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-06-23 17:21:15 --> Resultado de la consulta: Array
+(
+    [id] => 2
+    [name] => Admin
+    [email] => admin@docente.com
+    [email_verified_at] => 
+    [created_at] => 2025-06-23 12:17:08
+    [role_name] => Docente
+)
+
+INFO - 2025-06-23 17:21:15 --> User data retrieved: {"id":"2","name":"Admin","email":"admin@docente.com","email_verified_at":null,"created_at":"2025-06-23 12:17:08","role_name":"Docente"}
+INFO - 2025-06-23 23:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:41:33 --> Usuario autenticado con role_id: 
+INFO - 2025-06-23 23:41:39 --> El método authenticate fue llamado
+INFO - 2025-06-23 23:41:39 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-06-23 23:41:39 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-06-23 23:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:41:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:47:38 --> Usuario autenticado con role_id: 1
+INFO - 2025-06-23 23:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:47:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:52:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:52:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:52:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:54:11 --> Usuario autenticado con role_id: 1
+INFO - 2025-06-23 23:54:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:54:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:54:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:54:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-23 23:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

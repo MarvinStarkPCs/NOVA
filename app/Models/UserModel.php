@@ -16,8 +16,8 @@ class UserModel extends Model
     public function login($email, $password)
     {
         $user = $this->where('email', $email)->first();
-
-        if ($user && password_verify($password, $user['password_hash'])) {
+log_message('info', "Intento de inicio de sesión para el usuario: {$email}");
+        if ($user && password_verify($password, $user['password'])) {
             return $user;
         }
 

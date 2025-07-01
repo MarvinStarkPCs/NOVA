@@ -2,7 +2,7 @@
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('dashboard'); ?>">
         <div class="sidebar-brand-icon">
-            <img src="<?= base_url('img/logo.ico'); ?>" alt="">
+            <img src="<?= base_url('img/logo colegio.png'); ?>" alt="">
         </div>
     </a>
 
@@ -34,34 +34,34 @@
             <div id="collapseSystem" class="collapse" aria-labelledby="headingSystem" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">SYSTEM MANAGEMENT</h6>
-                    <a class="collapse-item" href="<?= base_url('admin/pqrsmanagement'); ?>">
-                        <i class="fas fa-fw fa-cog"></i> PQRS Management
+                    <a class="collapse-item" href="<?= base_url('admin/createexam'); ?>">
+                        <i class="fas fa-fw fa-cog"></i>Armar Prueba
                     </a>
-                    <a class="collapse-item" href="<?= base_url('admin/transactions'); ?>">
+                    <!-- <a class="collapse-item" href="< ?= base_url('admin/transactions'); ?>">
                         
                         <i class="fas fa-university"></i> Pay
                     </a>
-                    <a class="collapse-item" href="<?= base_url('admin/clientmanagement'); ?>">
+                    <a class="collapse-item" href="< ?= base_url('admin/clientmanagement'); ?>">
                         <i class="fas fa-users"></i> clients
-                    </a>
-                    <!-- <a class="collapse-item" href="<?= base_url('admin/extrasmanagement'); ?>">
+                    </a> 
+               <a class="collapse-item" href="< ?= base_url('admin/extrasmanagement'); ?>">
                         <i class="fas fa-tools"></i> Gestión de Extras
-                    </a> -->
+                    </a>  -->
                 </div>
             </div>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseHistory"
             aria-expanded="true" aria-controls="collapseHistory">
-            <i class="fas fa-fw fa-history"></i> <!-- Icono de historia -->
+            <i class="fas fa-fw fa-history"></i> Icono de historia 
             <span>History</span>
         </a>
         <div id="collapseHistory" class="collapse" aria-labelledby="headingHistory" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">HISTORY OF THE SYSTEM:</h6>
-                <a class="collapse-item" href="<?= base_url('admin/historytransactions'); ?>" >
+                <a class="collapse-item" href="< ?= base_url('admin/historytransactions'); ?>" >
                         <i class="fas fa-tasks"></i> History de transactions
-                    </a>
+                    </a> -->
                 <!--
                     <a class="collapse-item" href="< ?= base_url('asignaciones'); ?>">
                         <i class="fas fa-calendar-alt"></i> Historial de asignaciones
@@ -69,11 +69,11 @@
 
                     <a class="collapse-item" href="< ?= base_url('dados-de-baja'); ?>">
                         <i class="fas fa-trash-alt"></i> Historial Dados de Baja
-                    </a> -->
+                    </a> 
             </div>
 
         </div>
-    </li>
+    </li>-->
 
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSecurity"

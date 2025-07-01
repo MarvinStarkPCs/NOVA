@@ -14,7 +14,7 @@ class HomeController extends BaseController
             // Vista para administradores
             return view('extras_management/extras_management');
         } else {
-            return redirect()->to('/client/pqrs-sent');
+            return redirect()->to('/estudiante/menu');
         }
     }
 }

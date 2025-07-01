@@ -16,5 +16,7 @@ class DatabaseSeeder extends Seeder
         $this->call('PreguntasSeeder');
         $this->call('LecturasPreguntasSeeder');
         $this->call('RespuestasSeeder');
+        $this->call('GradosSeeder');
+        $this->call('GruposSeeder');
     }
 }

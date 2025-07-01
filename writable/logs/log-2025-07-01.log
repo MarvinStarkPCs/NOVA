@@ -1,0 +1,183 @@
+INFO - 2025-07-01 01:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:43:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:46:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:46:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:49:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:49:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:49:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:50:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:53:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:53:58 --> Usuario autenticado con role_id: 
+INFO - 2025-07-01 01:54:01 --> El método authenticate fue llamado
+INFO - 2025-07-01 01:54:02 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-07-01 01:54:02 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-07-01 01:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:54:02 --> Usuario autenticado con role_id: 
+INFO - 2025-07-01 01:54:09 --> El método authenticate fue llamado
+INFO - 2025-07-01 01:54:09 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-07-01 01:54:09 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-07-01 01:54:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:54:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 01:55:04 --> Resultado de la consulta: Array
+(
+    [id] => 1
+    [name] => Admin
+    [email] => admin@admin.com
+    [email_verified_at] => 
+    [created_at] => 2025-06-23 12:17:08
+    [role_name] => Administrador
+)
+
+INFO - 2025-07-01 01:55:04 --> User data retrieved: {"id":"1","name":"Admin","email":"admin@admin.com","email_verified_at":null,"created_at":"2025-06-23 12:17:08","role_name":"Administrador"}
+INFO - 2025-07-01 01:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:56:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 01:56:12 --> Usuario autenticado con role_id: 
+ERROR - 2025-07-01 02:00:06 --> mysqli_sql_exception: Duplicate entry 'Administrador' for key 'roles.nombre' in C:\laragon\www\NOVA\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\NOVA\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ro...', 0)
+#1 C:\laragon\www\NOVA\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ro...')
+#2 C:\laragon\www\NOVA\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ro...')
+#3 C:\laragon\www\NOVA\system\Database\BaseBuilder.php(1828): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ro...', NULL, false)
+#4 C:\laragon\www\NOVA\system\Database\BaseBuilder.php(2217): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\laragon\www\NOVA\app\Database\Seeds\RolesSeeder.php(16): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\laragon\www\NOVA\system\Database\Seeder.php(147): App\Database\Seeds\RolesSeeder->run()
+#7 C:\laragon\www\NOVA\app\Database\Seeds\DatabaseSeeder.php(12): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\laragon\www\NOVA\system\Database\Seeder.php(147): App\Database\Seeds\DatabaseSeeder->run()
+#9 C:\laragon\www\NOVA\system\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#10 C:\laragon\www\NOVA\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Seed->run(Array)
+#11 C:\laragon\www\NOVA\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#12 C:\laragon\www\NOVA\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#13 C:\laragon\www\NOVA\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 C:\laragon\www\NOVA\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+ERROR - 2025-07-01 02:00:52 --> mysqli_sql_exception: Duplicate entry 'Administrador' for key 'roles.nombre' in C:\laragon\www\NOVA\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\NOVA\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ro...', 0)
+#1 C:\laragon\www\NOVA\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ro...')
+#2 C:\laragon\www\NOVA\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ro...')
+#3 C:\laragon\www\NOVA\system\Database\BaseBuilder.php(1828): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ro...', NULL, false)
+#4 C:\laragon\www\NOVA\system\Database\BaseBuilder.php(2217): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\laragon\www\NOVA\app\Database\Seeds\RolesSeeder.php(16): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\laragon\www\NOVA\system\Database\Seeder.php(147): App\Database\Seeds\RolesSeeder->run()
+#7 C:\laragon\www\NOVA\app\Database\Seeds\DatabaseSeeder.php(12): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\laragon\www\NOVA\system\Database\Seeder.php(147): App\Database\Seeds\DatabaseSeeder->run()
+#9 C:\laragon\www\NOVA\system\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#10 C:\laragon\www\NOVA\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Seed->run(Array)
+#11 C:\laragon\www\NOVA\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#12 C:\laragon\www\NOVA\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#13 C:\laragon\www\NOVA\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 C:\laragon\www\NOVA\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+ERROR - 2025-07-01 02:01:59 --> mysqli_sql_exception: Duplicate entry 'Administrador' for key 'roles.nombre' in C:\laragon\www\NOVA\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\NOVA\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ro...', 0)
+#1 C:\laragon\www\NOVA\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ro...')
+#2 C:\laragon\www\NOVA\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ro...')
+#3 C:\laragon\www\NOVA\system\Database\BaseBuilder.php(1828): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ro...', NULL, false)
+#4 C:\laragon\www\NOVA\system\Database\BaseBuilder.php(2217): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 C:\laragon\www\NOVA\app\Database\Seeds\RolesSeeder.php(16): CodeIgniter\Database\BaseBuilder->insertBatch(Array)
+#6 C:\laragon\www\NOVA\system\Database\Seeder.php(147): App\Database\Seeds\RolesSeeder->run()
+#7 C:\laragon\www\NOVA\app\Database\Seeds\DatabaseSeeder.php(12): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#8 C:\laragon\www\NOVA\system\Database\Seeder.php(147): App\Database\Seeds\DatabaseSeeder->run()
+#9 C:\laragon\www\NOVA\system\Commands\Database\Seed.php(79): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#10 C:\laragon\www\NOVA\system\CLI\Commands.php(70): CodeIgniter\Commands\Database\Seed->run(Array)
+#11 C:\laragon\www\NOVA\system\CLI\Console.php(48): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#12 C:\laragon\www\NOVA\system\Boot.php(351): CodeIgniter\CLI\Console->run()
+#13 C:\laragon\www\NOVA\system\Boot.php(104): CodeIgniter\Boot::runCommand(Object(CodeIgniter\CLI\Console))
+#14 C:\laragon\www\NOVA\spark(84): CodeIgniter\Boot::bootSpark(Object(Config\Paths))
+#15 {main}
+INFO - 2025-07-01 02:02:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:02:49 --> Usuario autenticado con role_id: 
+INFO - 2025-07-01 02:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:03:41 --> Usuario autenticado con role_id: 
+INFO - 2025-07-01 02:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:03:41 --> Usuario autenticado con role_id: 
+INFO - 2025-07-01 02:03:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:03:54 --> Usuario autenticado con role_id: 
+INFO - 2025-07-01 02:04:50 --> El método authenticate fue llamado
+INFO - 2025-07-01 02:04:50 --> Intento de inicio de sesión para el usuario: admin@docente.com
+INFO - 2025-07-01 02:04:50 --> Intento de inicio de sesión para el usuario: admin@docente.com
+INFO - 2025-07-01 02:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:09:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:09:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:09:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:09:54 --> Acceso a la vista de cambio de contraseña.
+INFO - 2025-07-01 02:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:10:05 --> Acceso a la vista de cambio de contraseña.
+INFO - 2025-07-01 02:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:10:16 --> Usuario autenticado con role_id: 
+INFO - 2025-07-01 02:10:26 --> El método authenticate fue llamado
+INFO - 2025-07-01 02:10:26 --> Intento de inicio de sesión para el usuario: admin@estudiante.com
+INFO - 2025-07-01 02:10:26 --> Intento de inicio de sesión para el usuario: admin@estudiante.com
+INFO - 2025-07-01 02:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:12:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 02:12:34 --> Resultado de la consulta: Array
+(
+    [id] => 2
+    [name] => estudiante1
+    [email] => admin@estudiante.com
+    [email_verified_at] => 
+    [created_at] => 2025-07-01 02:04:29
+    [role_name] => Estudiante
+)
+
+INFO - 2025-07-01 02:12:34 --> User data retrieved: {"id":"2","name":"estudiante1","email":"admin@estudiante.com","email_verified_at":null,"created_at":"2025-07-01 02:04:29","role_name":"Estudiante"}
+INFO - 2025-07-01 02:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:12:40 --> Usuario autenticado con role_id: 
+INFO - 2025-07-01 02:12:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:21:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:21:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:21:21 --> Usuario autenticado con role_id: 
+INFO - 2025-07-01 02:23:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:23:02 --> Usuario autenticado con role_id: 
+INFO - 2025-07-01 02:23:24 --> El método authenticate fue llamado
+INFO - 2025-07-01 02:23:25 --> Intento de inicio de sesión para el usuario: admin@estudiante.com
+INFO - 2025-07-01 02:23:25 --> Intento de inicio de sesión para el usuario: admin@estudiante.com
+INFO - 2025-07-01 02:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:23:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-01 02:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-07-01 02:25:09 --> Resultado de la consulta: Array
+(
+    [id] => 2
+    [name] => estudiante1
+    [email] => admin@estudiante.com
+    [email_verified_at] => 
+    [created_at] => 2025-07-01 02:22:58
+    [role_name] => Estudiante
+)
+
+INFO - 2025-07-01 02:25:09 --> User data retrieved: {"id":"2","name":"estudiante1","email":"admin@estudiante.com","email_verified_at":null,"created_at":"2025-07-01 02:22:58","role_name":"Estudiante"}
+INFO - 2025-07-01 02:25:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

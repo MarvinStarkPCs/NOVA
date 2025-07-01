@@ -40,11 +40,11 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->post('extrasmanagement/request-statuses/update/(:num)', 'RequestStatusesController::update/$1');
     $routes->get('extrasmanagement/request-statuses/delete/(:num)', 'RequestStatusesController::delete/$1');
     // request types
-     // request statuses
-     $routes->get('extrasmanagement/request-types', 'RequestTypesController::index');
-     $routes->post('extrasmanagement/request-types/add', 'RequestTypesController::create');
-     $routes->post('extrasmanagement/request-types/update/(:num)', 'RequestTypesController::update/$1');
-     $routes->get('extrasmanagement/request-types/delete/(:num)', 'RequestTypesController::delete/$1');
+    // request statuses
+    $routes->get('extrasmanagement/request-types', 'RequestTypesController::index');
+    $routes->post('extrasmanagement/request-types/add', 'RequestTypesController::create');
+    $routes->post('extrasmanagement/request-types/update/(:num)', 'RequestTypesController::update/$1');
+    $routes->get('extrasmanagement/request-types/delete/(:num)', 'RequestTypesController::delete/$1');
     // Rutas de autenticación (protegidas) para el aside
     ///setting
     $routes->get('setting', 'ConfigurationController::index');
@@ -64,7 +64,7 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->get('transactions', 'TransactionsController::index');
     $routes->post('transactions/search', 'TransactionsController::search');
     $routes->post('transactions/pay', 'TransactionsController::pay');
-// Rutas de autenticación (protegidas) para el modulo de seguridad
+    // Rutas de autenticación (protegidas) para el modulo de seguridad
     ///clientmanagemen
     $routes->get('clientmanagement', 'ClientsManagementController::index'); // Listar usuarios
     $routes->get('clientmanagement/show/(:num)', 'ClientsManagementController::show/$1'); // Obtener un usuario específico
@@ -89,22 +89,26 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     ///changepassword
     $routes->get('changepassword', 'ChangePasswordController::index');  // Cargar formulario
     $routes->post('changepassword/update', 'ChangePasswordController::updatePassword');  // Enviar formulario
+
+    // Rutas de autenticación (protegidas) para crear pruebas
+    $routes->get('createexam', 'CrearPruebaController::index');
 });
 
 
-$routes->group('client', ['filter' => 'auth'], function ($routes) {
+$routes->group('estudiante', ['filter' => 'auth'], function ($routes) {
     $routes->get('dashboard', 'HomeController::index');
     $routes->get('profile', 'ProfileController::index');
     $routes->post('profile/update', 'ProfileController::updateProfile');
     ///changepassword
     $routes->get('changepassword', 'ChangePasswordController::index');  // Cargar formulario
     $routes->post('changepassword/update', 'ChangePasswordController::updatePassword');  // Enviar formulario
+    //menu(estudiante)
 
-    // Rutas de autenticación (protegidas) para pqrs client
-    $routes->get('pqrs-sent', 'PqrsSentController::index');
-    $routes->post('pqrs-sent/save', 'PqrsSentController::save'); // Guardar PQRS
-    $routes->get('historytransactions/detail/(:num)', 'HistoryTransactionsController::renderViewHistoryTransaction/$1');
+    $routes->get('menu', 'MenuController::index');
+    
+    
+        $routes->get('profile', 'ProfileController::index');
 
-    //PQRS VIEW
-    $routes->get('pqrs-sent/view', 'PqrsSentController::view'); // Ver detalles de una PQRS
+    
+
 });

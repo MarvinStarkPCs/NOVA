@@ -1,0 +1,15 @@
+INFO - 2025-06-25 23:20:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-25 23:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-25 23:20:04 --> Usuario autenticado con role_id: 
+INFO - 2025-06-25 23:20:06 --> El método authenticate fue llamado
+INFO - 2025-06-25 23:20:06 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-06-25 23:20:07 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-06-25 23:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-25 23:20:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-25 23:20:07 --> Usuario autenticado con role_id: 
+INFO - 2025-06-25 23:20:12 --> El método authenticate fue llamado
+INFO - 2025-06-25 23:20:12 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-06-25 23:20:12 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-06-25 23:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-25 23:20:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-25 23:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -5,48 +5,48 @@ use CodeIgniter\Model;
 class UserManagementModel extends Model
 {
     protected $table = 'users';
-    protected $primaryKey = 'id_user';
-    protected $allowedFields = ['name', 'last_name', 'identification', 'password_hash', 'role_id', 'email', 'phone', 'address', 'status', 'login_attempts', 'last_login_attempt', 'balance', 'date_registration'];
+    protected $primaryKey = 'id';
+    
+    protected $allowedFields = [
+        'name', 'email', 'email_verified_at',
+        'password', 'remember_token',
+        'created_at', 'updated_at',
+        'role_id'
+    ];
+    
     protected $returnType = 'array';
-    protected $useTimestamps = false;
+    protected $useTimestamps = true; // usa created_at y updated_at automáticamente
+    protected $createdField  = 'created_at';
+    protected $updatedField  = 'updated_at';
 
-    // Método para obtener usuarios sin la contraseña
-    public function getUsers($id = null)
-    {
-        $query = $this->select('users.id_user, users.name, users.last_name, users.identification, users.email, 
-                                users.phone, users.address, users.status, users.login_attempts, 
-                                users.last_login_attempt, users.role_id, users.date_registration, 
-                                roles.role_name')
-            ->join('roles', 'roles.id_role = users.role_id')
-            ->where('roles.role_name=', 'ADMIN'); // Excluye usuarios
+    // Método para obtener usuarios con su rol
+public function getUsers($id = null) 
+{
+    $builder = $this->select('users.id, users.name, users.email, users.email_verified_at, users.created_at, roles.nombre AS role_name')
+                    ->join('roles', 'roles.id = users.role_id', 'left');
 
+    if ($id !== null) {
+        $builder->where('users.id', $id);
 
-        if ($id !== null) {
-            $query->where('users.id_user', $id);
-            return $query->first(); // Retorna solo un usuario si hay filtro
-        }
-        
+        // Imprimir la consulta generada
 
-        return $query->findAll(); // Retorna todos los usuarios si no hay filtro
+        $data = $builder->first();
+        log_message('debug', 'Resultado de la consulta: ' . print_r($data, true));
+        return $data;
     }
-    public function getUserByIdentification($identification)
-    {
-        return $this->where('identification', $identification)->first();
-    }
-    public function getUserByIdUser($id_user)
-    {
-        return $this->where('id_user', $id_user)->first();
-    }
-   
 
-    /**
-     * Actualiza el saldo del usuario
-     */
-    public function updateUserBalance($identification, $newBalance)
-    {
-        return $this->set('balance', $newBalance)
-            ->where('identification', $identification)
-            ->update();
-    }
+    return $builder->findAll();
 }
 
+
+
+    public function getUserByEmail($email)
+    {
+        return $this->where('email', $email)->first();
+    }
+
+    public function getUserById($id)
+    {
+        return $this->where('id', $id)->first();
+    }
+}

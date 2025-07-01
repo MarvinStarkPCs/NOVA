@@ -156,7 +156,6 @@ console.log(form)
     // Handle tab switching
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
-            toggleLoader(true, 800)
 
             const target = tab.getAttribute('data-target');
             localStorage.setItem('activeTab', target);
@@ -184,7 +183,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 tlsCheckbox.checked = false;
             }
         });
-    toggleLoader(true, 1000)
     localStorage.getItem('activeTab') ? document.querySelector(`.tab[data-target="${localStorage.getItem('activeTab')}"]`).click() : tabs[0].click();
 });
 
