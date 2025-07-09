@@ -93,7 +93,7 @@
 <!-- Contenido principal con botón -->
 <div class="start-box">
   <h2>¡Bienvenido! ¿Estás listo para comenzar?</h2>
-  <a href="<?= base_url('estudiante/prueba'); ?>" class="start-btn">Empezar prueba</a>
+  <a href="<?= base_url('estudiante/resolver/mostrar'); ?>" class="start-btn">Empezar prueba</a>
 </div>
 
 <!-- Scripts -->

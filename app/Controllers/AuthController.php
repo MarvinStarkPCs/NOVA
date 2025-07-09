@@ -70,7 +70,7 @@ log_message('info', "Intento de inicio de sesión para el usuario: {$email}");
         // Redirige según el rol del usuario
         return ($session->get('role_id') == 1 ) 
         ? redirect()->to('/admin/dashboard') 
-        : redirect()->to('/estudiante/dashboard');
+        : redirect()->to('/estudiante/menu');
             
         } else {
             return redirect()->back()->with('error', 'Correo electrónico o contraseña incorrectos.');

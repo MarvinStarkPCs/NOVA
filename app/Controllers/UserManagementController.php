@@ -132,4 +132,34 @@ class UserManagementController extends BaseController
             return redirect()->to('/admin/usermanagement')->with('error', 'Error al intentar eliminar el usuario.');
         }
     }
+    public function verPrueba($asignaturaId)
+{
+    $preguntaModel = new \App\Models\PreguntaModel();
+    $lecturaModel  = new \App\Models\LecturaModel();
+
+    // Bloques con lectura (tipo: con-texto)
+    $lecturas = $lecturaModel
+        ->where('asignatura_id', $asignaturaId)
+        ->findAll();
+
+    foreach ($lecturas as &$lectura) {
+        $lectura['preguntas'] = $preguntaModel
+            ->select('preguntas.*')
+            ->join('lecturas_preguntas', 'preguntas.id = lecturas_preguntas.pregunta_id')
+            ->where('lecturas_preguntas.lectura_id', $lectura['id'])
+            ->findAll();
+    }
+
+    // Preguntas sueltas (tipo: solo-preguntas)
+    $preguntasSueltas = $preguntaModel
+        ->where('asignatura_id', $asignaturaId)
+        ->where('tipo', 'solo-preguntas')
+        ->findAll();
+
+    return view('estudiante/ver_prueba', [
+        'lecturas' => $lecturas,
+        'preguntasSueltas' => $preguntasSueltas,
+    ]);
+}
+
 }

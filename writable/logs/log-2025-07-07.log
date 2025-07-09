@@ -1,0 +1,20 @@
+INFO - 2025-07-07 06:28:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-07 06:28:35 --> ErrorException: foreach() argument must be of type array|object, null given
+[Method: POST, Route: estudiante/resolver/guardarRespuestas]
+in APPPATH\Controllers\ResolverPruebaController.php on line 81.
+ 1 APPPATH\Controllers\ResolverPruebaController.php(81): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'C:\\laragon\\www\\NOVA\\app\\Controllers\\ResolverPruebaController.php', 81)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ResolverPruebaController->guardarRespuestas()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ResolverPruebaController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-07-07 13:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-07 13:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-07 13:40:05 --> Usuario autenticado con role_id: 
+INFO - 2025-07-07 13:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-07 13:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-07 13:40:06 --> Usuario autenticado con role_id: 
+INFO - 2025-07-07 19:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-07 19:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-07 19:30:48 --> Usuario autenticado con role_id: 

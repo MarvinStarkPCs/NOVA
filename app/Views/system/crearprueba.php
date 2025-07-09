@@ -404,14 +404,43 @@ function guardarPrueba() {
     }
   });
 
-  if (!error) {
-    console.log("JSON Final:", JSON.stringify(resultado, null, 2));
-    Swal.fire({
-      icon: 'success',
-      title: 'Prueba generada correctamente',
-      confirmButtonColor: '#2A6322'
-    });
-  }
+
+    if (!error) {
+  const asignatura_id = $("#asignatura").val(); // capturar asignatura seleccionada
+
+  const resultadoFinal = {
+    asignatura_id: asignatura_id,
+    bloques: resultado
+  };
+
+  console.log("JSON a enviar:", resultadoFinal);
+
+  $.ajax({
+    url: "<?= base_url('admin/createexam/guardar-prueba') ?>",
+    type: "POST",
+    data: JSON.stringify(resultadoFinal),
+    contentType: "application/json",
+    success: function (response) {
+      console.log("Respuesta del servidor:", response);
+      Swal.fire({
+        icon: "success",
+        title: "Prueba guardada correctamente",
+        text: response.message || "Los datos se han guardado en la base de datos.",
+        confirmButtonColor: "#2A6322"
+      });
+    },
+    error: function (xhr, status, error) {
+      console.error("Error:", error);
+      Swal.fire({
+        icon: "error",
+        title: "Error al guardar",
+        text: "Hubo un problema al guardar la prueba.",
+        confirmButtonColor: "#2A6322"
+      });
+    }
+  });
+}
+
 }
 
 </script>

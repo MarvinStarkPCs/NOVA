@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prueba Estudiantil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * { box-sizing: border-box; }
+    body, html {
+      margin: 0; padding: 0;
+      font-family: 'Baloo 2', cursive;
+      background: linear-gradient(to top right, #A1C4FD, #C2E9FB);
+      color: #2A6322;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    nav {
+      background-color: #2a6322;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 1.5rem;
+      border-radius: 0 0 15px 15px;
+    }
+
+    .container {
+      flex: 1;
+      background: white;
+      border-radius: 25px;
+      margin: 1rem auto;
+      padding: 2rem;
+      width: 95%;
+      max-width: 900px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+
+    .question {
+      display: none;
+      background: #e6f0d4;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 20px;
+      box-shadow: inset 0 0 10px #c6d9a7;
+    }
+    .question.active { display: block; }
+
+    .question p { font-weight: 700; margin-bottom: 0.5rem; }
+
+    .question label {
+      display: block;
+      padding: 0.4rem 0.6rem;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+    .question label:hover { background-color: #c1d897; }
+    .question input[type="radio"] { margin-right: 8px; cursor: pointer; }
+
+    .feedback {
+      font-weight: 700;
+      margin-top: 0.5rem;
+      border-radius: 12px;
+      padding: 0.3rem 0.6rem;
+      width: fit-content;
+    }
+    .correct { background-color: #a6d785; color: #2a6322; }
+    .incorrect { background-color: #f7a6a6; color: #7a1a1a; }
+
+    .pagination {
+      text-align: center;
+      margin: 2rem 0 1rem;
+    }
+    .pagination button {
+      margin: 0 5px;
+      padding: 0.5rem 1rem;
+      background-color: #2a6322;
+      color: white;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .pagination button:hover { background-color: #1e4a19; }
+
+    #submitBtn {
+      display: block;
+      margin: 1.5rem auto;
+      padding: 0.8rem 2rem;
+      font-size: 1.2rem;
+      background-color: #2a6322;
+      color: white;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    #result {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background-color: #2a6322;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1rem;
+      border-radius: 0 0 25px 25px;
+    }
+
+    /* Loader */
+    .loader-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(255, 255, 255, 0.8);
+      z-index: 9999;
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .spinner {
+      border: 8px solid #e0e0e0;
+      border-top: 8px solid #2a6322;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <nav><i class="fas fa-graduation-cap"></i> Plataforma Educativa - Paginación de 10 en 10</nav>
+  <div class="container">
+    <div id="questionsContainer"></div>
+    <div class="pagination">
+      <button onclick="cambiarPagina(-1)" aria-label="Página anterior"><i class="fas fa-chevron-left"></i></button>
+      <button onclick="cambiarPagina(1)" aria-label="Página siguiente"><i class="fas fa-chevron-right"></i></button>
+    </div>
+    <button id="submitBtn">Entregar Prueba</button>
+    <div id="result"></div>
+  </div>
+  <footer>© 2025 Marvin StarkPCS - Aprende Jugando</footer>
+
+  <!-- Loader -->
+  <div class="loader-overlay" id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <script>
+    const preguntas = Array.from({ length: 30 }, (_, i) => ({
+      texto: `Pregunta ejemplo ${i + 1}: ¿Cuál es la respuesta correcta?`,
+      opciones: ["A", "B", "C", "D"],
+      correcta: "A",
+      explicacion: "La respuesta correcta es A porque sí."
+    }));
+
+    let paginaActual = 0;
+    const preguntasPorPagina = 10;
+
+    function renderPreguntas() {
+      const contenedor = document.getElementById("questionsContainer");
+      contenedor.innerHTML = "";
+
+      const inicio = paginaActual * preguntasPorPagina;
+      const fin = Math.min(inicio + preguntasPorPagina, preguntas.length);
+
+      for (let i = inicio; i < fin; i++) {
+        const p = preguntas[i];
+        const div = document.createElement("div");
+        div.className = "question active";
+        div.innerHTML = `<p><strong>${i + 1}. ${p.texto}</strong></p>` +
+          p.opciones.map(o => `<label><input type="radio" name="p${i}" value="${o}"> ${o}</label>`).join("");
+        contenedor.appendChild(div);
+      }
+    }
+
+    function cambiarPagina(offset) {
+      const loader = document.getElementById("loader");
+      loader.style.display = "flex";
+
+      setTimeout(() => {
+        const totalPaginas = Math.ceil(preguntas.length / preguntasPorPagina);
+        paginaActual = Math.max(0, Math.min(totalPaginas - 1, paginaActual + offset));
+        renderPreguntas();
+        loader.style.display = "none";
+      }, 500); // milisegundos de carga simulada
+    }
+
+    document.getElementById("submitBtn").onclick = () => {
+      let correctas = 0;
+      preguntas.forEach((p, i) => {
+        const elegida = document.querySelector(`input[name="p${i}"]:checked`);
+        const div = document.getElementsByClassName("question")[i % preguntasPorPagina];
+        let feedback = document.createElement("div");
+        feedback.classList.add("feedback");
+
+        if (elegida && elegida.value === p.correcta) {
+          correctas++;
+          feedback.textContent = "¡Correcto!";
+          feedback.classList.add("correct");
+        } else {
+          feedback.innerHTML = `Incorrecto<br><small><em>${p.explicacion}</em></small>`;
+          feedback.classList.add("incorrect");
+        }
+        if (div) div.appendChild(feedback);
+      });
+      document.getElementById("result").textContent = `Obtuviste ${correctas} de ${preguntas.length} correctas.`;
+    };
+
+    renderPreguntas();
+  </script>
+</body>
+</html>
