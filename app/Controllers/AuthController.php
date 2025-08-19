@@ -48,7 +48,6 @@ class AuthController extends BaseController
         if (!$this->validate($rules)) {
             return redirect()->back()->with('error', implode('<br>', $this->validator->getErrors()));
         }
-
         $email = $this->request->getPost('email');
         $password = $this->request->getPost('password');
 log_message('info', "Intento de inicio de sesión para el usuario: {$email}");
