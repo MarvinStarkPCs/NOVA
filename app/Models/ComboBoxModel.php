@@ -26,4 +26,20 @@ class ComboBoxModel extends Model
         // Ejecuta la consulta y devuelve el resultado
         return $builder->get()->getResultArray();
     }
+
+public function getById($table, $id, $field = 'id')
+{
+    log_message('info', "Obteniendo datos de la tabla: {$table}, id: {$id}, campo: {$field}");
+    if (!$this->db->tableExists($table)) {
+        return [];
+    }
+
+    return $this->db->table($table)
+        ->where($field, $id)
+        ->get()
+        ->getResultArray();
+}
+
+
+
 }

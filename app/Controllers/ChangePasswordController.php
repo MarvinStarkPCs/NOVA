@@ -37,7 +37,7 @@ class ChangePasswordController extends BaseController
         $user = $userModel->find(session()->get('id_user'));
 
         // Verificar si la contraseña actual es correcta
-        if (!password_verify($currentPassword, $user['password_hash'])) {
+        if (!password_verify($currentPassword, $user['password'])) {
             log_message('error', 'La contraseña actual es incorrecta para el usuario con ID: ' . session()->get('user_id'));
             return redirect()->back()->with('error', 'La contraseña actual es incorrecta');
         }
@@ -53,7 +53,7 @@ class ChangePasswordController extends BaseController
         log_message('info', 'Nueva contraseña encriptada para el usuario con ID: ' . session()->get('user_id'));
 
         // Actualizar la contraseña en la base de datos
-        if ($userModel->update($user['id_user'], ['password_hash' => $newPasswordHash])) {
+        if ($userModel->update($user['id'], ['password' => $newPasswordHash])) {
             log_message('info', 'Contraseña actualizada con éxito para el usuario con ID: ' . session()->get('user_id'));
             // Redirigir con un mensaje de éxito
             return redirect()->to('/admin/changepassword')->with('success', 'Contraseña actualizada con éxito');

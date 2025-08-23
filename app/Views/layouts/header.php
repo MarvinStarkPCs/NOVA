@@ -16,35 +16,15 @@
                 ?>
                 <span class="text-black mr-2 d-none d-lg-inline small">
                     <?= esc($nombreUsuario); ?>
-                </span> 
+                </span>
                 <img class="img-profile rounded-circle" src="<?= base_url('img/undraw_profile.svg'); ?>">
             </a>
-           
-
-                <?php if ($role_id == 1): // Si es administrador ?>
-                     <!-- Dropdown - User Information -->
+            <!-- Dropdown - User Information -->
             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                 <a class="dropdown-item" href="<?= base_url('admin/profile'); ?>">
                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
                     Profile
                 </a>
-                    <a class="dropdown-item" href="<?= base_url('admin/setting'); ?>">
-                        <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                        Settings
-                    </a>
-                <?php endif; ?>
-
-
-                <?php if ($role_id == 2): // Si es administrador ?>
-                     <!-- Dropdown - User Information -->
-            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="<?= base_url('client/profile'); ?>">
-                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                    Profile
-                </a>
-    
-                <?php endif; ?>
-
                 <a class="dropdown-item" href="<?= base_url('logout'); ?>" data-toggle="modal" data-target="#logoutModal">
                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                     Logout

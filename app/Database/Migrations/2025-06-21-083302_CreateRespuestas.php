@@ -10,7 +10,6 @@ class CreateRespuestas extends Migration
     {
         $this->forge->addField([
             'id'               => ['type' => 'INT', 'auto_increment' => true],
-            'user_id'          => ['type' => 'BIGINT', 'unsigned' => true],
             'pregunta_id'      => ['type' => 'INT'],
             'opcion_elegida'   => ['type' => 'CHAR', 'constraint' => 1],
             'respuesta_correcta' => ['type' => 'BOOLEAN', 'null' => true],
@@ -21,7 +20,6 @@ class CreateRespuestas extends Migration
             
         ]);
         $this->forge->addKey('id', true);
-        $this->forge->addForeignKey('user_id', 'users', 'id', 'CASCADE', 'CASCADE');
         $this->forge->addForeignKey('pregunta_id', 'preguntas', 'id', 'CASCADE', 'CASCADE');
         $this->forge->createTable('respuestas');
     }

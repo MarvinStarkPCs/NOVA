@@ -15,13 +15,7 @@ class CreatePruebasLecturasRelacion extends Migration
                 'unsigned'       => true,
                 'auto_increment' => true,
             ],
-            'asignatura_id'   => [
-                'type'     => 'INT',
-            ],
-            'user_id'         => [
-                'type'     => 'BIGINT',
-                'unsigned' => true,
-            ],
+    
             'nombre'          => [
                 'type' => 'VARCHAR',
                 'constraint' => 255,
@@ -37,8 +31,6 @@ class CreatePruebasLecturasRelacion extends Migration
         ]);
 
         $this->forge->addKey('id', true);
-        $this->forge->addForeignKey('asignatura_id', 'asignaturas', 'id', 'CASCADE', 'CASCADE');
-        $this->forge->addForeignKey('user_id', 'users', 'id', 'CASCADE', 'CASCADE');
         $this->forge->createTable('pruebas');
 
         // Agregar prueba_id a lecturas
@@ -58,7 +50,6 @@ class CreatePruebasLecturasRelacion extends Migration
                 'type'     => 'INT',
                 'unsigned' => true,
                 'null'     => true,
-                'after'    => 'asignatura_id',
             ],
         ];
         $this->forge->addColumn('preguntas', $fieldsPreguntas);

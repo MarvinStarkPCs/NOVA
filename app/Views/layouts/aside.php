@@ -6,23 +6,20 @@
         </div>
     </a>
 
-  
-
     <!-- Verificamos el role_id -->
     <?php if (session()->get('role_id') == 1): ?>
-          <!-- Divider -->
-    <hr class="sidebar-divider my-0">
+        <!-- DOCENTE -->
+        <hr class="sidebar-divider my-0">
 
-<!-- Nav Item - Dashboard -->
-<li class="nav-item active">
-    <a class="nav-link" href="<?= base_url('admin/dashboard'); ?>">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Home</span></a>
-</li>
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item active">
+            <a class="nav-link" href="<?= base_url('profesor/home'); ?>">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Home</span></a>
+        </li>
 
-<!-- Divider -->
-<hr class="sidebar-divider">
-        <!-- Items para Administrador -->
+        <!-- Divider -->
+        <hr class="sidebar-divider">
         <div class="sidebar-heading">Interfaces</div>
 
         <li class="nav-item">
@@ -33,47 +30,26 @@
             </a>
             <div id="collapseSystem" class="collapse" aria-labelledby="headingSystem" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">SYSTEM MANAGEMENT</h6>
-                    <a class="collapse-item" href="<?= base_url('admin/createexam'); ?>">
-                        <i class="fas fa-fw fa-cog"></i>Armar Prueba
+                    <h6 class="collapse-header">GESTIÓN DE PRUEBAS</h6>
+                    <a class="collapse-item" href="<?= base_url('profesor/createexam'); ?>">
+                        <i class="fas fa-edit"></i> Armar Prueba
                     </a>
-                    <!-- <a class="collapse-item" href="< ?= base_url('admin/transactions'); ?>">
-                        
-                        <i class="fas fa-university"></i> Pay
+
+                     <a class="collapse-item" href="<?= base_url('profesor/asignar'); ?>">
+                        <i class="fas fa-clipboard"></i> Asignar prueba
                     </a>
-                    <a class="collapse-item" href="< ?= base_url('admin/clientmanagement'); ?>">
-                        <i class="fas fa-users"></i> clients
-                    </a> 
-               <a class="collapse-item" href="< ?= base_url('admin/extrasmanagement'); ?>">
-                        <i class="fas fa-tools"></i> Gestión de Extras
-                    </a>  -->
+                    <a class="collapse-item" href="<?= base_url('profesor/results'); ?>">
+                        <i class="fas fa-list"></i> Ver Resultados
+                    </a>
+                    <a class="collapse-item" href="<?= base_url('profesor/grades'); ?>">
+                        <i class="fas fa-star"></i> Calificaciones
+                    </a>
+                    <a class="collapse-item" href="<?= base_url('profesor/filterstudent'); ?>">
+                        <i class="fas fa-user-graduate"></i> Filtrar por Estudiante
+                    </a>
                 </div>
             </div>
         </li>
-        <!-- <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseHistory"
-            aria-expanded="true" aria-controls="collapseHistory">
-            <i class="fas fa-fw fa-history"></i> Icono de historia 
-            <span>History</span>
-        </a>
-        <div id="collapseHistory" class="collapse" aria-labelledby="headingHistory" data-parent="#accordionSidebar">
-            <div class="bg-white py-2 collapse-inner rounded">
-                <h6 class="collapse-header">HISTORY OF THE SYSTEM:</h6>
-                <a class="collapse-item" href="< ?= base_url('admin/historytransactions'); ?>" >
-                        <i class="fas fa-tasks"></i> History de transactions
-                    </a> -->
-                <!--
-                    <a class="collapse-item" href="< ?= base_url('asignaciones'); ?>">
-                        <i class="fas fa-calendar-alt"></i> Historial de asignaciones
-                    </a>
-
-                    <a class="collapse-item" href="< ?= base_url('dados-de-baja'); ?>">
-                        <i class="fas fa-trash-alt"></i> Historial Dados de Baja
-                    </a> 
-            </div>
-
-        </div>
-    </li>-->
 
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSecurity"
@@ -84,68 +60,115 @@
             <div id="collapseSecurity" class="collapse" aria-labelledby="headingSecurity" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">SECURITY SETTINGS:</h6>
-                    <a class="collapse-item" href="<?= base_url('admin/usermanagement'); ?>">
-                        <i class="fas fa-users-cog"></i> User Management
-                    </a>
-                    <a class="collapse-item" href="<?= base_url('admin/changepassword'); ?>">
-                        <i class="fas fa-key"></i> Change Password
+                    <a class="collapse-item" href="<?= base_url('profesor/changepassword'); ?>">
+                        <i class="fas fa-key"></i> Cambiar Contraseña
                     </a>
                 </div>
             </div>
         </li>
 
     <?php elseif (session()->get('role_id') == 2): ?>
+        <!-- ESTUDIANTE -->
         <hr class="sidebar-divider my-0">
 
-<!-- Nav Item - Dashboard -->
-<li class="nav-item active">
-    <a class="nav-link" href="<?= base_url('client/dashboard'); ?>">
-        <i class="fas fa-fw fa-tachometer-alt"></i>
-        <span>Home</span></a>
-</li>
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item active">
+            <a class="nav-link" href="<?= base_url('estudiante/home'); ?>">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Home</span></a>
+        </li>
 
-<!-- Divider -->
-<hr class="sidebar-divider">
-         <!-- Items para Administrador -->
-         <div class="sidebar-heading">Interfaces</div>
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+        <div class="sidebar-heading">Interfaces</div>
 
-<li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSystem" aria-expanded="true"
-        aria-controls="collapseSystem">
-        <i class="fas fa-fw fa-cog"></i>
-        <span>System</span>
-    </a>
-    <div id="collapseSystem" class="collapse" aria-labelledby="headingSystem" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">SYSTEM MANAGEMENT</h6>
-            <a class="collapse-item" href="<?= base_url('client/pqrs-sent/view'); ?>">
-                <i class="fas fa-fw fa-cog"></i> PQRS
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSystem" aria-expanded="true"
+                aria-controls="collapseSystem">
+                <i class="fas fa-fw fa-cog"></i>
+                <span>System</span>
             </a>
-            <a class="collapse-item" href="<?= base_url('client/historytransactions/detail/' . session('id_user')); ?>">
-    <i class="fas fa-exchange-alt"></i> Transactions
-</a>
+            <div id="collapseSystem" class="collapse" aria-labelledby="headingSystem" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">MIS RESULTADOS</h6>
+                    <a class="collapse-item" href="<?= base_url('estudiante/grades'); ?>">
+                        <i class="fas fa-star"></i> Mis Calificaciones
+                    </a>
+                </div>
+            </div>
+        </li>
 
-        </div>
-    </div>
-</li>
-
-<li class="nav-item">
-    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSecurity"
-        aria-expanded="true" aria-controls="collapseSecurity">
-        <i class="fas fa-fw fa-shield-alt"></i>
-        <span>Security</span>
-    </a>
-    <div id="collapseSecurity" class="collapse" aria-labelledby="headingSecurity" data-parent="#accordionSidebar">
-        <div class="bg-white py-2 collapse-inner rounded">
-            <h6 class="collapse-header">SECURITY SETTINGS:</h6>
-           
-            <a class="collapse-item" href="<?= base_url('client/changepassword'); ?>">
-                <i class="fas fa-key"></i> Change Password
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSecurity"
+                aria-expanded="true" aria-controls="collapseSecurity">
+                <i class="fas fa-fw fa-shield-alt"></i>
+                <span>Security</span>
             </a>
-        </div>
-    </div>
-</li>
+            <div id="collapseSecurity" class="collapse" aria-labelledby="headingSecurity" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">SECURITY SETTINGS:</h6>
+                    <a class="collapse-item" href="<?= base_url('estudiante/changepassword'); ?>">
+                        <i class="fas fa-key"></i> Cambiar Contraseña
+                    </a>
+                </div>
+            </div>
+        </li>
 
+    <?php elseif (session()->get('role_id') == 3): ?>
+        <!-- ADMINISTRADOR -->
+        <hr class="sidebar-divider my-0">
+
+        <!-- Nav Item - Dashboard -->
+        <li class="nav-item active">
+            <a class="nav-link" href="<?= base_url('admin/home'); ?>">
+                <i class="fas fa-fw fa-tachometer-alt"></i>
+                <span>Home</span></a>
+        </li>
+
+        <!-- Divider -->
+        <hr class="sidebar-divider">
+        <div class="sidebar-heading">Interfaces</div>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSystem" aria-expanded="true"
+                aria-controls="collapseSystem">
+                <i class="fas fa-fw fa-cog"></i>
+                <span>System</span>
+            </a>
+            <div id="collapseSystem" class="collapse" aria-labelledby="headingSystem" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">GESTIÓN ACADÉMICA</h6>
+                    <a class="collapse-item" href="<?= base_url('admin/usermanagement'); ?>">
+                        <i class="fas fa-users-cog"></i> Gestión de Usuarios
+                    </a>
+                    <a class="collapse-item" href="<?= base_url('admin/students'); ?>">
+                        <i class="fas fa-user-graduate"></i> Estudiantes Matriculados
+                    </a>
+                    <a class="collapse-item" href="<?= base_url('admin/rematricula'); ?>">
+                        <i class="fas fa-redo"></i> Rematriculación
+                    </a>
+                    <a class="collapse-item" href="<?= base_url('admin/asignaciones'); ?>">
+                        <i class="fas fa-chalkboard-teacher"></i> Asignación Académica
+                    </a>
+                </div>
+            </div>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSecurity"
+                aria-expanded="true" aria-controls="collapseSecurity">
+                <i class="fas fa-fw fa-shield-alt"></i>
+                <span>Security</span>
+            </a>
+            <div id="collapseSecurity" class="collapse" aria-labelledby="headingSecurity" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                    <h6 class="collapse-header">SECURITY SETTINGS:</h6>
+                    <a class="collapse-item" href="<?= base_url('admin/changepassword'); ?>">
+                        <i class="fas fa-key"></i> Cambiar Contraseña
+                    </a>
+                </div>
+            </div>
+        </li>
     <?php endif; ?>
 
     <!-- Divider -->

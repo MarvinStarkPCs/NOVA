@@ -18,10 +18,8 @@ class CreatePreguntas extends Migration
             'opcion_correcta' => ['type' => 'CHAR', 'constraint' => 1],
             'justificacion'   => ['type' => 'TEXT'],
             'tipo'            => ['type' => 'VARCHAR', 'constraint' => 50],
-            'asignatura_id'   => ['type' => 'INT'],
         ]);
         $this->forge->addKey('id', true);
-        $this->forge->addForeignKey('asignatura_id', 'asignaturas', 'id', 'CASCADE', 'CASCADE');
         $this->forge->createTable('preguntas');
     }
 
