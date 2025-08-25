@@ -90,6 +90,8 @@ public function addUser()
         'fecha_nacimiento' => $this->request->getPost('fecha_nacimiento'),
         'role_id'          => $roleId,
         'estado'           => $this->request->getPost('status'),
+            'password'         => password_hash('admin123*', PASSWORD_DEFAULT),
+
     ];
 
     try {
