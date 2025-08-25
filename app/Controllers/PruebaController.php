@@ -6,7 +6,7 @@ use App\Models\ProfesorAsignaturasModel;
 use App\Models\PruebasModel;
 use CodeIgniter\Controller;
 use App\Models\ComboBoxModel;
-use App\Models\PruebasMatriculaModel;
+use App\Models\PruebaGruposModel;
 class PruebaController extends BaseController
 {
     public function index()
@@ -38,15 +38,14 @@ public function asignar()
     $prueba_id = $this->request->getPost('prueba_id');
     $grupo_id = $this->request->getPost('grupo_id');
     $fecha_limite = $this->request->getPost('fecha_limite');
-    $usuario_id = session()->get('id_user');
-log_message('info', "Asignando prueba ID: {$prueba_id} al grupo ID: {$grupo_id} por el usuario ID: {$usuario_id}");
+
     // Modelo para asignaciones
-    $pruebaMatriculaModel = new PruebasMatriculaModel();
+    $pruebaMatriculaModel = new PruebaGruposModel();
 
     // Guardar la asignación en la tabla
     $pruebaMatriculaModel->insert([
         'prueba_id' => $prueba_id,
-        'matricula_id' => $grupo_id,
+        'grupo_id' => $grupo_id,
         'fecha_asignacion' => date('Y-m-d H:i:s'),
         'fecha_limite' => $fecha_limite,
     ]);

@@ -41,7 +41,7 @@ class PruebasModel extends Model
             ->getResultArray();
     }
 
-  public function getDetallePruebasPorGrupo($grupoId)
+public function getDetallePruebasPorGrupo($grupoId)
     {
         return $this->db->table('pruebas p')
             ->select("
@@ -58,12 +58,11 @@ class PruebasModel extends Model
                 CONCAT(u.name, ' ', u.last_name) as profesor,
                 u.email as email_profesor,
 
-                pm.fecha_asignacion,
-                pm.fecha_limite,
+                pg.fecha_asignacion,
+                pg.fecha_limite,
                 CASE 
-                    WHEN pm.fecha_limite < NOW() THEN 'VENCIDA'
-                    WHEN pm.activa = 1 THEN 'ACTIVA'
-                    ELSE 'INACTIVA'
+                    WHEN pg.fecha_limite < NOW() THEN 'VENCIDA'
+                    ELSE 'ACTIVA'
                 END as estado_prueba,
 
                 (SELECT COUNT(*) FROM preguntas pr WHERE pr.prueba_id = p.id) as total_preguntas,
@@ -79,9 +78,9 @@ class PruebasModel extends Model
                     END, 2
                 ) as porcentaje_participacion
             ", false)
-            ->join('prueba_matriculas pm', 'p.id = pm.prueba_id')
-            ->join('matriculas m', 'pm.matricula_id = m.id')
-            ->join('grupos g', 'm.grupo_id = g.id')
+            ->join('prueba_grupos pg', 'p.id = pg.prueba_id')
+            ->join('grupos g', 'pg.grupo_id = g.id')
+            ->join('matriculas m', 'g.id = m.grupo_id')
             ->join('grados gra', 'g.grado_id = gra.id')
             ->join('jornadas j', 'm.jornada_id = j.id')
             ->join('asignaturas a', 'p.asignatura_id = a.id')
@@ -93,12 +92,13 @@ class PruebasModel extends Model
                 g.id, g.nombre, gra.nombre, j.nombre,
                 p.id, p.nombre, p.descripcion, a.nombre,
                 u.name, u.last_name, u.email,
-                pm.fecha_asignacion, pm.fecha_limite, pm.activa
+                pg.fecha_asignacion, pg.fecha_limite
             ", false)
-            ->orderBy('pm.fecha_asignacion', 'DESC')
+            ->orderBy('pg.fecha_asignacion', 'DESC')
             ->get()
             ->getResultArray();
     }
+
 
 public function getLecturasConPreguntas($pruebaId)
 {
