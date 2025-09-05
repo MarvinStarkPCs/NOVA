@@ -56,9 +56,6 @@ class AuthController extends BaseController
         log_message('info', "Intento de inicio de sesión para el usuario: {$email}");
         $userModel = new UserModel();
         $user = $userModel->login($email, $password);
-
-
-        
         if ($user) {
             $session = session();
             $session->set([

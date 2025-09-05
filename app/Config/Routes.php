@@ -20,7 +20,6 @@ $routes->group('profesor', ['filter' => 'auth'], function ($routes) {
     $routes->get('profile', 'ProfileController::index');
     $routes->get('asignar', 'PruebaController::RenderAsignar');
     $routes->post('asignar_prueba', 'PruebaController::asignar');  // Cargar formulario
-        $routes->get('results', 'ProfesorController::ver_resultados');
 
     $routes->get('home', 'ProfesorController::index');
     $routes->get('pruebas/(:num)', 'PruebaController::mostrar/$1');  // Cargar formulario
@@ -63,8 +62,6 @@ $routes->group(
     ['filter' => 'auth'],
     function ($routes) {
             $routes->get('prueba/(:num)', 'EstudianteController::mostrar/$1');  // Cargar formulario
-            $routes->post('prueba/guardar', 'EstudianteController::guardar');
-            $routes->get('calificacion/prueba/(:num)', 'EstudianteController::mostrar_calificacion/$1');  // Cargar formulario
 
         $routes->get('home', 'EstudianteController::index');
         $routes->get('resolver/mostrar', 'ResolverPruebaController::mostrar');

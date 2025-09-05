@@ -13,21 +13,14 @@ class UserModel extends Model
     protected $useTimestamps = false;
 
     // Verifica si el usuario existe y la contraseña es correcta
-     function login($email, $password)
+    public function login($email, $password)
     {
         $user = $this->where('email', $email)->first();
-
 log_message('info', "Intento de inicio de sesión para el usuario: {$email}");
-
         if ($user && password_verify($password, $user['password'])) {
             return $user;
         }
 
         return false;
     }
-
-    public function getUserByEmail($email)
-    {
-        return $this->where('email', $email)->first();
-    }   
 }

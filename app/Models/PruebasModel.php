@@ -106,8 +106,7 @@ public function getLecturasConPreguntas($pruebaId)
         SELECT l.id AS lectura_id, l.titulo, l.contenido,
                p.id AS pregunta_id, p.enunciado,
                p.opcion_a, p.opcion_b, p.opcion_c, p.opcion_d,
-               p.opcion_correcta,
-            p.justificacion
+               p.opcion_correcta
         FROM lecturas l
         LEFT JOIN lectura_preguntas lp ON l.id = lp.lectura_id
         LEFT JOIN preguntas p ON lp.pregunta_id = p.id
@@ -132,7 +131,6 @@ public function getLecturasConPreguntas($pruebaId)
                 'opcion_c'        => $row['opcion_c'],
                 'opcion_d'        => $row['opcion_d'],
                 'opcion_correcta' => $row['opcion_correcta'], // ✅ correcto
-                'justificacion'   => $row['justificacion'],
             ];
         }
     }
@@ -145,9 +143,7 @@ public function getPreguntasSueltas($pruebaId)
     $query = $this->db->query("
         SELECT p.id, p.enunciado,
                p.opcion_a, p.opcion_b, p.opcion_c, p.opcion_d,
-               p.opcion_correcta,
-               p.justificacion
-
+               p.opcion_correcta
         FROM preguntas p
         WHERE p.prueba_id = ?
           AND p.id NOT IN (SELECT pregunta_id FROM lectura_preguntas)

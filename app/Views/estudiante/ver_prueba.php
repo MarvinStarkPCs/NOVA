@@ -6,9 +6,6 @@
   <title>Vista Estudiante - Prueba</title>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <script src="<?= base_url('assets/jquery/jquery.min.js') ?>"></script>
-  <script src="<?= base_url('assets/sweetalert2/dist/sweetalert2.all.min.js') ?>"></script>
-
   <style>
     body {
       font-family: 'Quicksand', sans-serif;
@@ -127,33 +124,30 @@
     <i class="fas fa-arrow-left"></i> Volver
   </button>
 </div>
- 
+
 <form method="POST" action="<?= base_url('estudiante/entregar_prueba') ?>">
   <div class="container">
     <h2 style="color:#2a6322">📝 Comprensión de Lecturas</h2>
     <div id="bloqueLecturas">
       <?php foreach ($lecturas_con_preguntas as $lectura): ?>
-        <!-- 🔹 Bloque completo de una lectura con sus preguntas -->
-        <div class="bloque-lectura">
-          <div class="lectura question">
-            <h4><?= esc($lectura['titulo']) ?></h4>
-            <p><?= nl2br(esc($lectura['contenido'])) ?></p>
-          </div>
-
-          <?php if (isset($lectura['preguntas'])): ?>
-            <?php foreach ($lectura['preguntas'] as $pregunta): ?>
-              <div class="question pregunta">
-                <p><strong><?= esc($pregunta['enunciado']) ?></strong></p>
-                <?php foreach (['a','b','c','d'] as $op): ?>
-                  <label class="opcion">
-                    <input type="radio" name="respuesta[<?= $pregunta['pregunta_id'] ?>]" value="<?= $op ?>">
-                    <?= strtoupper($op) ?>) <?= esc($pregunta['opcion_'.$op]) ?>
-                  </label>
-                <?php endforeach; ?>
-              </div>
-            <?php endforeach; ?>
-          <?php endif; ?>
+        <div class="lectura question">
+          <h4><?= esc($lectura['titulo']) ?></h4>
+          <p><?= nl2br(esc($lectura['contenido'])) ?></p>
         </div>
+
+        <?php if (isset($lectura['preguntas'])): ?>
+          <?php foreach ($lectura['preguntas'] as $pregunta): ?>
+            <div class="question pregunta">
+              <p><strong><?= esc($pregunta['enunciado']) ?></strong></p>
+              <?php foreach (['a','b','c','d'] as $op): ?>
+                <label class="opcion">
+                  <input type="radio" name="respuesta[<?= $pregunta['pregunta_id'] ?>]" value="<?= $op ?>">
+                  <?= strtoupper($op) ?>) <?= esc($pregunta['opcion_'.$op]) ?>
+                </label>
+              <?php endforeach; ?>
+            </div>
+          <?php endforeach; ?>
+        <?php endif; ?>
       <?php endforeach; ?>
     </div>
 
@@ -172,145 +166,11 @@
       <?php endforeach; ?>
     </div>
 
-    <button onclick="verRespuestas()" class="btn-entregar">📤 Entregar prueba</button>
+    <button type="submit" class="btn-entregar">📤 Entregar prueba</button>
   </div>
 </form>
 
 <footer>© 2025 NOVA - Aprende Jugando</footer>
-
-<script>
-  // 🔹 Función para mezclar elementos dentro de un contenedor
-  function shuffleContainer(containerId) {
-    const container = document.getElementById(containerId);
-    if (!container) return;
-
-    const items = Array.from(container.children);
-    for (let i = items.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [items[i], items[j]] = [items[j], items[i]];
-    }
-    container.innerHTML = "";
-    items.forEach(item => container.appendChild(item));
-  }
-
-  // 🔹 Verifica si todas las preguntas tienen respuesta
-  function validarPreguntas() {
-    let todasRespondidas = true;
-    const preguntas = document.querySelectorAll(".pregunta");
-
-    preguntas.forEach(pregunta => {
-      const radios = pregunta.querySelectorAll('input[type="radio"]');
-      const algunoMarcado = Array.from(radios).some(radio => radio.checked);
-
-      if (!algunoMarcado) {
-        todasRespondidas = false;
-      }
-    });
-
-    return todasRespondidas;
-  }
-
-  // Obtener el ID de la prueba desde la URL
-  function obtenerPruebaId() {
-    const path = window.location.pathname; 
-    const match = path.match(/\/prueba\/(\d+)/);
-    return match ? match[1] : null;
-  }
-
-  // Captura respuestas (radios + textos)
-  function obtenerRespuestasJSON() {
-    const respuestas = {
-      prueba_id: obtenerPruebaId(),
-      preguntas: {}
-    };
-
-    const radios = document.querySelectorAll('input[type="radio"]:checked');
-    radios.forEach(radio => {
-      const name = radio.getAttribute("name");
-      const preguntaId = name.match(/\[(\d+)\]/)?.[1]; 
-      if (preguntaId) {
-        respuestas.preguntas[preguntaId] = radio.value;
-      }
-    });
-
-    const textos = document.querySelectorAll('input[type="text"], textarea');
-    textos.forEach(texto => {
-      const name = texto.getAttribute("name");
-      const preguntaId = name.match(/\[(\d+)\]/)?.[1]; 
-      if (preguntaId && texto.value.trim() !== "") {
-        respuestas.preguntas[preguntaId] = texto.value.trim();
-      }
-    });
-
-    return respuestas;
-  }
-
-  // Mostrar JSON en consola
-  function mostrarRespuestasJSON() {
-    const respuestas = obtenerRespuestasJSON();
-    const json = JSON.stringify(respuestas, null, 2);
-    console.log("Respuestas en JSON:", json);
-    return respuestas;
-  }
-
-  // Inicialización
-  window.addEventListener("DOMContentLoaded", () => {
-    shuffleContainer("bloqueLecturas");
-    shuffleContainer("bloqueSueltas");
-
-    const form = document.querySelector("form");
-    if (form) {
-      form.addEventListener("submit", function (e) {
-        e.preventDefault();
-
-        // 🔹 Validar antes de enviar
-        if (!validarPreguntas()) {
-          Swal.fire({
-            icon: "warning",
-            title: "Faltan respuestas",
-            text: "Debes responder todas las preguntas antes de entregar la prueba.",
-            confirmButtonColor: "#2A6322"
-          });
-          return;
-        }
-
-        const respuestas = mostrarRespuestasJSON();
-
-        // 🔹 Enviar AJAX a CodeIgniter 4
-        $.ajax({
-          url: "./guardar", 
-          type: "POST",
-          contentType: "application/json",
-          data: JSON.stringify(respuestas),
-          success: function(response) {
-            console.log("Servidor respondió:", response);
-            Swal.fire({
-              icon: "success",
-              title: "¡Enviado!",
-              text: "✅ Respuestas enviadas correctamente",
-              confirmButtonColor: "#2A6322"
-            }).then(() => {
-    window.location.href = "<?= base_url('estudiante/home') ?>"; // 🔹 redirección
-  });
-          },
-          error: function(xhr) {
-            console.error("❌ Error:", xhr.responseText);
-            Swal.fire({
-              icon: "error",
-              title: "Oops...",
-              text: "❌ Error al enviar las respuestas",
-              confirmButtonColor: "#d33"
-            });
-          }
-        });
-      });
-    }
-  });
-
-  function verRespuestas() {
-    return mostrarRespuestasJSON();
-  }
-</script>
 
 </body>
 </html>

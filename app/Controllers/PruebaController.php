@@ -38,6 +38,7 @@ public function asignar()
     $prueba_id = $this->request->getPost('prueba_id');
     $grupo_id = $this->request->getPost('grupo_id');
     $fecha_limite = $this->request->getPost('fecha_limite');
+
     // Modelo para asignaciones
     $pruebaMatriculaModel = new PruebaGruposModel();
 
@@ -175,8 +176,4 @@ public function asignar()
             ])->setStatusCode(500);
         }
     }
-
-
-
- 
 }
