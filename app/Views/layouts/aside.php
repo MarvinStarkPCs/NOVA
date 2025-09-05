@@ -41,12 +41,7 @@
                     <a class="collapse-item" href="<?= base_url('profesor/results'); ?>">
                         <i class="fas fa-list"></i> Ver Resultados
                     </a>
-                    <a class="collapse-item" href="<?= base_url('profesor/grades'); ?>">
-                        <i class="fas fa-star"></i> Calificaciones
-                    </a>
-                    <a class="collapse-item" href="<?= base_url('profesor/filterstudent'); ?>">
-                        <i class="fas fa-user-graduate"></i> Filtrar por Estudiante
-                    </a>
+                 
                 </div>
             </div>
         </li>
@@ -82,21 +77,7 @@
         <hr class="sidebar-divider">
         <div class="sidebar-heading">Interfaces</div>
 
-        <li class="nav-item">
-            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSystem" aria-expanded="true"
-                aria-controls="collapseSystem">
-                <i class="fas fa-fw fa-cog"></i>
-                <span>System</span>
-            </a>
-            <div id="collapseSystem" class="collapse" aria-labelledby="headingSystem" data-parent="#accordionSidebar">
-                <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">MIS RESULTADOS</h6>
-                    <a class="collapse-item" href="<?= base_url('estudiante/grades'); ?>">
-                        <i class="fas fa-star"></i> Mis Calificaciones
-                    </a>
-                </div>
-            </div>
-        </li>
+      
 
         <li class="nav-item">
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSecurity"

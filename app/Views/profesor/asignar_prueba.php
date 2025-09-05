@@ -609,9 +609,11 @@ $(document).ready(function() {
     $('#formAsignarPrueba').on('submit', function(e) {
         e.preventDefault(); // Prevenir envío automático para validar primero
         
+        
         // Obtener valores del formulario
         const fechaLimite = $('#fechaLimite').val();
         const pruebaId = $('#pruebaId').val();
+console.log(fechaLimite);  
 
         // VALIDACIÓN: Fecha límite es requerida
         if (!fechaLimite) {
@@ -677,11 +679,9 @@ $(document).ready(function() {
                 });
                 
                 // Enviar formulario después de un breve delay (mejor UX)
-                setTimeout(() => {
                     // Enviar formulario de forma tradicional (no AJAX)
                     // Esto permitirá que el controlador maneje la redirección normalmente
                     $('#formAsignarPrueba')[0].submit();
-                }, 1000); // 1 segundo de delay
             }
         });
     });
