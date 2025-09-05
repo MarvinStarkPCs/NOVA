@@ -45,7 +45,7 @@ class EstudianteController extends BaseController
         // 4. Extraer solo los IDs de las pruebas ya respondidas
         $pruebasRespondidas = array_column($respuestas, 'prueba_id');
         log_message('debug', 'Pruebas respondidas: ' . print_r($pruebasRespondidas, true));
-
+log_message('debug', 'Pruebas asignadas: ' . print_r($pruebas, true));
         // 5. Enviar datos a la vista
         $data = [
             'pruebas'             => $pruebas,
@@ -72,7 +72,6 @@ public function mostrar_calificacion($idprueb)
         
 $resultados = new RespuestasModel();
         // Obtener los datos completos de la prueba
-       
         
         // Organizar datos para la vista
         $data = [

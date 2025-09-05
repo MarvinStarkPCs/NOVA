@@ -38,7 +38,7 @@ class ChangePasswordController extends BaseController
 
         // Verificar si la contraseña actual es correcta
         if (!password_verify($currentPassword, $user['password'])) {
-            log_message('error', 'La contraseña actual es incorrecta para el usuario con ID: ' . session()->get('user_id'));
+            log_message('error', 'La contraseña actual es incorrecta para el usuario con ID: ' . session()->get('id_user'));
             return redirect()->back()->with('error', 'La contraseña actual es incorrecta');
         }
 
@@ -50,15 +50,25 @@ class ChangePasswordController extends BaseController
 
         // Encriptar la nueva contraseña
         $newPasswordHash = password_hash($newPassword, PASSWORD_DEFAULT);
-        log_message('info', 'Nueva contraseña encriptada para el usuario con ID: ' . session()->get('user_id'));
+        log_message('info', 'Nueva contraseña encriptada para el usuario con ID: ' . session()->get('id_user'));
 
         // Actualizar la contraseña en la base de datos
         if ($userModel->update($user['id'], ['password' => $newPasswordHash])) {
-            log_message('info', 'Contraseña actualizada con éxito para el usuario con ID: ' . session()->get('user_id'));
-            // Redirigir con un mensaje de éxito
-            return redirect()->to('/admin/changepassword')->with('success', 'Contraseña actualizada con éxito');
-        } else {
-            log_message('error', 'Error al actualizar la contraseña para el usuario con ID: ' . session()->get('user_id'));
+    log_message('info', 'Contraseña actualizada con éxito para el usuario con ID: ' . session()->get('id_user'));
+    
+    // Redirigir según el rol
+    $roleId = session()->get('role_id');
+
+    if ($roleId == 3) {
+        return redirect()->to("/admin/changepassword")->with('success', 'Contraseña actualizada con éxito');
+    } elseif ($roleId == 2) {
+        return redirect()->to("/estudiante/changepassword")->with('success', 'Contraseña actualizada con éxito');
+    } else {
+        return redirect()->to("/profesor/changepassword")->with('success', 'Contraseña actualizada con éxito');
+    }
+}
+ else {
+            log_message('error', 'Error al actualizar la contraseña para el usuario con ID: ' . session()->get('id_user'));
             return redirect()->back()->with('error', 'Error al actualizar la contraseña');
         }
     }
