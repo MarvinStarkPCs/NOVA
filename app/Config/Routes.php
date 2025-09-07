@@ -20,7 +20,13 @@ $routes->group('profesor', ['filter' => 'auth'], function ($routes) {
     $routes->get('profile', 'ProfileController::index');
     $routes->get('asignar', 'PruebaController::RenderAsignar');
     $routes->post('asignar_prueba', 'PruebaController::asignar');  // Cargar formulario
-        $routes->get('results', 'ProfesorController::ver_resultados');
+    
+    $routes->get('results', 'ProfesorController::ver_resultados');
+    $routes->post('results/buscar', 'ProfesorController::buscar');
+    
+$routes->get('results/ver/(:num)/(:num)', 'ProfesorController::mostrar_calificacion/$1/$2');
+
+
 
     $routes->get('home', 'ProfesorController::index');
     $routes->get('pruebas/(:num)', 'PruebaController::mostrar/$1');  // Cargar formulario
@@ -29,6 +35,8 @@ $routes->group('profesor', ['filter' => 'auth'], function ($routes) {
     $routes->post('usermanagement/showComboBox', 'UserManagementController::showComboBox');
     $routes->get('changepassword', 'ChangePasswordController::index');  // Cargar formulario
     $routes->post('changepassword/update', 'ChangePasswordController::updatePassword');  // Enviar formulario
+        $routes->post('usermanagement/showComboBox', 'UserManagementController::showComboBox');
+
 
 });
 

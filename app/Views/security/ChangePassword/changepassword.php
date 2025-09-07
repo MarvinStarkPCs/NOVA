@@ -73,13 +73,15 @@
 
 <div class="container d-flex justify-content-center align-items-start">
     <div class="card shadow-lg p-4" style="max-width: 400px; width: 100%;">
-        <h4 class="text-center mb-4" style="color: #2A6322;"><i class="fas fa-key"></i> Change password</h4>
+        <h4 class="text-center mb-4" style="color: #2A6322;">
+            <i class="fas fa-key"></i> Cambiar contraseña
+        </h4>
         <form id="changePasswordForm" method="POST" action="./changepassword/update">
             <?= csrf_field() ?>
-
+            
             <!-- Contraseña actual -->
             <div class="mb-3">
-                <label for="current_password" class="form-label">Current password</label>
+                <label for="current_password" class="form-label">Contraseña actual</label>
                 <div class="input-group">
                     <span class="input-group-text"><i class="fas fa-lock"></i></span>
                     <input type="password" class="form-control" id="current_password" name="current_password" value="<?= old('current_password') ?>" required>
@@ -91,7 +93,7 @@
 
             <!-- Nueva contraseña -->
             <div class="mb-3">
-                <label for="new_password" class="form-label">New password</label>
+                <label for="new_password" class="form-label">Nueva contraseña</label>
                 <div class="input-group">
                     <span class="input-group-text"><i class="fas fa-lock"></i></span>
                     <input type="password" class="form-control" id="new_password" name="new_password" value="<?= old('new_password') ?>" required>
@@ -99,12 +101,12 @@
                         <i class="fas fa-eye"></i>
                     </span>
                 </div>
-                <small class="text-muted">Minimum 8 characters, including one uppercase letter and one number.</small>
+                <small class="text-muted">Mínimo 8 caracteres, incluyendo una mayúscula y un número.</small>
             </div>
 
             <!-- Confirmar nueva contraseña -->
             <div class="mb-3">
-                <label for="confirm_password" class="form-label">Confirm new password</label>
+                <label for="confirm_password" class="form-label">Confirmar nueva contraseña</label>
                 <div class="input-group">
                     <span class="input-group-text"><i class="fas fa-lock"></i></span>
                     <input type="password" class="form-control" id="confirm_password" name="confirm_password" value="<?= old('confirm_password') ?>" required>
@@ -117,13 +119,13 @@
             <!-- Mensaje de error -->
             <div class="mb-3">
                 <p id="password_error" class="text-danger text-center" style="display: none;">
-                    Make sure both passwords match and meet the requirements.
+                    Asegúrate de que ambas contraseñas coincidan y cumplan con los requisitos.
                 </p>
             </div>
 
             <!-- Botón de envío -->
             <button type="submit" class="btn btn-primary w-100">
-                <i class="fas fa-save"></i> Change password
+                <i class="fas fa-save"></i> Guardar contraseña
             </button>
         </form>
     </div>
@@ -138,7 +140,7 @@
 
             if (input.type === "password") {
                 input.type = "text";
-                icon.classList.replace("fa-eye", "fa-eye-slash");
+                iºcon.classList.replace("fa-eye", "fa-eye-slash");
             } else {
                 input.type = "password";
                 icon.classList.replace("fa-eye-slash", "fa-eye");
@@ -152,7 +154,6 @@
         const newPassword = document.getElementById('new_password').value;
         const confirmPassword = document.getElementById('confirm_password').value;
         const errorText = document.getElementById('password_error');
-
         const valid = /^(?=.*[A-Z])(?=.*\d).{8,}$/.test(newPassword);
 
         if (newPassword !== confirmPassword || !valid) {

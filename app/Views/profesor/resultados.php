@@ -3,15 +3,7 @@
 
 <div class="card shadow mb-4">
   <div class="card-header py-3 bg-dark-blue d-flex justify-content-between align-items-center">
-    <h6 class="m-0 fw-bold text-primary">PQRS</h6>
-    <div>
-      <button class="btn btn-success btn-sm">
-        <i class="fas fa-file-excel"></i> Export to Excel
-      </button>
-      <button class="btn btn-sm btn-outline-light" type="button" id="toggleFiltros">
-        <i class="fas fa-sliders-h me-1"></i> Hide filters
-      </button>
-    </div>
+    <h6 class="m-0 fw-bold text-primary">Resultados</h6>
   </div>
 
   <!-- 🔎 Filtros -->
@@ -30,13 +22,10 @@
           <i class="fas fa-user-graduate me-1 text-success"></i> Grado
         </label>
         <select id="grado" class="form-control select2">
-          <option value="" disabled selected>-- Seleccione --</option>
-          <option>6°</option>
-          <option>7°</option>
-          <option>8°</option>
-          <option>9°</option>
-          <option>10°</option>
-          <option>11°</option>
+          <option value="">Selecciona...</option>
+          <?php foreach ($grados as $grado): ?>
+            <option value="<?= esc($grado['id']) ?>"><?= esc($grado['nombre']) ?></option>
+          <?php endforeach; ?>
         </select>
       </div>
       <!-- Grupo -->
@@ -45,10 +34,7 @@
           <i class="fas fa-users me-1 text-warning"></i> Grupo
         </label>
         <select id="grupo" class="form-control select2">
-          <option value="" disabled selected>-- Seleccione --</option>
-          <option>A</option>
-          <option>B</option>
-          <option>C</option>
+          <option value="">-- Seleccione --</option>
         </select>
       </div>
       <!-- Jornada -->
@@ -57,22 +43,22 @@
           <i class="fas fa-clock me-1 text-danger"></i> Jornada
         </label>
         <select id="jornada" class="form-control select2">
-          <option value="" disabled selected>-- Seleccione --</option>
-          <option>Mañana</option>
-          <option>Tarde</option>
-          <option>Noche</option>
+          <option value="">-- Seleccione --</option>
+          <?php foreach ($jornadas as $jornada): ?>
+            <option value="<?= esc($jornada['id']) ?>"><?= esc($jornada['nombre']) ?></option>
+          <?php endforeach; ?>
         </select>
       </div>
     </form>
 
     <div class="row justify-content-center mt-3">
       <div class="col-md-2 text-center">
-        <button type="button" class="btn btn-warning w-100">
+        <button type="button" class="btn btn-warning w-100" id="btnBuscar">
           <i class="fas fa-search me-1"></i> Search
         </button>
       </div>
       <div class="col-md-2 text-center">
-        <button type="button" class="btn btn-secondary w-100">
+        <button type="button" class="btn btn-secondary w-100" id="btnLimpiar">
           <i class="fas fa-broom me-1"></i> Clean
         </button>
       </div>
@@ -82,31 +68,19 @@
   <!-- 📊 Tabla -->
   <div class="card-body">
     <div class="table-responsive mt-4">
-      <table class="table table-bordered" width="100%">
+      <table id="dataTable2" class="table table-bordered" width="100%" cellspacing="0">
         <thead class="bg-primary text-white">
           <tr>
-            <th>Unique Code</th>
-            <th>User Name</th>
-            <th>Type</th>
-            <th>Status</th>
-            <th>Opening Date</th>
-            <th>Actions</th>
+            <th>Documento</th>
+            <th>Estudiante</th>
+            <th>Curso</th>
+            <th>Jornada</th>
+            <th>Prueba</th>
+            <th>Acciones</th>
           </tr>
         </thead>
         <tbody id="tablaResultados">
-          <tr>
-            <td>PQRS001</td>
-            <td>usuario1@mail.com</td>
-            <td>Queja</td>
-            <td>Abierto</td>
-            <td>2025-09-01</td>
-            <td>
-             
-              <a href="<?= base_url('pruebas/ver/1') ?>" class="btn btn-sm btn-primary" title="Ver prueba">
-                <i class="fas fa-book-open"></i>
-              </a>
-            </td>
-          </tr>
+          <!-- tbody vacío para que lo maneje dataTable2s -->
         </tbody>
       </table>
     </div>
@@ -134,14 +108,172 @@
     padding: 8px 12px;
     border: 1px solid #ced4da;
   }
-  .select2-container--default .select2-selection--single:focus {
-    border-color: #4e73df;
-    box-shadow: 0 0 0 0.25rem rgba(78,115,223,.25);
-  }
   .card.bg-dark-blue {
     background-color: #1c1f26 !important;
     color: #fff;
   }
 </style>
+
+<!-- 🔌 Script -->
+<script>
+$(document).ready(function() {
+  // 🔄 Restaurar datos al cargar la página
+  const data = JSON.parse(localStorage.getItem('resultadosData'));
+  const filtros = JSON.parse(localStorage.getItem('resultadosFiltros'));
+
+  if (data && filtros) {
+    // Restaurar filtros en inputs
+    $('#documento').val(filtros.documento || '');
+    $('#grado').val(filtros.grado || '').trigger('change');
+    $('#grupo').val(filtros.grupo || '').trigger('change');
+    $('#jornada').val(filtros.jornada || '').trigger('change');
+
+    // Restaurar la tabla
+    let tabla = $('#dataTable2').DataTable();
+    tabla.clear();
+
+    data.forEach(item => {
+      tabla.row.add([
+        item.documento,
+        item.estudiante,
+        item.curso,
+        item.jornada,
+        item.prueba_presentada,
+        `<a href="./results/ver/${item.prueba_id}/${item.id_estudiante}" 
+            class="btn btn-sm btn-primary" title="Ver prueba">
+           <i class="fas fa-book-open"></i>
+         </a>`
+      ]);
+    });
+
+    tabla.draw();
+  }
+
+  // 👉 Buscar
+  $('#btnBuscar').on('click', function () {
+    const documento = $('#documento').val().trim();
+    const grado = $('#grado').val();
+    const grupo = $('#grupo').val();
+    const jornada = $('#jornada').val();
+
+    // 🔎 Validaciones
+    if (documento && (grado || grupo || jornada)) {
+      Swal.fire({
+        icon: 'warning',
+        title: 'Filtros inválidos',
+        text: 'Debe buscar solo por documento o solo por grado/grupo/jornada, no ambos.',
+      });
+      return;
+    }
+
+    if (!documento && (!grado || !grupo || !jornada)) {
+      Swal.fire({
+        icon: 'warning',
+        title: 'Faltan filtros',
+        text: 'Ingrese un documento o seleccione grado, grupo y jornada.',
+      });
+      return;
+    }
+
+    // 👉 Si es por documento, limpiar selects
+    if (documento) {
+      $('#grado, #grupo, #jornada').val('').trigger('change');
+    }
+
+    // 👉 Si es por selects, limpiar documento
+    if (!documento && (grado && grupo && jornada)) {
+      $('#documento').val('');
+    }
+
+    // 🔥 Petición AJAX
+    $.ajax({
+      url: "./results/buscar",
+      type: "POST",
+      data: {
+        documento: documento,
+        grado: grado,
+        grupo: grupo,
+        jornada: jornada,
+        <?= csrf_token() ?>: "<?= csrf_hash() ?>"
+      },
+      dataType: "json",
+      success: function (data) {
+        let tabla = $('#dataTable2').DataTable();
+        tabla.clear();
+
+        if (data.length) {
+          data.forEach(item => {
+            tabla.row.add([
+              item.documento,
+              item.estudiante,
+              item.curso,
+              item.jornada,
+              item.prueba_presentada,
+              `<a href="./results/ver/${item.prueba_id}/${item.id_estudiante}" 
+                  class="btn btn-sm btn-primary" title="Ver prueba">
+                 <i class="fas fa-book-open"></i>
+               </a>`
+            ]);
+          });
+        }
+
+        tabla.draw();
+
+        // 💾 Guardar en localStorage
+        localStorage.setItem('resultadosData', JSON.stringify(data));
+        localStorage.setItem('resultadosFiltros', JSON.stringify({ documento, grado, grupo, jornada }));
+      }
+    });
+  });
+
+  // 🧹 Limpiar filtros
+  $('#btnLimpiar').on('click', function () {
+    $('#documento, #grado, #grupo, #jornada').val('').trigger('change');
+    let tabla = $('#dataTable2').DataTable();
+    tabla.clear().draw();
+
+    // 🗑️ Borrar localStorage
+    localStorage.removeItem('resultadosData');
+    localStorage.removeItem('resultadosFiltros');
+  });
+
+  // Dependencia grado -> grupo
+  $('#grado').on('change', function() {
+    cargarGruposPorGrado($(this).val());
+  });
+
+  function cargarGruposPorGrado(gradoId) {
+    const grupoSelect = $('#grupo');
+    grupoSelect.empty().append('<option value="">Cargando...</option>');
+
+    if (!gradoId) {
+      grupoSelect.html('<option value="">Selecciona un grado</option>');
+      return;
+    }
+
+    $.ajax({
+      url: "<?= base_url('profesor/usermanagement/showComboBox') ?>",
+      type: "POST",
+      data: {
+        tabla: 'grupos',
+        campo: 'grado_id',
+        id: gradoId,
+        <?= csrf_token() ?>: "<?= csrf_hash() ?>"
+      },
+      dataType: "json",
+      success: function(data) {
+        grupoSelect.empty().append('<option value="">Selecciona...</option>');
+        if (data.length) {
+          data.forEach(grupo => {
+            grupoSelect.append(new Option(grupo.nombre, grupo.id));
+          });
+        } else {
+          grupoSelect.append('<option value="">No hay grupos</option>');
+        }
+      }
+    });
+  }
+});
+</script>
 
 <?= $this->endSection() ?>
