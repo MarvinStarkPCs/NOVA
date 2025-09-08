@@ -30,7 +30,31 @@ class UserManagementController extends BaseController
         return view('administrador/UserManagement/UserManagement', $data);
     }
 
+   public function editUser($id)
+    {
+        $roleModel = new ComboBoxModel();
 
+        log_message('info', 'Iniciando el méto11do editUser() con ID: ' . $id);
+
+        $data['user'] = (new UserManagementModel())->getUserById($id) ?? [];
+        $data['roles']    = $roleModel->getTableData('roles') ?? [];
+
+        log_message('info', 'Datos del usuario: ' . json_encode($data['user']));
+        return view('administrador/UserManagement/update', $data);
+    }
+  public function detailUser($id)
+    {
+        $roleModel = new ComboBoxModel();
+
+        log_message('info', 'Iniciando el méto11do editUser() con ID: ' . $id);
+
+        $data['user'] = (new UserManagementModel())->getUserById($id) ?? [];
+        $data['roles']    = $roleModel->getTableData('roles') ?? [];
+
+        log_message('info', 'Datos del usuario: ' . json_encode($data['user']));
+        
+        return view('administrador/UserManagement/Detail', $data);
+    }
 public function addUser()
 {
     log_message('info', 'Iniciando el método addUser()');

@@ -1,6 +1,7 @@
 <?= $this->extend('layouts/main') ?>
 
 <?= $this->section('content') ?>
+
 <!-- DataTable -->
 <div class="card shadow mb-4">
     <div class="card-header py-3 bg-dark-blue">
@@ -20,6 +21,7 @@
             <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                 <thead>
                 <tr>
+                    <th>id</th>
                     <th>Nombre</th>
                     <th>Documento</th>
                     <th>Email</th>
@@ -35,6 +37,7 @@
                 <tbody>
                 <?php foreach ($users as $user): ?>
                     <tr>
+                        <td><?= esc($user['id']) ?></td>
                         <td><?= esc($user['name']) ?></td>
                         <td><?= esc($user['documento']) ?></td>
                         <td><?= esc($user['email']) ?></td>
@@ -56,18 +59,19 @@
                             <?php endif; ?>
                         </td>
                         <td><?= esc($user['role_name']) ?></td>
-                        <td class="text-center">
-                            <button class="btn btn-icon btn-detail btn-secondary btn-sm" data-toggle="modal"
-                                        data-target="#detailsModal" 
-                                        data-id="<?= $user['id']?>"
-                                        title="View Details">
-                                    <i class="fas fa-info-circle"></i>
-                                </button>
-                                <button class="btn btn-icon btn-edit btn-info btn-sm" data-toggle="modal" id="editModalClient"
-                                        data-target="#editModal"
-                                        data-id="<?= $user['id']?>" title="Edit User">
-                                    <i class="fas fa-edit"></i>
-                                </button>
+                       <td class="text-center">
+                            <!-- Botón Detalle -->
+                            <a href="<?= base_url('admin/usermanagement/detail/' . $user['id']) ?>"
+                               class="btn btn-icon btn-detail btn-secondary btn-sm"
+                               title="Ver Detalles">
+                                <i class="fas fa-info-circle"></i>
+                            </a>
+                            <!-- Botón Editar (abre en otra pestaña) -->
+                            <a href="<?= base_url('admin/usermanagement/edit/' . $user['id']) ?>"
+                               class="btn btn-icon btn-edit btn-info btn-sm"
+                               title="Editar Usuario">
+                                <i class="fas fa-edit"></i>
+                            </a>
                         </td>
                     </tr>
                 <?php endforeach; ?>

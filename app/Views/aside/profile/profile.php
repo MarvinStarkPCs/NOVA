@@ -15,7 +15,7 @@
     }
 
     .profile-header {
-        background: linear-gradient(135deg, #FEC659, #FFA500);
+        background: linear-gradient(135deg, #4A148C, #8771afff);
         padding: 30px;
         text-align: center;
         color: white;
@@ -117,14 +117,14 @@
 
     /* Estilo para los inputs en modo edición */
     .input-edit .form-control {
-        border: 2px solid #FEC659;
+        border: 2px solid #4A148C;
         border-radius: 8px;
         transition: all 0.3s ease;
         background: rgba(254, 198, 89, 0.05);
     }
 
     .input-edit .form-control:focus {
-        border-color: #FFA500;
+        border-color: #8771afff;
         box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.25);
         background: rgba(254, 198, 89, 0.1);
     }
@@ -133,7 +133,7 @@
     .edit-btn,
     .save-btn,
     .cancel-btn {
-        background: #FEC659;
+        background: #4A148C;
         border: none;
         color: white;
         padding: 10px 20px;
@@ -147,7 +147,7 @@
     .edit-btn:hover,
     .save-btn:hover,
     .cancel-btn:hover {
-        background: #FFA500;
+        background: #8771afff;
         transform: scale(1.05);
     }
 
@@ -193,7 +193,7 @@
 
     /* Indicador visual de modo edición */
     .profile-card.edit-mode {
-        border: 2px solid #FEC659;
+        border: 2px solid #4A148C;
         box-shadow: 0 6px 12px rgba(254, 198, 89, 0.3);
     }
 
@@ -327,7 +327,7 @@
                         </ul>
 
                         <div class="text-center">
-                            <button type="button" class="edit-btn" id="editBtn">Edit profile</button>
+                            <!-- <button type="button" class="edit-btn" id="editBtn">Edit profile</button> -->
                             <button type="submit" class="save-btn hidden" id="saveBtn">Guardar</button>
                             <button type="button" class="cancel-btn hidden" id="cancelBtn">Cancelar</button>
                         </div>

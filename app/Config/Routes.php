@@ -47,7 +47,8 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->get('matriculas', 'AdminController::rematricula'); 
     $routes->post('matriculas/store', 'AdminController::store'); // guarda en la BD
 
-
+    $routes->get('usermanagement/edit/(:num)', 'UserManagementController::editUser/$1');
+    $routes->get('usermanagement/detail/(:num)', 'UserManagementController::detailUser/$1');
     
     // $routes->get('setting', 'ConfigurationController::index');
     // $routes->post('setting/save_security_settings', 'ConfigurationController::saveSecuritySettings');

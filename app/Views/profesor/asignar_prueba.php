@@ -23,7 +23,7 @@ TÍTULO PRINCIPAL DE LA PÁGINA
 ------------------------------------------
 */
 h2 {
-    color: #2A6322;  /* Color verde institucional */
+    color: #4A148C;  /* Color verde institucional */
 }
 
 /* 
@@ -32,7 +32,7 @@ CÍRCULO CON ICONO EN LAS TARJETAS
 ------------------------------------------
 */
 .icon-circle {
-    background-color: #2A6322;  /* Fondo verde */
+    background-color: #4A148C;  /* Fondo verde */
     color: white;               /* Texto blanco */
     width: 60px;                /* Ancho del círculo */
     height: 60px;               /* Alto del círculo */
@@ -69,7 +69,7 @@ ESTILOS DE BOTONES
 ------------------------------------------
 */
 .btn-ver {
-    background-color: #2A6322;  /* Fondo verde */
+    background-color: #4A148C;  /* Fondo verde */
     color: #fff;                /* Texto blanco */
     border: none;               /* Sin bordes */
     font-weight: bold;          /* Texto en negrita */
@@ -104,14 +104,14 @@ CONTENEDORES DE SELECT Y INPUT
     top: 50%;                 /* Centrar verticalmente */
     left: 12px;               /* Posición desde la izquierda */
     transform: translateY(-50%); /* Centrar exactamente */
-    color: #2A6322;           /* Color verde */
+    color: #4A148C;           /* Color verde */
     z-index: 10;              /* Por encima del input */
 }
 
 /* Estilos para select e input */
 .form-select, .form-control {
     padding-left: 35px;       /* Espacio para el icono */
-    border: 2px solid #2A6322; /* Borde verde */
+    border: 2px solid #4A148C; /* Borde verde */
     border-radius: 8px;       /* Bordes redondeados */
     font-size: 16px;          /* Tamaño de fuente */
 }
@@ -142,14 +142,14 @@ ESTILOS DEL MODAL
 ------------------------------------------
 */
 .modal-header {
-    background-color: #2A6322;  /* Fondo verde en el header */
+    background-color: #4A148C;  /* Fondo verde en el header */
     color: white;               /* Texto blanco */
 }
 
 /* Botón primario del modal */
 .modal-footer .btn-primary {
-    background-color: #2A6322;  /* Fondo verde */
-    border-color: #2A6322;      /* Borde verde */
+    background-color: #4A148C;  /* Fondo verde */
+    border-color: #4A148C;      /* Borde verde */
 }
 
 /* Hover del botón primario */
@@ -548,7 +548,7 @@ $(document).ready(function() {
                 icon: 'warning',
                 title: 'Seleccione un grado',
                 text: 'Debe seleccionar un grado antes de asignar la prueba.',
-                confirmButtonColor: '#2A6322'
+                confirmButtonColor: '#4A148C'
             });
             return;
         }
@@ -559,7 +559,7 @@ $(document).ready(function() {
                 icon: 'warning',
                 title: 'Seleccione un grupo',
                 text: 'Debe seleccionar un grupo antes de asignar la prueba.',
-                confirmButtonColor: '#2A6322'
+                confirmButtonColor: '#4A148C'
             });
             return;
         }
@@ -621,7 +621,7 @@ console.log(fechaLimite);
                 icon: 'warning',
                 title: 'Fecha límite requerida',
                 text: 'Debe establecer una fecha límite para la prueba.',
-                confirmButtonColor: '#2A6322'
+                confirmButtonColor: '#4A148C'
             });
             return false;
         }
@@ -635,7 +635,7 @@ console.log(fechaLimite);
                 icon: 'warning',
                 title: 'Fecha inválida',
                 text: 'La fecha límite debe ser posterior a la fecha actual.',
-                confirmButtonColor: '#2A6322'
+                confirmButtonColor: '#4A148C'
             });
             return false;
         }
@@ -649,7 +649,7 @@ console.log(fechaLimite);
             text: `Se asignará la prueba con fecha límite: ${fechaSeleccionada.toLocaleString('es-ES')}`,
             icon: 'question',
             showCancelButton: true,
-            confirmButtonColor: '#2A6322',
+            confirmButtonColor: '#4A148C',
             cancelButtonColor: '#6c757d',
             confirmButtonText: 'Sí, asignar',
             cancelButtonText: 'Cancelar'

@@ -7,9 +7,9 @@
   <div class="text-center p-5 rounded-3 shadow-lg" 
        style="background: #ffffff; 
               max-width: 420px; 
-              color: #2a6322; 
-              border: 1px solid rgba(42,99,34,0.1);
-              box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+              color: #4A148C; 
+              border: 1px solid rgba(127, 76, 175, 0.1);
+              box-shadow: 0 8px 32px rgba(127, 76, 175, 0.1);
               transition: transform 0.4s ease, box-shadow 0.4s ease;">
     
     <!-- Título -->
@@ -31,18 +31,13 @@
                 border-radius: 20px; 
                 margin-bottom: 20px; 
                 font-weight: 500;
-                color: #2a6322;
+                color: #4A148C;
                 transition: all 0.5s ease;">
       ✅ Sistema funcionando correctamente
     </div>
     
     <!-- Botón -->
-    <a href="<?= base_url('admin/students'); ?>" class="btn btn-success btn-lg px-5 py-2" 
-       style="border-radius: 50px; letter-spacing: 1px; transition: all 0.3s ease;"
-       onmouseover="this.style.transform='scale(1.08)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.2)';" 
-       onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none';">
-      Ir al Panel
-    </a>
+
     
   </div>
 </div>

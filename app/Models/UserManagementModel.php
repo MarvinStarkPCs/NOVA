@@ -8,7 +8,7 @@ class UserManagementModel extends Model
     protected $primaryKey = 'id';
     
     protected $allowedFields = [
-        'name', '', 'login','last_name','email', 'email_verified_at',
+        'id', 'name', 'login','last_name','email', 'email_verified_at',
         'password', 'remember_token',
         'created_at', 'updated_at',
         'role_id','documento','telefono','direccion','genero','fecha_nacimiento','estado'
@@ -19,24 +19,44 @@ class UserManagementModel extends Model
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
 
+    
     // Método para obtener usuarios con su rol
 public function getUsers($id = null) 
 {
-    $builder = $this->select('*, roles.nombre AS role_name')
-                    ->join('roles', 'roles.id = users.role_id', 'left');
+    $builder = $this->select("
+            users.id,
+            users.login,
+            users.name,
+            users.last_name,
+            users.email,
+            users.email_verified_at,
+            users.password,
+            users.remember_token,
+            users.created_at,
+            users.updated_at,
+            users.role_id,
+            users.documento,
+            users.telefono,
+            users.direccion,
+            users.genero,
+            users.fecha_nacimiento,
+            users.estado,
+            roles.nombre AS role_name
+        ")
+        ->join('roles', 'roles.id = users.role_id', 'left');
 
     if ($id !== null) {
         $builder->where('users.id', $id);
-
-        // Imprimir la consulta generada
-
-        $data = $builder->first();
-        log_message('debug', 'Resultado de la consulta: ' . print_r($data, true));
+        $data = $builder->first();  // Solo un registro
+        log_message('debug', 'Consulta usuario por ID ' . $id . ': ' . $this->getLastQuery());
         return $data;
     }
 
-    return $builder->findAll();
+    $data = $builder->findAll(); // Todos los registros
+    log_message('debug', 'Consulta todos los usuarios: ' . $this->getLastQuery());
+    return $data;
 }
+
 
 
 public function getProfesorConAsignaturas($documento)
@@ -119,7 +139,19 @@ public function getProfesorConAsignaturas($documento)
 
     public function getUserById($id)
     {
-        return $this->where('id', $id)->first();
+      
+
+
+
+        log_message('debug', 'getUserById Buscando usuario con ID: ' . $id);
+
+    $builder = $this->where('id', $id);
+    $result  = $builder->first();
+
+    // Log de la consulta SQL
+    log_message('debug', 'Consulta ejecutada: ' . $this->getLastQuery());
+
+    return $result;
     }
 
 

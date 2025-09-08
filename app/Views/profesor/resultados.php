@@ -53,7 +53,7 @@
 
     <div class="row justify-content-center mt-3">
       <div class="col-md-2 text-center">
-        <button type="button" class="btn btn-warning w-100" id="btnBuscar">
+        <button type="button" class="btn btn-primary w-100" id="btnBuscar">
           <i class="fas fa-search me-1"></i> Search
         </button>
       </div>
