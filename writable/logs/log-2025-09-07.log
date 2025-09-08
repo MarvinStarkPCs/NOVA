@@ -1,0 +1,111 @@
+INFO - 2025-09-07 23:21:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-09-07 23:21:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '::text, ', ') AS asignatura_ids, STRING_AGG(a.nombre, ', ') AS asignaturas
+FROM ' at line 1 in C:\laragon\www\NOVA\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\NOVA\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `u`.`id`...', 0)
+#1 C:\laragon\www\NOVA\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`id`...')
+#2 C:\laragon\www\NOVA\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`id`...')
+#3 C:\laragon\www\NOVA\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`id`...', Array, false)
+#4 C:\laragon\www\NOVA\app\Models\UserManagementModel.php(59): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\NOVA\app\Controllers\AdminController.php(86): App\Models\UserManagementModel->getProfesorConAsignaturas('10000001')
+#6 C:\laragon\www\NOVA\system\CodeIgniter.php(933): App\Controllers\AdminController->buscar_asignacion_academica()
+#7 C:\laragon\www\NOVA\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+#8 C:\laragon\www\NOVA\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\NOVA\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\NOVA\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\NOVA\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-09-07 23:21:53 --> CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '::text, ', ') AS asignatura_ids, STRING_AGG(a.nombre, ', ') AS asignaturas
+FROM ' at line 1
+[Method: POST, Route: admin/asignaciones/buscar]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`id` AS `profesor_id`, `u`.`name` AS `nombre_profesor`, `u`.`last_name` AS `apellido_profesor`, `u`.`documento`, `u`.`email`, `u`.`telefono`, STRING_AGG(a.id::text, \', \') AS asignatura_ids, STRING_AGG(a.nombre, \', \') AS asignaturas
+FROM `users` `u`
+JOIN `profesor_asignaturas` `pa` ON `u`.`id` = `pa`.`profesor_id`
+JOIN `asignaturas` `a` ON `pa`.`asignatura_id` = `a`.`id`
+WHERE `u`.`documento` = :u.documento:
+GROUP BY `u`.`id`, `u`.`name`, `u`.`last_name`, `u`.`documento`, `u`.`email`, `u`.`telefono`', [...], false)
+ 2 APPPATH\Models\UserManagementModel.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\AdminController.php(86): App\Models\UserManagementModel->getProfesorConAsignaturas('10000001')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->buscar_asignacion_academica()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 23:21:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '::text, ', ') AS asignatura_ids, STRING_AGG(a.nombre, ', ') AS asignaturas
+FROM ' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`id` AS `profesor_id`, `u`.`name` AS `nombre_profesor`, `u`.`last_name` AS `apellido_profesor`, `u`.`documento`, `u`.`email`, `u`.`telefono`, STRING_AGG(a.id::text, \', \') AS asignatura_ids, STRING_AGG(a.nombre, \', \') AS asignaturas
+FROM `users` `u`
+JOIN `profesor_asignaturas` `pa` ON `u`.`id` = `pa`.`profesor_id`
+JOIN `asignaturas` `a` ON `pa`.`asignatura_id` = `a`.`id`
+WHERE `u`.`documento` = \'10000001\'
+GROUP BY `u`.`id`, `u`.`name`, `u`.`last_name`, `u`.`documento`, `u`.`email`, `u`.`telefono`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`id` AS `profesor_id`, `u`.`name` AS `nombre_profesor`, `u`.`last_name` AS `apellido_profesor`, `u`.`documento`, `u`.`email`, `u`.`telefono`, STRING_AGG(a.id::text, \', \') AS asignatura_ids, STRING_AGG(a.nombre, \', \') AS asignaturas
+FROM `users` `u`
+JOIN `profesor_asignaturas` `pa` ON `u`.`id` = `pa`.`profesor_id`
+JOIN `asignaturas` `a` ON `pa`.`asignatura_id` = `a`.`id`
+WHERE `u`.`documento` = \'10000001\'
+GROUP BY `u`.`id`, `u`.`name`, `u`.`last_name`, `u`.`documento`, `u`.`email`, `u`.`telefono`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`id` AS `profesor_id`, `u`.`name` AS `nombre_profesor`, `u`.`last_name` AS `apellido_profesor`, `u`.`documento`, `u`.`email`, `u`.`telefono`, STRING_AGG(a.id::text, \', \') AS asignatura_ids, STRING_AGG(a.nombre, \', \') AS asignaturas
+FROM `users` `u`
+JOIN `profesor_asignaturas` `pa` ON `u`.`id` = `pa`.`profesor_id`
+JOIN `asignaturas` `a` ON `pa`.`asignatura_id` = `a`.`id`
+WHERE `u`.`documento` = :u.documento:
+GROUP BY `u`.`id`, `u`.`name`, `u`.`last_name`, `u`.`documento`, `u`.`email`, `u`.`telefono`', [...], false)
+ 4 APPPATH\Models\UserManagementModel.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\AdminController.php(86): App\Models\UserManagementModel->getProfesorConAsignaturas('10000001')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->buscar_asignacion_academica()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-09-07 23:21:53 --> [Caused by] mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '::text, ', ') AS asignatura_ids, STRING_AGG(a.nombre, ', ') AS asignaturas
+FROM ' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT `u`.`id` AS `profesor_id`, `u`.`name` AS `nombre_profesor`, `u`.`last_name` AS `apellido_profesor`, `u`.`documento`, `u`.`email`, `u`.`telefono`, STRING_AGG(a.id::text, \', \') AS asignatura_ids, STRING_AGG(a.nombre, \', \') AS asignaturas
+FROM `users` `u`
+JOIN `profesor_asignaturas` `pa` ON `u`.`id` = `pa`.`profesor_id`
+JOIN `asignaturas` `a` ON `pa`.`asignatura_id` = `a`.`id`
+WHERE `u`.`documento` = \'10000001\'
+GROUP BY `u`.`id`, `u`.`name`, `u`.`last_name`, `u`.`documento`, `u`.`email`, `u`.`telefono`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `u`.`id` AS `profesor_id`, `u`.`name` AS `nombre_profesor`, `u`.`last_name` AS `apellido_profesor`, `u`.`documento`, `u`.`email`, `u`.`telefono`, STRING_AGG(a.id::text, \', \') AS asignatura_ids, STRING_AGG(a.nombre, \', \') AS asignaturas
+FROM `users` `u`
+JOIN `profesor_asignaturas` `pa` ON `u`.`id` = `pa`.`profesor_id`
+JOIN `asignaturas` `a` ON `pa`.`asignatura_id` = `a`.`id`
+WHERE `u`.`documento` = \'10000001\'
+GROUP BY `u`.`id`, `u`.`name`, `u`.`last_name`, `u`.`documento`, `u`.`email`, `u`.`telefono`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `u`.`id` AS `profesor_id`, `u`.`name` AS `nombre_profesor`, `u`.`last_name` AS `apellido_profesor`, `u`.`documento`, `u`.`email`, `u`.`telefono`, STRING_AGG(a.id::text, \', \') AS asignatura_ids, STRING_AGG(a.nombre, \', \') AS asignaturas
+FROM `users` `u`
+JOIN `profesor_asignaturas` `pa` ON `u`.`id` = `pa`.`profesor_id`
+JOIN `asignaturas` `a` ON `pa`.`asignatura_id` = `a`.`id`
+WHERE `u`.`documento` = \'10000001\'
+GROUP BY `u`.`id`, `u`.`name`, `u`.`last_name`, `u`.`documento`, `u`.`email`, `u`.`telefono`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT `u`.`id` AS `profesor_id`, `u`.`name` AS `nombre_profesor`, `u`.`last_name` AS `apellido_profesor`, `u`.`documento`, `u`.`email`, `u`.`telefono`, STRING_AGG(a.id::text, \', \') AS asignatura_ids, STRING_AGG(a.nombre, \', \') AS asignaturas
+FROM `users` `u`
+JOIN `profesor_asignaturas` `pa` ON `u`.`id` = `pa`.`profesor_id`
+JOIN `asignaturas` `a` ON `pa`.`asignatura_id` = `a`.`id`
+WHERE `u`.`documento` = :u.documento:
+GROUP BY `u`.`id`, `u`.`name`, `u`.`last_name`, `u`.`documento`, `u`.`email`, `u`.`telefono`', [...], false)
+ 5 APPPATH\Models\UserManagementModel.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\AdminController.php(86): App\Models\UserManagementModel->getProfesorConAsignaturas('10000001')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AdminController->buscar_asignacion_academica()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-09-07 23:22:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-07 23:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-07 23:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-07 23:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-07 23:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-07 23:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-07 23:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-07 23:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-07 23:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-07 23:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-07 23:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-07 23:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

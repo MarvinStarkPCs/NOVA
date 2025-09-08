@@ -1,0 +1,16 @@
+INFO - 2025-08-29 23:56:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-29 23:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-29 23:56:58 --> Usuario autenticado con role_id: 
+INFO - 2025-08-29 23:57:04 --> El método authenticate fue llamado
+INFO - 2025-08-29 23:57:04 --> Intento de inicio de sesión para el usuario: admin@siares.com
+INFO - 2025-08-29 23:57:05 --> Intento de inicio de sesión para el usuario: admin@siares.com
+INFO - 2025-08-29 23:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-29 23:57:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-29 23:57:06 --> Usuario autenticado con role_id: 
+INFO - 2025-08-29 23:57:25 --> El método authenticate fue llamado
+INFO - 2025-08-29 23:57:25 --> Intento de inicio de sesión para el usuario: admin@colegiosanjose.edu.co
+INFO - 2025-08-29 23:57:25 --> Intento de inicio de sesión para el usuario: admin@colegiosanjose.edu.co
+INFO - 2025-08-29 23:57:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-29 23:57:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-29 23:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-29 23:58:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

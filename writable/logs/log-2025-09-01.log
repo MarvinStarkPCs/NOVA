@@ -1,0 +1,8 @@
+INFO - 2025-09-01 01:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-01 01:25:50 --> Usuario autenticado con role_id: 
+INFO - 2025-09-01 01:25:54 --> El método authenticate fue llamado
+INFO - 2025-09-01 01:25:54 --> Intento de inicio de sesión para el usuario: admin@siares.com
+INFO - 2025-09-01 01:25:54 --> Intento de inicio de sesión para el usuario: admin@siares.com
+INFO - 2025-09-01 01:25:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-01 01:25:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-01 01:25:55 --> Usuario autenticado con role_id: 

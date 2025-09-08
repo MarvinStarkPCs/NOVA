@@ -80,7 +80,7 @@
         }
 
         .sidebar-brand-icon img {
-            width: 51%;
+            width: 84%;
             height: 84%;
             object-fit: cover;
         }

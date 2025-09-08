@@ -1,0 +1,1254 @@
+INFO - 2025-09-04 20:55:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-04 20:55:29 --> Cargando prueba con ID: 3
+DEBUG - 2025-09-04 20:55:29 --> Respuestas obtenidas: Array
+(
+    [0] => Array
+        (
+            [id] => 45
+            [estudiante_id] => 23
+            [pregunta_id] => 6
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [1] => Array
+        (
+            [id] => 46
+            [estudiante_id] => 23
+            [pregunta_id] => 7
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [2] => Array
+        (
+            [id] => 47
+            [estudiante_id] => 23
+            [pregunta_id] => 16
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [3] => Array
+        (
+            [id] => 48
+            [estudiante_id] => 23
+            [pregunta_id] => 17
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [4] => Array
+        (
+            [id] => 49
+            [estudiante_id] => 23
+            [pregunta_id] => 18
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [5] => Array
+        (
+            [id] => 50
+            [estudiante_id] => 23
+            [pregunta_id] => 19
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [6] => Array
+        (
+            [id] => 51
+            [estudiante_id] => 23
+            [pregunta_id] => 20
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [7] => Array
+        (
+            [id] => 52
+            [estudiante_id] => 23
+            [pregunta_id] => 21
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [8] => Array
+        (
+            [id] => 53
+            [estudiante_id] => 23
+            [pregunta_id] => 22
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [9] => Array
+        (
+            [id] => 54
+            [estudiante_id] => 23
+            [pregunta_id] => 23
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [10] => Array
+        (
+            [id] => 55
+            [estudiante_id] => 23
+            [pregunta_id] => 24
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [11] => Array
+        (
+            [id] => 56
+            [estudiante_id] => 23
+            [pregunta_id] => 25
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [12] => Array
+        (
+            [id] => 57
+            [estudiante_id] => 23
+            [pregunta_id] => 26
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [13] => Array
+        (
+            [id] => 58
+            [estudiante_id] => 23
+            [pregunta_id] => 27
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [14] => Array
+        (
+            [id] => 59
+            [estudiante_id] => 23
+            [pregunta_id] => 28
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+)
+
+CRITICAL - 2025-09-04 20:55:29 --> ErrorException: Undefined array key "es_correcta"
+[Method: GET, Route: estudiante/calificacion/prueba/3]
+in APPPATH\Views\estudiante\ver_prueba_calificada.php on line 31.
+ 1 APPPATH\Views\estudiante\ver_prueba_calificada.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "es_correcta"', 'C:\\laragon\\www\\NOVA\\app\\Views\\estudiante\\ver_prueba_calificada.php', 31)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\NOVA\\app\\Views\\estudiante\\ver_prueba_calificada.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('estudiante/ver_prueba_calificada', [], true)
+ 5 APPPATH\Controllers\EstudianteController.php(145): view('estudiante/ver_prueba_calificada', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EstudianteController->mostrar_calificacion('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-09-04 20:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-04 20:56:30 --> Cargando prueba con ID: 3
+DEBUG - 2025-09-04 20:56:30 --> Respuestas obtenidas: Array
+(
+    [0] => Array
+        (
+            [id] => 45
+            [estudiante_id] => 23
+            [pregunta_id] => 6
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [1] => Array
+        (
+            [id] => 46
+            [estudiante_id] => 23
+            [pregunta_id] => 7
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [2] => Array
+        (
+            [id] => 47
+            [estudiante_id] => 23
+            [pregunta_id] => 16
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [3] => Array
+        (
+            [id] => 48
+            [estudiante_id] => 23
+            [pregunta_id] => 17
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [4] => Array
+        (
+            [id] => 49
+            [estudiante_id] => 23
+            [pregunta_id] => 18
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [5] => Array
+        (
+            [id] => 50
+            [estudiante_id] => 23
+            [pregunta_id] => 19
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [6] => Array
+        (
+            [id] => 51
+            [estudiante_id] => 23
+            [pregunta_id] => 20
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [7] => Array
+        (
+            [id] => 52
+            [estudiante_id] => 23
+            [pregunta_id] => 21
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [8] => Array
+        (
+            [id] => 53
+            [estudiante_id] => 23
+            [pregunta_id] => 22
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [9] => Array
+        (
+            [id] => 54
+            [estudiante_id] => 23
+            [pregunta_id] => 23
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [10] => Array
+        (
+            [id] => 55
+            [estudiante_id] => 23
+            [pregunta_id] => 24
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [11] => Array
+        (
+            [id] => 56
+            [estudiante_id] => 23
+            [pregunta_id] => 25
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [12] => Array
+        (
+            [id] => 57
+            [estudiante_id] => 23
+            [pregunta_id] => 26
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [13] => Array
+        (
+            [id] => 58
+            [estudiante_id] => 23
+            [pregunta_id] => 27
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [14] => Array
+        (
+            [id] => 59
+            [estudiante_id] => 23
+            [pregunta_id] => 28
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+)
+
+CRITICAL - 2025-09-04 20:56:31 --> ErrorException: Undefined array key "respuesta_estudiante"
+[Method: GET, Route: estudiante/calificacion/prueba/3]
+in APPPATH\Views\estudiante\ver_prueba_calificada.php on line 39.
+ 1 APPPATH\Views\estudiante\ver_prueba_calificada.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "respuesta_estudiante"', 'C:\\laragon\\www\\NOVA\\app\\Views\\estudiante\\ver_prueba_calificada.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\NOVA\\app\\Views\\estudiante\\ver_prueba_calificada.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('estudiante/ver_prueba_calificada', [], true)
+ 5 APPPATH\Controllers\EstudianteController.php(145): view('estudiante/ver_prueba_calificada', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EstudianteController->mostrar_calificacion('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-09-04 20:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-04 20:57:23 --> Cargando prueba con ID: 3
+DEBUG - 2025-09-04 20:57:23 --> Respuestas obtenidas: Array
+(
+    [0] => Array
+        (
+            [id] => 45
+            [estudiante_id] => 23
+            [pregunta_id] => 6
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [1] => Array
+        (
+            [id] => 46
+            [estudiante_id] => 23
+            [pregunta_id] => 7
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [2] => Array
+        (
+            [id] => 47
+            [estudiante_id] => 23
+            [pregunta_id] => 16
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [3] => Array
+        (
+            [id] => 48
+            [estudiante_id] => 23
+            [pregunta_id] => 17
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [4] => Array
+        (
+            [id] => 49
+            [estudiante_id] => 23
+            [pregunta_id] => 18
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [5] => Array
+        (
+            [id] => 50
+            [estudiante_id] => 23
+            [pregunta_id] => 19
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [6] => Array
+        (
+            [id] => 51
+            [estudiante_id] => 23
+            [pregunta_id] => 20
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [7] => Array
+        (
+            [id] => 52
+            [estudiante_id] => 23
+            [pregunta_id] => 21
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [8] => Array
+        (
+            [id] => 53
+            [estudiante_id] => 23
+            [pregunta_id] => 22
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [9] => Array
+        (
+            [id] => 54
+            [estudiante_id] => 23
+            [pregunta_id] => 23
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [10] => Array
+        (
+            [id] => 55
+            [estudiante_id] => 23
+            [pregunta_id] => 24
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [11] => Array
+        (
+            [id] => 56
+            [estudiante_id] => 23
+            [pregunta_id] => 25
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [12] => Array
+        (
+            [id] => 57
+            [estudiante_id] => 23
+            [pregunta_id] => 26
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [13] => Array
+        (
+            [id] => 58
+            [estudiante_id] => 23
+            [pregunta_id] => 27
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [14] => Array
+        (
+            [id] => 59
+            [estudiante_id] => 23
+            [pregunta_id] => 28
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+)
+
+CRITICAL - 2025-09-04 20:57:23 --> ErrorException: Undefined array key "opcion_elegida"
+[Method: GET, Route: estudiante/calificacion/prueba/3]
+in APPPATH\Views\estudiante\ver_prueba_calificada.php on line 39.
+ 1 APPPATH\Views\estudiante\ver_prueba_calificada.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "opcion_elegida"', 'C:\\laragon\\www\\NOVA\\app\\Views\\estudiante\\ver_prueba_calificada.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\NOVA\\app\\Views\\estudiante\\ver_prueba_calificada.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('estudiante/ver_prueba_calificada', [], true)
+ 5 APPPATH\Controllers\EstudianteController.php(145): view('estudiante/ver_prueba_calificada', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EstudianteController->mostrar_calificacion('3')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-09-04 20:58:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-04 20:58:09 --> Cargando prueba con ID: 3
+DEBUG - 2025-09-04 20:58:09 --> Respuestas obtenidas: Array
+(
+    [0] => Array
+        (
+            [id] => 45
+            [estudiante_id] => 23
+            [pregunta_id] => 6
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [1] => Array
+        (
+            [id] => 46
+            [estudiante_id] => 23
+            [pregunta_id] => 7
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [2] => Array
+        (
+            [id] => 47
+            [estudiante_id] => 23
+            [pregunta_id] => 16
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [3] => Array
+        (
+            [id] => 48
+            [estudiante_id] => 23
+            [pregunta_id] => 17
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [4] => Array
+        (
+            [id] => 49
+            [estudiante_id] => 23
+            [pregunta_id] => 18
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [5] => Array
+        (
+            [id] => 50
+            [estudiante_id] => 23
+            [pregunta_id] => 19
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [6] => Array
+        (
+            [id] => 51
+            [estudiante_id] => 23
+            [pregunta_id] => 20
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [7] => Array
+        (
+            [id] => 52
+            [estudiante_id] => 23
+            [pregunta_id] => 21
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [8] => Array
+        (
+            [id] => 53
+            [estudiante_id] => 23
+            [pregunta_id] => 22
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [9] => Array
+        (
+            [id] => 54
+            [estudiante_id] => 23
+            [pregunta_id] => 23
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [10] => Array
+        (
+            [id] => 55
+            [estudiante_id] => 23
+            [pregunta_id] => 24
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [11] => Array
+        (
+            [id] => 56
+            [estudiante_id] => 23
+            [pregunta_id] => 25
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [12] => Array
+        (
+            [id] => 57
+            [estudiante_id] => 23
+            [pregunta_id] => 26
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [13] => Array
+        (
+            [id] => 58
+            [estudiante_id] => 23
+            [pregunta_id] => 27
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [14] => Array
+        (
+            [id] => 59
+            [estudiante_id] => 23
+            [pregunta_id] => 28
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+)
+
+INFO - 2025-09-04 21:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-04 21:12:58 --> Cargando prueba con ID: 3
+DEBUG - 2025-09-04 21:12:58 --> Respuestas obtenidas: Array
+(
+    [0] => Array
+        (
+            [id] => 45
+            [estudiante_id] => 23
+            [pregunta_id] => 6
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [1] => Array
+        (
+            [id] => 46
+            [estudiante_id] => 23
+            [pregunta_id] => 7
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [2] => Array
+        (
+            [id] => 47
+            [estudiante_id] => 23
+            [pregunta_id] => 16
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [3] => Array
+        (
+            [id] => 48
+            [estudiante_id] => 23
+            [pregunta_id] => 17
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [4] => Array
+        (
+            [id] => 49
+            [estudiante_id] => 23
+            [pregunta_id] => 18
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [5] => Array
+        (
+            [id] => 50
+            [estudiante_id] => 23
+            [pregunta_id] => 19
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [6] => Array
+        (
+            [id] => 51
+            [estudiante_id] => 23
+            [pregunta_id] => 20
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [7] => Array
+        (
+            [id] => 52
+            [estudiante_id] => 23
+            [pregunta_id] => 21
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [8] => Array
+        (
+            [id] => 53
+            [estudiante_id] => 23
+            [pregunta_id] => 22
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [9] => Array
+        (
+            [id] => 54
+            [estudiante_id] => 23
+            [pregunta_id] => 23
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [10] => Array
+        (
+            [id] => 55
+            [estudiante_id] => 23
+            [pregunta_id] => 24
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [11] => Array
+        (
+            [id] => 56
+            [estudiante_id] => 23
+            [pregunta_id] => 25
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [12] => Array
+        (
+            [id] => 57
+            [estudiante_id] => 23
+            [pregunta_id] => 26
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [13] => Array
+        (
+            [id] => 58
+            [estudiante_id] => 23
+            [pregunta_id] => 27
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [14] => Array
+        (
+            [id] => 59
+            [estudiante_id] => 23
+            [pregunta_id] => 28
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+)
+
+INFO - 2025-09-04 21:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-04 21:17:35 --> Cargando prueba con ID: 3
+DEBUG - 2025-09-04 21:17:35 --> Respuestas obtenidas: Array
+(
+    [0] => Array
+        (
+            [id] => 45
+            [estudiante_id] => 23
+            [pregunta_id] => 6
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [1] => Array
+        (
+            [id] => 46
+            [estudiante_id] => 23
+            [pregunta_id] => 7
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [2] => Array
+        (
+            [id] => 47
+            [estudiante_id] => 23
+            [pregunta_id] => 16
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [3] => Array
+        (
+            [id] => 48
+            [estudiante_id] => 23
+            [pregunta_id] => 17
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [4] => Array
+        (
+            [id] => 49
+            [estudiante_id] => 23
+            [pregunta_id] => 18
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [5] => Array
+        (
+            [id] => 50
+            [estudiante_id] => 23
+            [pregunta_id] => 19
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [6] => Array
+        (
+            [id] => 51
+            [estudiante_id] => 23
+            [pregunta_id] => 20
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [7] => Array
+        (
+            [id] => 52
+            [estudiante_id] => 23
+            [pregunta_id] => 21
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:28
+            [created_at] => 2025-09-04 15:15:28
+            [updated_at] => 2025-09-04 15:15:28
+        )
+
+    [8] => Array
+        (
+            [id] => 53
+            [estudiante_id] => 23
+            [pregunta_id] => 22
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [9] => Array
+        (
+            [id] => 54
+            [estudiante_id] => 23
+            [pregunta_id] => 23
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [10] => Array
+        (
+            [id] => 55
+            [estudiante_id] => 23
+            [pregunta_id] => 24
+            [prueba_id] => 3
+            [opcion_elegida] => b
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [11] => Array
+        (
+            [id] => 56
+            [estudiante_id] => 23
+            [pregunta_id] => 25
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [12] => Array
+        (
+            [id] => 57
+            [estudiante_id] => 23
+            [pregunta_id] => 26
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [13] => Array
+        (
+            [id] => 58
+            [estudiante_id] => 23
+            [pregunta_id] => 27
+            [prueba_id] => 3
+            [opcion_elegida] => a
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+    [14] => Array
+        (
+            [id] => 59
+            [estudiante_id] => 23
+            [pregunta_id] => 28
+            [prueba_id] => 3
+            [opcion_elegida] => c
+            [respuesta_correcta] => 0
+            [fecha_respuesta] => 2025-09-04 20:15:29
+            [created_at] => 2025-09-04 15:15:29
+            [updated_at] => 2025-09-04 15:15:29
+        )
+
+)
+
+INFO - 2025-09-04 21:19:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-04 21:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-04 21:19:41 --> Usuario autenticado con role_id: 
+INFO - 2025-09-04 21:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-04 21:46:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-04 21:46:18 --> Usuario autenticado con role_id: 

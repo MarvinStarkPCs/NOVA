@@ -1,0 +1,303 @@
+INFO - 2025-09-03 00:10:53 --> El método authenticate fue llamado
+INFO - 2025-09-03 00:10:53 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-03 00:10:53 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-03 00:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 00:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 00:10:53 --> Usuario autenticado con role_id: 
+INFO - 2025-09-03 00:11:05 --> El método authenticate fue llamado
+INFO - 2025-09-03 00:11:05 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-03 00:11:06 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-03 00:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 00:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 00:11:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-03 00:11:11 --> InvalidArgumentException: whereNotIn() expects $values to be of type array or closure
+[Method: GET, Route: admin/usermanagement]
+in SYSTEMPATH\Database\BaseBuilder.php on line 951.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(863): CodeIgniter\Database\BaseBuilder->_whereIn('0', '1', true, 'AND ', null)
+ 2 APPPATH\Models\ComboBoxModel.php(23): CodeIgniter\Database\BaseBuilder->whereNotIn('0', '1')
+ 3 APPPATH\Controllers\UserManagementController.php(21): App\Models\ComboBoxModel->getTableData('roles', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserManagementController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserManagementController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-09-03 00:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-03 00:11:46 --> InvalidArgumentException: whereNotIn() expects $values to be of type array or closure
+[Method: GET, Route: admin/usermanagement]
+in SYSTEMPATH\Database\BaseBuilder.php on line 951.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(863): CodeIgniter\Database\BaseBuilder->_whereIn('0', 1, true, 'AND ', null)
+ 2 APPPATH\Models\ComboBoxModel.php(23): CodeIgniter\Database\BaseBuilder->whereNotIn('0', 1)
+ 3 APPPATH\Controllers\UserManagementController.php(21): App\Models\ComboBoxModel->getTableData('roles', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserManagementController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserManagementController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-09-03 00:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-09-03 00:11:47 --> InvalidArgumentException: whereNotIn() expects $values to be of type array or closure
+[Method: GET, Route: admin/usermanagement]
+in SYSTEMPATH\Database\BaseBuilder.php on line 951.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(863): CodeIgniter\Database\BaseBuilder->_whereIn('0', 1, true, 'AND ', null)
+ 2 APPPATH\Models\ComboBoxModel.php(23): CodeIgniter\Database\BaseBuilder->whereNotIn('0', 1)
+ 3 APPPATH\Controllers\UserManagementController.php(21): App\Models\ComboBoxModel->getTableData('roles', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserManagementController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserManagementController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-09-03 00:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:08:24 --> Usuario autenticado con role_id: 
+INFO - 2025-09-03 22:08:31 --> El método authenticate fue llamado
+INFO - 2025-09-03 22:08:31 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-03 22:08:31 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-03 22:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:08:32 --> Usuario autenticado con role_id: 
+INFO - 2025-09-03 22:09:59 --> El método authenticate fue llamado
+INFO - 2025-09-03 22:09:59 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-03 22:09:59 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-03 22:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:09:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:10:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:11:29 --> Usuario autenticado con role_id: 
+INFO - 2025-09-03 22:12:29 --> El método authenticate fue llamado
+INFO - 2025-09-03 22:12:29 --> Intento de inicio de sesión para el usuario: mesp3127@gmail.com
+INFO - 2025-09-03 22:12:30 --> Intento de inicio de sesión para el usuario: mesp3127@gmail.com
+INFO - 2025-09-03 22:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-03 22:12:31 --> Grupo ID del estudiante: 11
+DEBUG - 2025-09-03 22:12:31 --> Pruebas encontradas: Array
+(
+    [0] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 8
+            [prueba_nombre] => hola robin
+            [prueba_descripcion] => etsa prueba va enfoncad a robuson
+            [asignatura] => Español
+            [profesor] => MARVIN PEREZ
+            [email_profesor] => marvin.santos@soy.sena.edu.co
+            [fecha_asignacion] => 2025-09-02 23:13:11
+            [fecha_limite] => 0000-00-00 00:00:00
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 3
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+    [1] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 7
+            [prueba_nombre] => PRUEBA DE COMPRENSIÓN LECTORA Y PREGUNTAS SUELTAS
+            [prueba_descripcion] => waerawerawer
+            [asignatura] => Español
+            [profesor] => MARVIN PEREZ
+            [email_profesor] => marvin.santos@soy.sena.edu.co
+            [fecha_asignacion] => 2025-08-24 21:59:40
+            [fecha_limite] => 2025-08-30 21:59:40
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 2
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+)
+
+INFO - 2025-09-03 22:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:12:48 --> Usuario autenticado con role_id: 
+INFO - 2025-09-03 22:13:03 --> El método authenticate fue llamado
+INFO - 2025-09-03 22:13:03 --> Intento de inicio de sesión para el usuario: marvin.santos@soy.sena.edu.co
+INFO - 2025-09-03 22:13:04 --> Intento de inicio de sesión para el usuario: marvin.santos@soy.sena.edu.co
+INFO - 2025-09-03 22:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:13:27 --> Cargando asignaturas para el profesor ID: 18
+INFO - 2025-09-03 22:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:15:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:15:59 --> Cargando prueba con ID: 9
+INFO - 2025-09-03 22:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:16:18 --> Recibiendo solicitud para mostrar datos de la tabla: grupos, campo: grado_id, id: 10
+INFO - 2025-09-03 22:16:18 --> Obteniendo datos de la tabla: grupos, id: 10, campo: grado_id
+INFO - 2025-09-03 22:16:18 --> Datos obtenidos de la tabla grupos: [{"id":"11","nombre":"9A","grado_id":"10","created_at":"2025-08-24 21:59:39","updated_at":"2025-08-24 21:59:39"}]
+INFO - 2025-09-03 22:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:16:38 --> Usuario autenticado con role_id: 
+INFO - 2025-09-03 22:16:52 --> El método authenticate fue llamado
+INFO - 2025-09-03 22:16:52 --> Intento de inicio de sesión para el usuario: mesp3127@gmail.com
+INFO - 2025-09-03 22:16:52 --> Intento de inicio de sesión para el usuario: mesp3127@gmail.com
+INFO - 2025-09-03 22:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:16:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-03 22:16:53 --> Grupo ID del estudiante: 11
+DEBUG - 2025-09-03 22:16:53 --> Pruebas encontradas: Array
+(
+    [0] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 9
+            [prueba_nombre] => WISMA ES FEO
+            [prueba_descripcion] => FEO
+            [asignatura] => Español
+            [profesor] => MARVIN PEREZ
+            [email_profesor] => marvin.santos@soy.sena.edu.co
+            [fecha_asignacion] => 2025-09-03 22:16:31
+            [fecha_limite] => 0000-00-00 00:00:00
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 3
+            [total_lecturas] => 2
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+    [1] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 8
+            [prueba_nombre] => hola robin
+            [prueba_descripcion] => etsa prueba va enfoncad a robuson
+            [asignatura] => Español
+            [profesor] => MARVIN PEREZ
+            [email_profesor] => marvin.santos@soy.sena.edu.co
+            [fecha_asignacion] => 2025-09-02 23:13:11
+            [fecha_limite] => 0000-00-00 00:00:00
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 3
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+    [2] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 7
+            [prueba_nombre] => PRUEBA DE COMPRENSIÓN LECTORA Y PREGUNTAS SUELTAS
+            [prueba_descripcion] => waerawerawer
+            [asignatura] => Español
+            [profesor] => MARVIN PEREZ
+            [email_profesor] => marvin.santos@soy.sena.edu.co
+            [fecha_asignacion] => 2025-08-24 21:59:40
+            [fecha_limite] => 2025-08-30 21:59:40
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 2
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+)
+
+INFO - 2025-09-03 22:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:16:59 --> Cargando prueba con ID: 9
+INFO - 2025-09-03 22:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:33:15 --> Usuario autenticado con role_id: 2
+INFO - 2025-09-03 22:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-03 22:33:16 --> Grupo ID del estudiante: 11
+DEBUG - 2025-09-03 22:33:16 --> Pruebas encontradas: Array
+(
+    [0] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 9
+            [prueba_nombre] => WISMA ES FEO
+            [prueba_descripcion] => FEO
+            [asignatura] => Español
+            [profesor] => MARVIN PEREZ
+            [email_profesor] => marvin.santos@soy.sena.edu.co
+            [fecha_asignacion] => 2025-09-03 22:16:31
+            [fecha_limite] => 0000-00-00 00:00:00
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 3
+            [total_lecturas] => 2
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+    [1] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 8
+            [prueba_nombre] => hola robin
+            [prueba_descripcion] => etsa prueba va enfoncad a robuson
+            [asignatura] => Español
+            [profesor] => MARVIN PEREZ
+            [email_profesor] => marvin.santos@soy.sena.edu.co
+            [fecha_asignacion] => 2025-09-02 23:13:11
+            [fecha_limite] => 0000-00-00 00:00:00
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 3
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+    [2] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 7
+            [prueba_nombre] => PRUEBA DE COMPRENSIÓN LECTORA Y PREGUNTAS SUELTAS
+            [prueba_descripcion] => waerawerawer
+            [asignatura] => Español
+            [profesor] => MARVIN PEREZ
+            [email_profesor] => marvin.santos@soy.sena.edu.co
+            [fecha_asignacion] => 2025-08-24 21:59:40
+            [fecha_limite] => 2025-08-30 21:59:40
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 2
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+)
+
+INFO - 2025-09-03 22:33:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:33:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-03 22:33:24 --> Usuario autenticado con role_id: 

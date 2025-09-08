@@ -1,0 +1,313 @@
+INFO - 2025-09-02 14:19:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 14:19:00 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 14:19:07 --> El método authenticate fue llamado
+INFO - 2025-09-02 14:19:07 --> Intento de inicio de sesión para el usuario: admin@siares.com
+INFO - 2025-09-02 14:19:10 --> Intento de inicio de sesión para el usuario: admin@siares.com
+INFO - 2025-09-02 14:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 14:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 14:19:10 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 14:19:14 --> El método authenticate fue llamado
+INFO - 2025-09-02 14:19:14 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 14:19:14 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 14:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 14:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 14:19:14 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 14:19:37 --> El método authenticate fue llamado
+INFO - 2025-09-02 14:19:37 --> Intento de inicio de sesión para el usuario: admin@siares.edu.co
+INFO - 2025-09-02 14:19:37 --> Intento de inicio de sesión para el usuario: admin@siares.edu.co
+INFO - 2025-09-02 14:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 14:19:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 14:19:37 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 14:41:15 --> El método authenticate fue llamado
+INFO - 2025-09-02 14:41:15 --> Intento de inicio de sesión para el usuario: admin@docente.com
+INFO - 2025-09-02 14:41:15 --> Intento de inicio de sesión para el usuario: admin@docente.com
+INFO - 2025-09-02 14:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 14:41:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 14:41:15 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 15:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 15:33:15 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 15:33:25 --> El método authenticate fue llamado
+INFO - 2025-09-02 15:33:25 --> Intento de inicio de sesión para el usuario: admin@docente.com
+INFO - 2025-09-02 15:33:25 --> Intento de inicio de sesión para el usuario: admin@docente.com
+INFO - 2025-09-02 15:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 15:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 15:33:25 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 15:35:00 --> El método authenticate fue llamado
+INFO - 2025-09-02 15:35:00 --> Intento de inicio de sesión para el usuario: admin@colegiosanjose.edu.co
+INFO - 2025-09-02 15:35:00 --> Intento de inicio de sesión para el usuario: admin@colegiosanjose.edu.co
+INFO - 2025-09-02 15:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 15:35:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 15:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 15:57:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 15:58:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 18:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 18:53:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 18:53:10 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:05:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:05:13 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:05:16 --> El método authenticate fue llamado
+INFO - 2025-09-02 23:05:16 --> Intento de inicio de sesión para el usuario: admin@siares.com
+INFO - 2025-09-02 23:05:16 --> Intento de inicio de sesión para el usuario: admin@siares.com
+INFO - 2025-09-02 23:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:05:17 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:05:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:05:20 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:07:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:07:47 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:07:57 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:08:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:08:07 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:09:25 --> El método authenticate fue llamado
+INFO - 2025-09-02 23:09:25 --> Intento de inicio de sesión para el usuario: marvin.santos@soy.sena.edu.co
+INFO - 2025-09-02 23:09:25 --> Intento de inicio de sesión para el usuario: marvin.santos@soy.sena.edu.co
+INFO - 2025-09-02 23:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:09:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:09:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:09:28 --> Cargando prueba con ID: 7
+INFO - 2025-09-02 23:10:41 --> El método authenticate fue llamado
+INFO - 2025-09-02 23:10:41 --> Intento de inicio de sesión para el usuario: mesp3127@gmail.com
+INFO - 2025-09-02 23:10:41 --> Intento de inicio de sesión para el usuario: mesp3127@gmail.com
+INFO - 2025-09-02 23:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:10:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-02 23:10:41 --> Grupo ID del estudiante: 11
+DEBUG - 2025-09-02 23:10:42 --> Pruebas encontradas: Array
+(
+    [0] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 7
+            [prueba_nombre] => PRUEBA DE COMPRENSIÓN LECTORA Y PREGUNTAS SUELTAS
+            [prueba_descripcion] => waerawerawer
+            [asignatura] => Español
+            [profesor] => MARVIN PEREZ
+            [email_profesor] => marvin.santos@soy.sena.edu.co
+            [fecha_asignacion] => 2025-08-24 21:59:40
+            [fecha_limite] => 2025-08-30 21:59:40
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 2
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+)
+
+INFO - 2025-09-02 23:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:10:50 --> Cargando prueba con ID: 7
+INFO - 2025-09-02 23:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:11:02 --> Cargando asignaturas para el profesor ID: 18
+INFO - 2025-09-02 23:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:12:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:12:42 --> Cargando prueba con ID: 8
+INFO - 2025-09-02 23:12:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:13:04 --> Recibiendo solicitud para mostrar datos de la tabla: grupos, campo: grado_id, id: 10
+INFO - 2025-09-02 23:13:04 --> Obteniendo datos de la tabla: grupos, id: 10, campo: grado_id
+INFO - 2025-09-02 23:13:04 --> Datos obtenidos de la tabla grupos: [{"id":"11","nombre":"9A","grado_id":"10","created_at":"2025-08-24 21:59:39","updated_at":"2025-08-24 21:59:39"}]
+INFO - 2025-09-02 23:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:13:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:13:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-02 23:13:17 --> Grupo ID del estudiante: 11
+DEBUG - 2025-09-02 23:13:17 --> Pruebas encontradas: Array
+(
+    [0] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 8
+            [prueba_nombre] => hola robin
+            [prueba_descripcion] => etsa prueba va enfoncad a robuson
+            [asignatura] => Español
+            [profesor] => MARVIN PEREZ
+            [email_profesor] => marvin.santos@soy.sena.edu.co
+            [fecha_asignacion] => 2025-09-02 23:13:11
+            [fecha_limite] => 0000-00-00 00:00:00
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 3
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+    [1] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 7
+            [prueba_nombre] => PRUEBA DE COMPRENSIÓN LECTORA Y PREGUNTAS SUELTAS
+            [prueba_descripcion] => waerawerawer
+            [asignatura] => Español
+            [profesor] => MARVIN PEREZ
+            [email_profesor] => marvin.santos@soy.sena.edu.co
+            [fecha_asignacion] => 2025-08-24 21:59:40
+            [fecha_limite] => 2025-08-30 21:59:40
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 2
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+)
+
+INFO - 2025-09-02 23:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:13:24 --> Cargando prueba con ID: 8
+INFO - 2025-09-02 23:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:13:45 --> Cargando prueba con ID: 8
+INFO - 2025-09-02 23:14:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-09-02 23:14:47 --> Grupo ID del estudiante: 11
+DEBUG - 2025-09-02 23:14:47 --> Pruebas encontradas: Array
+(
+    [0] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 8
+            [prueba_nombre] => hola robin
+            [prueba_descripcion] => etsa prueba va enfoncad a robuson
+            [asignatura] => Español
+            [profesor] => MARVIN PEREZ
+            [email_profesor] => marvin.santos@soy.sena.edu.co
+            [fecha_asignacion] => 2025-09-02 23:13:11
+            [fecha_limite] => 0000-00-00 00:00:00
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 3
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+    [1] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 7
+            [prueba_nombre] => PRUEBA DE COMPRENSIÓN LECTORA Y PREGUNTAS SUELTAS
+            [prueba_descripcion] => waerawerawer
+            [asignatura] => Español
+            [profesor] => MARVIN PEREZ
+            [email_profesor] => marvin.santos@soy.sena.edu.co
+            [fecha_asignacion] => 2025-08-24 21:59:40
+            [fecha_limite] => 2025-08-30 21:59:40
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 2
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+)
+
+INFO - 2025-09-02 23:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:14:59 --> Cargando asignaturas para el profesor ID: 18
+INFO - 2025-09-02 23:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:24:19 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:25:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:26:01 --> Cargando asignaturas para el profesor ID: 18
+INFO - 2025-09-02 23:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:27:54 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:29:01 --> El método authenticate fue llamado
+INFO - 2025-09-02 23:29:01 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 23:29:01 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 23:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:29:01 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:29:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:29:23 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:29:25 --> El método authenticate fue llamado
+INFO - 2025-09-02 23:29:25 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 23:29:25 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 23:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:29:25 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:29:28 --> El método authenticate fue llamado
+INFO - 2025-09-02 23:29:28 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 23:29:28 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 23:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:29:28 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:29:37 --> El método authenticate fue llamado
+INFO - 2025-09-02 23:29:37 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 23:29:37 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 23:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:29:37 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:29:39 --> El método authenticate fue llamado
+INFO - 2025-09-02 23:29:39 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 23:29:39 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 23:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:29:39 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:29:59 --> El método authenticate fue llamado
+INFO - 2025-09-02 23:29:59 --> Intento de inicio de sesión para el usuario: marvin.santos@soy.sena.edu.co
+INFO - 2025-09-02 23:29:59 --> Intento de inicio de sesión para el usuario: marvin.santos@soy.sena.edu.co
+INFO - 2025-09-02 23:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:30:10 --> El método authenticate fue llamado
+INFO - 2025-09-02 23:30:10 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 23:30:10 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 23:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:30:10 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:30:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:30:15 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:30:25 --> El método authenticate fue llamado
+INFO - 2025-09-02 23:30:25 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 23:30:25 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 23:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:30:25 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:31:10 --> El método authenticate fue llamado
+INFO - 2025-09-02 23:31:10 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 23:31:10 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 23:31:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:31:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:31:33 --> El método authenticate fue llamado
+INFO - 2025-09-02 23:31:33 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 23:31:33 --> Intento de inicio de sesión para el usuario: admin@admin.com
+INFO - 2025-09-02 23:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:31:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:32:00 --> Acceso a la vista de cambio de contraseña.
+INFO - 2025-09-02 23:33:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:33:47 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:33:50 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:33:55 --> Usuario autenticado con role_id: 
+INFO - 2025-09-02 23:46:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-09-02 23:46:11 --> Usuario autenticado con role_id: 

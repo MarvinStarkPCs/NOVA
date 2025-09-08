@@ -2,7 +2,7 @@
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('dashboard'); ?>">
         <div class="sidebar-brand-icon">
-            <img src="<?= base_url('img/logo colegio.png'); ?>" alt="">
+            <img src="<?= base_url('img/icons/reading-kid.png'); ?>" alt="">
         </div>
     </a>
 
@@ -122,11 +122,9 @@
                     <a class="collapse-item" href="<?= base_url('admin/usermanagement'); ?>">
                         <i class="fas fa-users-cog"></i> Gestión de Usuarios
                     </a>
-                    <a class="collapse-item" href="<?= base_url('admin/students'); ?>">
-                        <i class="fas fa-user-graduate"></i> Estudiantes Matriculados
-                    </a>
-                    <a class="collapse-item" href="<?= base_url('admin/rematricula'); ?>">
-                        <i class="fas fa-redo"></i> Rematriculación
+              
+                    <a class="collapse-item" href="<?= base_url('admin/matriculas'); ?>">
+                        <i class="fas fa-redo"></i> Promoción
                     </a>
                     <a class="collapse-item" href="<?= base_url('admin/asignaciones'); ?>">
                         <i class="fas fa-chalkboard-teacher"></i> Asignación Académica

@@ -44,7 +44,11 @@ $routes->get('results/ver/(:num)/(:num)', 'ProfesorController::mostrar_calificac
 $routes->group('admin', ['filter' => 'auth'], function ($routes) {
 
     $routes->get('home', 'AdminController::index');
-    $routes->get('rematricula', 'AdminController::index');
+    $routes->get('matriculas', 'AdminController::rematricula'); 
+    $routes->post('matriculas/store', 'AdminController::store'); // guarda en la BD
+
+
+    
     // $routes->get('setting', 'ConfigurationController::index');
     // $routes->post('setting/save_security_settings', 'ConfigurationController::saveSecuritySettings');
     // $routes->post('setting/save_smtp', 'ConfigurationController::saveSMTPConfig');
@@ -60,6 +64,9 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     // ///changepassword
     $routes->get('changepassword', 'ChangePasswordController::index');  // Cargar formulario
     $routes->post('changepassword/update', 'ChangePasswordController::updatePassword');  // Enviar formulario
+
+    $routes->get('asignaciones', 'AdminController::asignacion_academica');
+        $routes->post('asignaciones/buscar', 'AdminController::buscar_asignacion_academica');
 
 
 

@@ -1,0 +1,974 @@
+INFO - 2025-08-25 03:19:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-08-25 03:19:51 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in C:\laragon\www\NOVA\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\NOVA\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pr...', 0)
+#1 C:\laragon\www\NOVA\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 C:\laragon\www\NOVA\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 C:\laragon\www\NOVA\system\Database\BaseBuilder.php(2332): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 C:\laragon\www\NOVA\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\NOVA\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\NOVA\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\NOVA\app\Controllers\PruebaController.php(46): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\NOVA\system\CodeIgniter.php(933): App\Controllers\PruebaController->asignar()
+#9 C:\laragon\www\NOVA\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PruebaController))
+#10 C:\laragon\www\NOVA\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\NOVA\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\NOVA\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\NOVA\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2025-08-25 03:19:51 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+[Method: POST, Route: profesor/asignar_prueba]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2332): CodeIgniter\Database\BaseConnection->query('INSERT INTO `prueba_grupos` (`prueba_id`, `grupo_id`, `fecha_asignacion`, `fecha_limite`, `created_at`, `updated_at`) VALUES (:prueba_id:, :grupo_id:, :fecha_asignacion:, :fecha_limite:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\PruebaController.php(46): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PruebaController->asignar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PruebaController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-25 03:19:51 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `prueba_grupos` (`prueba_id`, `grupo_id`, `fecha_asignacion`, `fecha_limite`, `created_at`, `updated_at`) VALUES (\'6\', \'11\', \'2025-08-25 03:19:51\', \'\', \'2025-08-25 03:19:51\', \'2025-08-25 03:19:51\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `prueba_grupos` (`prueba_id`, `grupo_id`, `fecha_asignacion`, `fecha_limite`, `created_at`, `updated_at`) VALUES (\'6\', \'11\', \'2025-08-25 03:19:51\', \'\', \'2025-08-25 03:19:51\', \'2025-08-25 03:19:51\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2332): CodeIgniter\Database\BaseConnection->query('INSERT INTO `prueba_grupos` (`prueba_id`, `grupo_id`, `fecha_asignacion`, `fecha_limite`, `created_at`, `updated_at`) VALUES (:prueba_id:, :grupo_id:, :fecha_asignacion:, :fecha_limite:, :created_at:, :updated_at:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 7 APPPATH\Controllers\PruebaController.php(46): CodeIgniter\Model->insert([...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PruebaController->asignar()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PruebaController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-25 03:19:51 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `prueba_grupos` (`prueba_id`, `grupo_id`, `fecha_asignacion`, `fecha_limite`, `created_at`, `updated_at`) VALUES (\'6\', \'11\', \'2025-08-25 03:19:51\', \'\', \'2025-08-25 03:19:51\', \'2025-08-25 03:19:51\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `prueba_grupos` (`prueba_id`, `grupo_id`, `fecha_asignacion`, `fecha_limite`, `created_at`, `updated_at`) VALUES (\'6\', \'11\', \'2025-08-25 03:19:51\', \'\', \'2025-08-25 03:19:51\', \'2025-08-25 03:19:51\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `prueba_grupos` (`prueba_id`, `grupo_id`, `fecha_asignacion`, `fecha_limite`, `created_at`, `updated_at`) VALUES (\'6\', \'11\', \'2025-08-25 03:19:51\', \'\', \'2025-08-25 03:19:51\', \'2025-08-25 03:19:51\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2332): CodeIgniter\Database\BaseConnection->query('INSERT INTO `prueba_grupos` (`prueba_id`, `grupo_id`, `fecha_asignacion`, `fecha_limite`, `created_at`, `updated_at`) VALUES (:prueba_id:, :grupo_id:, :fecha_asignacion:, :fecha_limite:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], true)
+ 8 APPPATH\Controllers\PruebaController.php(46): CodeIgniter\Model->insert([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PruebaController->asignar()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PruebaController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-08-25 03:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:21:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:21:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:21:56 --> Recibiendo solicitud para mostrar datos de la tabla: grupos, campo: grado_id, id: 10
+INFO - 2025-08-25 03:21:56 --> Obteniendo datos de la tabla: grupos, id: 10, campo: grado_id
+INFO - 2025-08-25 03:21:56 --> Datos obtenidos de la tabla grupos: [{"id":"11","nombre":"9A","grado_id":"10","created_at":"2025-08-24 21:59:39","updated_at":"2025-08-24 21:59:39"}]
+INFO - 2025-08-25 03:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:22:00 --> Usuario autenticado con role_id: 
+INFO - 2025-08-25 03:23:38 --> El método authenticate fue llamado
+INFO - 2025-08-25 03:23:38 --> Intento de inicio de sesión para el usuario: diego.morales@estudiante.com
+INFO - 2025-08-25 03:23:38 --> Intento de inicio de sesión para el usuario: diego.morales@estudiante.com
+INFO - 2025-08-25 03:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-25 03:23:39 --> Grupo ID del estudiante: 4
+ERROR - 2025-08-25 03:23:39 --> mysqli_sql_exception: Table 'sistema_educativo.prueba_matriculas' doesn't exist in C:\laragon\www\NOVA\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\NOVA\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT g.id as ...', 0)
+#1 C:\laragon\www\NOVA\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT g.id as ...')
+#2 C:\laragon\www\NOVA\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT g.id as ...')
+#3 C:\laragon\www\NOVA\system\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT g.id as ...', Array, false)
+#4 C:\laragon\www\NOVA\app\Models\PruebasModel.php(99): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\NOVA\app\Controllers\EstudianteController.php(27): App\Models\PruebasModel->getDetallePruebasPorGrupo('4')
+#6 C:\laragon\www\NOVA\system\CodeIgniter.php(933): App\Controllers\EstudianteController->index()
+#7 C:\laragon\www\NOVA\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteController))
+#8 C:\laragon\www\NOVA\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\NOVA\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\NOVA\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\laragon\www\NOVA\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2025-08-25 03:23:39 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistema_educativo.prueba_matriculas' doesn't exist
+[Method: GET, Route: estudiante/home]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT g.id as grupo_id,
+                g.nombre as grupo,
+                gra.nombre as grado,
+                j.nombre as jornada,
+
+                p.id as prueba_id,
+                p.nombre as prueba_nombre,
+                p.descripcion as prueba_descripcion,
+                a.nombre as asignatura,
+
+                CONCAT(u.name, \' \', u.last_name) as profesor,
+                u.email as email_profesor,
+
+                pm.fecha_asignacion,
+                pm.fecha_limite,
+                CASE 
+                    WHEN pm.fecha_limite < NOW() THEN \'VENCIDA\'
+                    WHEN pm.activa = 1 THEN \'ACTIVA\'
+                    ELSE \'INACTIVA\'
+                END as estado_prueba,
+
+                (SELECT COUNT(*) FROM preguntas pr WHERE pr.prueba_id = p.id) as total_preguntas,
+                (SELECT COUNT(*) FROM lecturas l WHERE l.prueba_id = p.id) as total_lecturas,
+
+                COUNT(DISTINCT m.user_id) as total_estudiantes_grupo,
+                COUNT(DISTINCT r.estudiante_id) as estudiantes_participaron,
+                ROUND(
+                    CASE 
+                        WHEN COUNT(DISTINCT m.user_id) > 0 THEN
+                            (COUNT(DISTINCT r.estudiante_id) * 100.0 / COUNT(DISTINCT m.user_id))
+                        ELSE 0 
+                    END, 2
+                ) as porcentaje_participacion
+FROM `pruebas` `p`
+JOIN `prueba_matriculas` `pm` ON `p`.`id` = `pm`.`prueba_id`
+JOIN `matriculas` `m` ON `pm`.`matricula_id` = `m`.`id`
+JOIN `grupos` `g` ON `m`.`grupo_id` = `g`.`id`
+JOIN `grados` `gra` ON `g`.`grado_id` = `gra`.`id`
+JOIN `jornadas` `j` ON `m`.`jornada_id` = `j`.`id`
+JOIN `asignaturas` `a` ON `p`.`asignatura_id` = `a`.`id`
+JOIN `users` `u` ON `p`.`profesor_id` = `u`.`id`
+LEFT JOIN `preguntas` `pr` ON `p`.`id` = `pr`.`prueba_id`
+LEFT JOIN `respuestas` `r` ON `pr`.`id` = `r`.`pregunta_id` AND `r`.`estudiante_id` = `m`.`user_id`
+WHERE `g`.`id` = :g.id:
+GROUP BY g.id, g.nombre, gra.nombre, j.nombre,
+                p.id, p.nombre, p.descripcion, a.nombre,
+                u.name, u.last_name, u.email,
+                pm.fecha_asignacion, pm.fecha_limite, pm.activa
+ORDER BY `pm`.`fecha_asignacion` DESC', [...], false)
+ 2 APPPATH\Models\PruebasModel.php(99): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\EstudianteController.php(27): App\Models\PruebasModel->getDetallePruebasPorGrupo('4')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EstudianteController->index()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-25 03:23:39 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'sistema_educativo.prueba_matriculas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT g.id as grupo_id,
+                g.nombre as grupo,
+                gra.nombre as grado,
+                j.nombre as jornada,
+
+                p.id as prueba_id,
+                p.nombre as prueba_nombre,
+                p.descripcion as prueba_descripcion,
+                a.nombre as asignatura,
+
+                CONCAT(u.name, \' \', u.last_name) as profesor,
+                u.email as email_profesor,
+
+                pm.fecha_asignacion,
+                pm.fecha_limite,
+                CASE 
+                    WHEN pm.fecha_limite < NOW() THEN \'VENCIDA\'
+                    WHEN pm.activa = 1 THEN \'ACTIVA\'
+                    ELSE \'INACTIVA\'
+                END as estado_prueba,
+
+                (SELECT COUNT(*) FROM preguntas pr WHERE pr.prueba_id = p.id) as total_preguntas,
+                (SELECT COUNT(*) FROM lecturas l WHERE l.prueba_id = p.id) as total_lecturas,
+
+                COUNT(DISTINCT m.user_id) as total_estudiantes_grupo,
+                COUNT(DISTINCT r.estudiante_id) as estudiantes_participaron,
+                ROUND(
+                    CASE 
+                        WHEN COUNT(DISTINCT m.user_id) > 0 THEN
+                            (COUNT(DISTINCT r.estudiante_id) * 100.0 / COUNT(DISTINCT m.user_id))
+                        ELSE 0 
+                    END, 2
+                ) as porcentaje_participacion
+FROM `pruebas` `p`
+JOIN `prueba_matriculas` `pm` ON `p`.`id` = `pm`.`prueba_id`
+JOIN `matriculas` `m` ON `pm`.`matricula_id` = `m`.`id`
+JOIN `grupos` `g` ON `m`.`grupo_id` = `g`.`id`
+JOIN `grados` `gra` ON `g`.`grado_id` = `gra`.`id`
+JOIN `jornadas` `j` ON `m`.`jornada_id` = `j`.`id`
+JOIN `asignaturas` `a` ON `p`.`asignatura_id` = `a`.`id`
+JOIN `users` `u` ON `p`.`profesor_id` = `u`.`id`
+LEFT JOIN `preguntas` `pr` ON `p`.`id` = `pr`.`prueba_id`
+LEFT JOIN `respuestas` `r` ON `pr`.`id` = `r`.`pregunta_id` AND `r`.`estudiante_id` = `m`.`user_id`
+WHERE `g`.`id` = \'4\'
+GROUP BY g.id, g.nombre, gra.nombre, j.nombre,
+                p.id, p.nombre, p.descripcion, a.nombre,
+                u.name, u.last_name, u.email,
+                pm.fecha_asignacion, pm.fecha_limite, pm.activa
+ORDER BY `pm`.`fecha_asignacion` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT g.id as grupo_id,
+                g.nombre as grupo,
+                gra.nombre as grado,
+                j.nombre as jornada,
+
+                p.id as prueba_id,
+                p.nombre as prueba_nombre,
+                p.descripcion as prueba_descripcion,
+                a.nombre as asignatura,
+
+                CONCAT(u.name, \' \', u.last_name) as profesor,
+                u.email as email_profesor,
+
+                pm.fecha_asignacion,
+                pm.fecha_limite,
+                CASE 
+                    WHEN pm.fecha_limite < NOW() THEN \'VENCIDA\'
+                    WHEN pm.activa = 1 THEN \'ACTIVA\'
+                    ELSE \'INACTIVA\'
+                END as estado_prueba,
+
+                (SELECT COUNT(*) FROM preguntas pr WHERE pr.prueba_id = p.id) as total_preguntas,
+                (SELECT COUNT(*) FROM lecturas l WHERE l.prueba_id = p.id) as total_lecturas,
+
+                COUNT(DISTINCT m.user_id) as total_estudiantes_grupo,
+                COUNT(DISTINCT r.estudiante_id) as estudiantes_participaron,
+                ROUND(
+                    CASE 
+                        WHEN COUNT(DISTINCT m.user_id) > 0 THEN
+                            (COUNT(DISTINCT r.estudiante_id) * 100.0 / COUNT(DISTINCT m.user_id))
+                        ELSE 0 
+                    END, 2
+                ) as porcentaje_participacion
+FROM `pruebas` `p`
+JOIN `prueba_matriculas` `pm` ON `p`.`id` = `pm`.`prueba_id`
+JOIN `matriculas` `m` ON `pm`.`matricula_id` = `m`.`id`
+JOIN `grupos` `g` ON `m`.`grupo_id` = `g`.`id`
+JOIN `grados` `gra` ON `g`.`grado_id` = `gra`.`id`
+JOIN `jornadas` `j` ON `m`.`jornada_id` = `j`.`id`
+JOIN `asignaturas` `a` ON `p`.`asignatura_id` = `a`.`id`
+JOIN `users` `u` ON `p`.`profesor_id` = `u`.`id`
+LEFT JOIN `preguntas` `pr` ON `p`.`id` = `pr`.`prueba_id`
+LEFT JOIN `respuestas` `r` ON `pr`.`id` = `r`.`pregunta_id` AND `r`.`estudiante_id` = `m`.`user_id`
+WHERE `g`.`id` = \'4\'
+GROUP BY g.id, g.nombre, gra.nombre, j.nombre,
+                p.id, p.nombre, p.descripcion, a.nombre,
+                u.name, u.last_name, u.email,
+                pm.fecha_asignacion, pm.fecha_limite, pm.activa
+ORDER BY `pm`.`fecha_asignacion` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT g.id as grupo_id,
+                g.nombre as grupo,
+                gra.nombre as grado,
+                j.nombre as jornada,
+
+                p.id as prueba_id,
+                p.nombre as prueba_nombre,
+                p.descripcion as prueba_descripcion,
+                a.nombre as asignatura,
+
+                CONCAT(u.name, \' \', u.last_name) as profesor,
+                u.email as email_profesor,
+
+                pm.fecha_asignacion,
+                pm.fecha_limite,
+                CASE 
+                    WHEN pm.fecha_limite < NOW() THEN \'VENCIDA\'
+                    WHEN pm.activa = 1 THEN \'ACTIVA\'
+                    ELSE \'INACTIVA\'
+                END as estado_prueba,
+
+                (SELECT COUNT(*) FROM preguntas pr WHERE pr.prueba_id = p.id) as total_preguntas,
+                (SELECT COUNT(*) FROM lecturas l WHERE l.prueba_id = p.id) as total_lecturas,
+
+                COUNT(DISTINCT m.user_id) as total_estudiantes_grupo,
+                COUNT(DISTINCT r.estudiante_id) as estudiantes_participaron,
+                ROUND(
+                    CASE 
+                        WHEN COUNT(DISTINCT m.user_id) > 0 THEN
+                            (COUNT(DISTINCT r.estudiante_id) * 100.0 / COUNT(DISTINCT m.user_id))
+                        ELSE 0 
+                    END, 2
+                ) as porcentaje_participacion
+FROM `pruebas` `p`
+JOIN `prueba_matriculas` `pm` ON `p`.`id` = `pm`.`prueba_id`
+JOIN `matriculas` `m` ON `pm`.`matricula_id` = `m`.`id`
+JOIN `grupos` `g` ON `m`.`grupo_id` = `g`.`id`
+JOIN `grados` `gra` ON `g`.`grado_id` = `gra`.`id`
+JOIN `jornadas` `j` ON `m`.`jornada_id` = `j`.`id`
+JOIN `asignaturas` `a` ON `p`.`asignatura_id` = `a`.`id`
+JOIN `users` `u` ON `p`.`profesor_id` = `u`.`id`
+LEFT JOIN `preguntas` `pr` ON `p`.`id` = `pr`.`prueba_id`
+LEFT JOIN `respuestas` `r` ON `pr`.`id` = `r`.`pregunta_id` AND `r`.`estudiante_id` = `m`.`user_id`
+WHERE `g`.`id` = :g.id:
+GROUP BY g.id, g.nombre, gra.nombre, j.nombre,
+                p.id, p.nombre, p.descripcion, a.nombre,
+                u.name, u.last_name, u.email,
+                pm.fecha_asignacion, pm.fecha_limite, pm.activa
+ORDER BY `pm`.`fecha_asignacion` DESC', [...], false)
+ 4 APPPATH\Models\PruebasModel.php(99): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\EstudianteController.php(27): App\Models\PruebasModel->getDetallePruebasPorGrupo('4')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EstudianteController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2025-08-25 03:23:39 --> [Caused by] mysqli_sql_exception: Table 'sistema_educativo.prueba_matriculas' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT g.id as grupo_id,
+                g.nombre as grupo,
+                gra.nombre as grado,
+                j.nombre as jornada,
+
+                p.id as prueba_id,
+                p.nombre as prueba_nombre,
+                p.descripcion as prueba_descripcion,
+                a.nombre as asignatura,
+
+                CONCAT(u.name, \' \', u.last_name) as profesor,
+                u.email as email_profesor,
+
+                pm.fecha_asignacion,
+                pm.fecha_limite,
+                CASE 
+                    WHEN pm.fecha_limite < NOW() THEN \'VENCIDA\'
+                    WHEN pm.activa = 1 THEN \'ACTIVA\'
+                    ELSE \'INACTIVA\'
+                END as estado_prueba,
+
+                (SELECT COUNT(*) FROM preguntas pr WHERE pr.prueba_id = p.id) as total_preguntas,
+                (SELECT COUNT(*) FROM lecturas l WHERE l.prueba_id = p.id) as total_lecturas,
+
+                COUNT(DISTINCT m.user_id) as total_estudiantes_grupo,
+                COUNT(DISTINCT r.estudiante_id) as estudiantes_participaron,
+                ROUND(
+                    CASE 
+                        WHEN COUNT(DISTINCT m.user_id) > 0 THEN
+                            (COUNT(DISTINCT r.estudiante_id) * 100.0 / COUNT(DISTINCT m.user_id))
+                        ELSE 0 
+                    END, 2
+                ) as porcentaje_participacion
+FROM `pruebas` `p`
+JOIN `prueba_matriculas` `pm` ON `p`.`id` = `pm`.`prueba_id`
+JOIN `matriculas` `m` ON `pm`.`matricula_id` = `m`.`id`
+JOIN `grupos` `g` ON `m`.`grupo_id` = `g`.`id`
+JOIN `grados` `gra` ON `g`.`grado_id` = `gra`.`id`
+JOIN `jornadas` `j` ON `m`.`jornada_id` = `j`.`id`
+JOIN `asignaturas` `a` ON `p`.`asignatura_id` = `a`.`id`
+JOIN `users` `u` ON `p`.`profesor_id` = `u`.`id`
+LEFT JOIN `preguntas` `pr` ON `p`.`id` = `pr`.`prueba_id`
+LEFT JOIN `respuestas` `r` ON `pr`.`id` = `r`.`pregunta_id` AND `r`.`estudiante_id` = `m`.`user_id`
+WHERE `g`.`id` = \'4\'
+GROUP BY g.id, g.nombre, gra.nombre, j.nombre,
+                p.id, p.nombre, p.descripcion, a.nombre,
+                u.name, u.last_name, u.email,
+                pm.fecha_asignacion, pm.fecha_limite, pm.activa
+ORDER BY `pm`.`fecha_asignacion` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT g.id as grupo_id,
+                g.nombre as grupo,
+                gra.nombre as grado,
+                j.nombre as jornada,
+
+                p.id as prueba_id,
+                p.nombre as prueba_nombre,
+                p.descripcion as prueba_descripcion,
+                a.nombre as asignatura,
+
+                CONCAT(u.name, \' \', u.last_name) as profesor,
+                u.email as email_profesor,
+
+                pm.fecha_asignacion,
+                pm.fecha_limite,
+                CASE 
+                    WHEN pm.fecha_limite < NOW() THEN \'VENCIDA\'
+                    WHEN pm.activa = 1 THEN \'ACTIVA\'
+                    ELSE \'INACTIVA\'
+                END as estado_prueba,
+
+                (SELECT COUNT(*) FROM preguntas pr WHERE pr.prueba_id = p.id) as total_preguntas,
+                (SELECT COUNT(*) FROM lecturas l WHERE l.prueba_id = p.id) as total_lecturas,
+
+                COUNT(DISTINCT m.user_id) as total_estudiantes_grupo,
+                COUNT(DISTINCT r.estudiante_id) as estudiantes_participaron,
+                ROUND(
+                    CASE 
+                        WHEN COUNT(DISTINCT m.user_id) > 0 THEN
+                            (COUNT(DISTINCT r.estudiante_id) * 100.0 / COUNT(DISTINCT m.user_id))
+                        ELSE 0 
+                    END, 2
+                ) as porcentaje_participacion
+FROM `pruebas` `p`
+JOIN `prueba_matriculas` `pm` ON `p`.`id` = `pm`.`prueba_id`
+JOIN `matriculas` `m` ON `pm`.`matricula_id` = `m`.`id`
+JOIN `grupos` `g` ON `m`.`grupo_id` = `g`.`id`
+JOIN `grados` `gra` ON `g`.`grado_id` = `gra`.`id`
+JOIN `jornadas` `j` ON `m`.`jornada_id` = `j`.`id`
+JOIN `asignaturas` `a` ON `p`.`asignatura_id` = `a`.`id`
+JOIN `users` `u` ON `p`.`profesor_id` = `u`.`id`
+LEFT JOIN `preguntas` `pr` ON `p`.`id` = `pr`.`prueba_id`
+LEFT JOIN `respuestas` `r` ON `pr`.`id` = `r`.`pregunta_id` AND `r`.`estudiante_id` = `m`.`user_id`
+WHERE `g`.`id` = \'4\'
+GROUP BY g.id, g.nombre, gra.nombre, j.nombre,
+                p.id, p.nombre, p.descripcion, a.nombre,
+                u.name, u.last_name, u.email,
+                pm.fecha_asignacion, pm.fecha_limite, pm.activa
+ORDER BY `pm`.`fecha_asignacion` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT g.id as grupo_id,
+                g.nombre as grupo,
+                gra.nombre as grado,
+                j.nombre as jornada,
+
+                p.id as prueba_id,
+                p.nombre as prueba_nombre,
+                p.descripcion as prueba_descripcion,
+                a.nombre as asignatura,
+
+                CONCAT(u.name, \' \', u.last_name) as profesor,
+                u.email as email_profesor,
+
+                pm.fecha_asignacion,
+                pm.fecha_limite,
+                CASE 
+                    WHEN pm.fecha_limite < NOW() THEN \'VENCIDA\'
+                    WHEN pm.activa = 1 THEN \'ACTIVA\'
+                    ELSE \'INACTIVA\'
+                END as estado_prueba,
+
+                (SELECT COUNT(*) FROM preguntas pr WHERE pr.prueba_id = p.id) as total_preguntas,
+                (SELECT COUNT(*) FROM lecturas l WHERE l.prueba_id = p.id) as total_lecturas,
+
+                COUNT(DISTINCT m.user_id) as total_estudiantes_grupo,
+                COUNT(DISTINCT r.estudiante_id) as estudiantes_participaron,
+                ROUND(
+                    CASE 
+                        WHEN COUNT(DISTINCT m.user_id) > 0 THEN
+                            (COUNT(DISTINCT r.estudiante_id) * 100.0 / COUNT(DISTINCT m.user_id))
+                        ELSE 0 
+                    END, 2
+                ) as porcentaje_participacion
+FROM `pruebas` `p`
+JOIN `prueba_matriculas` `pm` ON `p`.`id` = `pm`.`prueba_id`
+JOIN `matriculas` `m` ON `pm`.`matricula_id` = `m`.`id`
+JOIN `grupos` `g` ON `m`.`grupo_id` = `g`.`id`
+JOIN `grados` `gra` ON `g`.`grado_id` = `gra`.`id`
+JOIN `jornadas` `j` ON `m`.`jornada_id` = `j`.`id`
+JOIN `asignaturas` `a` ON `p`.`asignatura_id` = `a`.`id`
+JOIN `users` `u` ON `p`.`profesor_id` = `u`.`id`
+LEFT JOIN `preguntas` `pr` ON `p`.`id` = `pr`.`prueba_id`
+LEFT JOIN `respuestas` `r` ON `pr`.`id` = `r`.`pregunta_id` AND `r`.`estudiante_id` = `m`.`user_id`
+WHERE `g`.`id` = \'4\'
+GROUP BY g.id, g.nombre, gra.nombre, j.nombre,
+                p.id, p.nombre, p.descripcion, a.nombre,
+                u.name, u.last_name, u.email,
+                pm.fecha_asignacion, pm.fecha_limite, pm.activa
+ORDER BY `pm`.`fecha_asignacion` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1636): CodeIgniter\Database\BaseConnection->query('SELECT g.id as grupo_id,
+                g.nombre as grupo,
+                gra.nombre as grado,
+                j.nombre as jornada,
+
+                p.id as prueba_id,
+                p.nombre as prueba_nombre,
+                p.descripcion as prueba_descripcion,
+                a.nombre as asignatura,
+
+                CONCAT(u.name, \' \', u.last_name) as profesor,
+                u.email as email_profesor,
+
+                pm.fecha_asignacion,
+                pm.fecha_limite,
+                CASE 
+                    WHEN pm.fecha_limite < NOW() THEN \'VENCIDA\'
+                    WHEN pm.activa = 1 THEN \'ACTIVA\'
+                    ELSE \'INACTIVA\'
+                END as estado_prueba,
+
+                (SELECT COUNT(*) FROM preguntas pr WHERE pr.prueba_id = p.id) as total_preguntas,
+                (SELECT COUNT(*) FROM lecturas l WHERE l.prueba_id = p.id) as total_lecturas,
+
+                COUNT(DISTINCT m.user_id) as total_estudiantes_grupo,
+                COUNT(DISTINCT r.estudiante_id) as estudiantes_participaron,
+                ROUND(
+                    CASE 
+                        WHEN COUNT(DISTINCT m.user_id) > 0 THEN
+                            (COUNT(DISTINCT r.estudiante_id) * 100.0 / COUNT(DISTINCT m.user_id))
+                        ELSE 0 
+                    END, 2
+                ) as porcentaje_participacion
+FROM `pruebas` `p`
+JOIN `prueba_matriculas` `pm` ON `p`.`id` = `pm`.`prueba_id`
+JOIN `matriculas` `m` ON `pm`.`matricula_id` = `m`.`id`
+JOIN `grupos` `g` ON `m`.`grupo_id` = `g`.`id`
+JOIN `grados` `gra` ON `g`.`grado_id` = `gra`.`id`
+JOIN `jornadas` `j` ON `m`.`jornada_id` = `j`.`id`
+JOIN `asignaturas` `a` ON `p`.`asignatura_id` = `a`.`id`
+JOIN `users` `u` ON `p`.`profesor_id` = `u`.`id`
+LEFT JOIN `preguntas` `pr` ON `p`.`id` = `pr`.`prueba_id`
+LEFT JOIN `respuestas` `r` ON `pr`.`id` = `r`.`pregunta_id` AND `r`.`estudiante_id` = `m`.`user_id`
+WHERE `g`.`id` = :g.id:
+GROUP BY g.id, g.nombre, gra.nombre, j.nombre,
+                p.id, p.nombre, p.descripcion, a.nombre,
+                u.name, u.last_name, u.email,
+                pm.fecha_asignacion, pm.fecha_limite, pm.activa
+ORDER BY `pm`.`fecha_asignacion` DESC', [...], false)
+ 5 APPPATH\Models\PruebasModel.php(99): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\EstudianteController.php(27): App\Models\PruebasModel->getDetallePruebasPorGrupo('4')
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\EstudianteController->index()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EstudianteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2025-08-25 03:28:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-25 03:28:17 --> Grupo ID del estudiante: 4
+DEBUG - 2025-08-25 03:28:17 --> Pruebas encontradas: Array
+(
+    [0] => Array
+        (
+            [grupo_id] => 4
+            [grupo] => 2A
+            [grado] => Segundo
+            [jornada] => Tarde
+            [prueba_id] => 3
+            [prueba_nombre] => Los Seres Vivos
+            [prueba_descripcion] => Evaluación sobre características de los seres vivos
+            [asignatura] => Ciencias Naturales
+            [profesor] => Ana López
+            [email_profesor] => ana.lopez@colegiosanjose.edu.co
+            [fecha_asignacion] => 2025-08-24 21:59:40
+            [fecha_limite] => 2024-09-25 23:59:59
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 2
+            [total_lecturas] => 0
+            [total_estudiantes_grupo] => 2
+            [estudiantes_participaron] => 2
+            [porcentaje_participacion] => 100.00
+        )
+
+    [1] => Array
+        (
+            [grupo_id] => 4
+            [grupo] => 2A
+            [grado] => Segundo
+            [jornada] => Tarde
+            [prueba_id] => 4
+            [prueba_nombre] => Mi Comunidad
+            [prueba_descripcion] => Evaluación sobre la comunidad y sus características
+            [asignatura] => Ciencias Sociales
+            [profesor] => Pedro González
+            [email_profesor] => pedro.gonzalez@colegiosanjose.edu.co
+            [fecha_asignacion] => 2025-08-24 21:59:40
+            [fecha_limite] => 2024-09-30 23:59:59
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 2
+            [total_lecturas] => 0
+            [total_estudiantes_grupo] => 2
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+)
+
+INFO - 2025-08-25 03:28:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:28:20 --> Cargando prueba con ID: 3
+INFO - 2025-08-25 03:28:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-25 03:28:23 --> Grupo ID del estudiante: 4
+DEBUG - 2025-08-25 03:28:23 --> Pruebas encontradas: Array
+(
+    [0] => Array
+        (
+            [grupo_id] => 4
+            [grupo] => 2A
+            [grado] => Segundo
+            [jornada] => Tarde
+            [prueba_id] => 3
+            [prueba_nombre] => Los Seres Vivos
+            [prueba_descripcion] => Evaluación sobre características de los seres vivos
+            [asignatura] => Ciencias Naturales
+            [profesor] => Ana López
+            [email_profesor] => ana.lopez@colegiosanjose.edu.co
+            [fecha_asignacion] => 2025-08-24 21:59:40
+            [fecha_limite] => 2024-09-25 23:59:59
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 2
+            [total_lecturas] => 0
+            [total_estudiantes_grupo] => 2
+            [estudiantes_participaron] => 2
+            [porcentaje_participacion] => 100.00
+        )
+
+    [1] => Array
+        (
+            [grupo_id] => 4
+            [grupo] => 2A
+            [grado] => Segundo
+            [jornada] => Tarde
+            [prueba_id] => 4
+            [prueba_nombre] => Mi Comunidad
+            [prueba_descripcion] => Evaluación sobre la comunidad y sus características
+            [asignatura] => Ciencias Sociales
+            [profesor] => Pedro González
+            [email_profesor] => pedro.gonzalez@colegiosanjose.edu.co
+            [fecha_asignacion] => 2025-08-24 21:59:40
+            [fecha_limite] => 2024-09-30 23:59:59
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 2
+            [total_lecturas] => 0
+            [total_estudiantes_grupo] => 2
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+)
+
+INFO - 2025-08-25 03:28:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:28:25 --> Cargando prueba con ID: 4
+INFO - 2025-08-25 03:28:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:28:29 --> Cargando prueba con ID: 3
+INFO - 2025-08-25 03:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:28:33 --> Cargando prueba con ID: 4
+INFO - 2025-08-25 03:28:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:28:33 --> Cargando prueba con ID: 4
+INFO - 2025-08-25 03:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:29:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:29:12 --> Usuario autenticado con role_id: 
+INFO - 2025-08-25 03:29:21 --> El método authenticate fue llamado
+INFO - 2025-08-25 03:29:21 --> Intento de inicio de sesión para el usuario: admin@colegiosanjose.edu.co
+INFO - 2025-08-25 03:29:21 --> Intento de inicio de sesión para el usuario: admin@colegiosanjose.edu.co
+INFO - 2025-08-25 03:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:29:25 --> Acceso a la vista de cambio de contraseña.
+INFO - 2025-08-25 03:29:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:29:50 --> Iniciando el método addUser()
+INFO - 2025-08-25 03:29:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:30:09 --> Recibiendo solicitud para mostrar datos de la tabla: grupos, campo: grado_id, id: 10
+INFO - 2025-08-25 03:30:09 --> Obteniendo datos de la tabla: grupos, id: 10, campo: grado_id
+INFO - 2025-08-25 03:30:09 --> Datos obtenidos de la tabla grupos: [{"id":"11","nombre":"9A","grado_id":"10","created_at":"2025-08-24 21:59:39","updated_at":"2025-08-24 21:59:39"}]
+INFO - 2025-08-25 03:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:30:41 --> Iniciando el método addUser()
+INFO - 2025-08-25 03:30:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:30:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:30:54 --> Usuario autenticado con role_id: 
+INFO - 2025-08-25 03:31:02 --> El método authenticate fue llamado
+INFO - 2025-08-25 03:31:02 --> Intento de inicio de sesión para el usuario: marvin.santos@soy.sena.edu.co
+INFO - 2025-08-25 03:31:02 --> Intento de inicio de sesión para el usuario: marvin.santos@soy.sena.edu.co
+INFO - 2025-08-25 03:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:31:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:31:02 --> Usuario autenticado con role_id: 
+INFO - 2025-08-25 03:31:27 --> El método authenticate fue llamado
+INFO - 2025-08-25 03:31:27 --> Intento de inicio de sesión para el usuario: admin@siares.com
+INFO - 2025-08-25 03:31:27 --> Intento de inicio de sesión para el usuario: admin@siares.com
+INFO - 2025-08-25 03:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:31:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:31:27 --> Usuario autenticado con role_id: 
+INFO - 2025-08-25 03:31:41 --> El método authenticate fue llamado
+INFO - 2025-08-25 03:31:41 --> Intento de inicio de sesión para el usuario: marvin.santos@soy.sena.edu.co
+INFO - 2025-08-25 03:31:41 --> Intento de inicio de sesión para el usuario: marvin.santos@soy.sena.edu.co
+INFO - 2025-08-25 03:31:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:31:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:31:42 --> Usuario autenticado con role_id: 
+INFO - 2025-08-25 03:31:54 --> El método authenticate fue llamado
+INFO - 2025-08-25 03:31:54 --> Intento de inicio de sesión para el usuario: marvin.santos@soy.sena.edu.co
+INFO - 2025-08-25 03:31:54 --> Intento de inicio de sesión para el usuario: marvin.santos@soy.sena.edu.co
+INFO - 2025-08-25 03:31:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:31:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:31:59 --> Cargando asignaturas para el profesor ID: 18
+INFO - 2025-08-25 03:32:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:32:39 --> Cargando prueba con ID: 7
+INFO - 2025-08-25 03:32:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:32:49 --> Recibiendo solicitud para mostrar datos de la tabla: grupos, campo: grado_id, id: 11
+INFO - 2025-08-25 03:32:49 --> Obteniendo datos de la tabla: grupos, id: 11, campo: grado_id
+INFO - 2025-08-25 03:32:49 --> Datos obtenidos de la tabla grupos: [{"id":"12","nombre":"10A","grado_id":"11","created_at":"2025-08-24 21:59:39","updated_at":"2025-08-24 21:59:39"}]
+INFO - 2025-08-25 03:32:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:32:50 --> Recibiendo solicitud para mostrar datos de la tabla: grupos, campo: grado_id, id: 10
+INFO - 2025-08-25 03:32:50 --> Obteniendo datos de la tabla: grupos, id: 10, campo: grado_id
+INFO - 2025-08-25 03:32:50 --> Datos obtenidos de la tabla grupos: [{"id":"11","nombre":"9A","grado_id":"10","created_at":"2025-08-24 21:59:39","updated_at":"2025-08-24 21:59:39"}]
+INFO - 2025-08-25 03:33:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:33:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:33:09 --> Usuario autenticado con role_id: 
+INFO - 2025-08-25 03:33:15 --> El método authenticate fue llamado
+INFO - 2025-08-25 03:33:15 --> Intento de inicio de sesión para el usuario: mesp3127@gmail.com
+INFO - 2025-08-25 03:33:15 --> Intento de inicio de sesión para el usuario: mesp3127@gmail.com
+INFO - 2025-08-25 03:33:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-25 03:33:16 --> Grupo ID del estudiante: 11
+DEBUG - 2025-08-25 03:33:16 --> Pruebas encontradas: Array
+(
+    [0] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 7
+            [prueba_nombre] => PRUEBA DE COMPRENSIÓN LECTORA Y PREGUNTAS SUELTAS
+            [prueba_descripcion] => waerawerawer
+            [asignatura] => Español
+            [profesor] => MARVIN PEREZ
+            [email_profesor] => marvin.santos@soy.sena.edu.co
+            [fecha_asignacion] => 2025-08-25 03:33:02
+            [fecha_limite] => 0000-00-00 00:00:00
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 2
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+    [1] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 6
+            [prueba_nombre] => PRUEBA DE COMPRENSIÓN LECTORA Y PREGUNTAS SUELTAS
+            [prueba_descripcion] => azdfgadzfg asdfgadsfg
+            [asignatura] => Español
+            [profesor] => Pedro González
+            [email_profesor] => pedro.gonzalez@colegiosanjose.edu.co
+            [fecha_asignacion] => 2025-08-25 03:21:27
+            [fecha_limite] => 0000-00-00 00:00:00
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 5
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+)
+
+INFO - 2025-08-25 03:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:34:06 --> Cargando prueba con ID: 7
+INFO - 2025-08-25 03:48:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-25 03:48:48 --> Grupo ID del estudiante: 11
+DEBUG - 2025-08-25 03:48:48 --> Pruebas encontradas: Array
+(
+    [0] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 6
+            [prueba_nombre] => PRUEBA DE COMPRENSIÓN LECTORA Y PREGUNTAS SUELTAS
+            [prueba_descripcion] => azdfgadzfg asdfgadsfg
+            [asignatura] => Español
+            [profesor] => Pedro González
+            [email_profesor] => pedro.gonzalez@colegiosanjose.edu.co
+            [fecha_asignacion] => 2025-08-25 03:21:27
+            [fecha_limite] => 0000-00-00 00:00:00
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 5
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+)
+
+INFO - 2025-08-25 03:48:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:48:50 --> Cargando prueba con ID: 6
+INFO - 2025-08-25 03:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-25 03:48:52 --> Grupo ID del estudiante: 11
+DEBUG - 2025-08-25 03:48:52 --> Pruebas encontradas: Array
+(
+    [0] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 6
+            [prueba_nombre] => PRUEBA DE COMPRENSIÓN LECTORA Y PREGUNTAS SUELTAS
+            [prueba_descripcion] => azdfgadzfg asdfgadsfg
+            [asignatura] => Español
+            [profesor] => Pedro González
+            [email_profesor] => pedro.gonzalez@colegiosanjose.edu.co
+            [fecha_asignacion] => 2025-08-25 03:21:27
+            [fecha_limite] => 0000-00-00 00:00:00
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 5
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+)
+
+INFO - 2025-08-25 03:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-25 03:49:55 --> Grupo ID del estudiante: 11
+DEBUG - 2025-08-25 03:49:55 --> Pruebas encontradas: Array
+(
+    [0] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 6
+            [prueba_nombre] => PRUEBA DE COMPRENSIÓN LECTORA Y PREGUNTAS SUELTAS
+            [prueba_descripcion] => azdfgadzfg asdfgadsfg
+            [asignatura] => Español
+            [profesor] => Pedro González
+            [email_profesor] => pedro.gonzalez@colegiosanjose.edu.co
+            [fecha_asignacion] => 2025-08-25 03:21:27
+            [fecha_limite] => 0000-00-00 00:00:00
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 5
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+)
+
+INFO - 2025-08-25 03:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-25 03:49:56 --> Grupo ID del estudiante: 11
+DEBUG - 2025-08-25 03:49:56 --> Pruebas encontradas: Array
+(
+    [0] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 6
+            [prueba_nombre] => PRUEBA DE COMPRENSIÓN LECTORA Y PREGUNTAS SUELTAS
+            [prueba_descripcion] => azdfgadzfg asdfgadsfg
+            [asignatura] => Español
+            [profesor] => Pedro González
+            [email_profesor] => pedro.gonzalez@colegiosanjose.edu.co
+            [fecha_asignacion] => 2025-08-25 03:21:27
+            [fecha_limite] => 0000-00-00 00:00:00
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 5
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+)
+
+INFO - 2025-08-25 03:50:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-25 03:50:07 --> Grupo ID del estudiante: 11
+DEBUG - 2025-08-25 03:50:07 --> Pruebas encontradas: Array
+(
+    [0] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 6
+            [prueba_nombre] => PRUEBA DE COMPRENSIÓN LECTORA Y PREGUNTAS SUELTAS
+            [prueba_descripcion] => azdfgadzfg asdfgadsfg
+            [asignatura] => Español
+            [profesor] => Pedro González
+            [email_profesor] => pedro.gonzalez@colegiosanjose.edu.co
+            [fecha_asignacion] => 2025-08-25 03:21:27
+            [fecha_limite] => 0000-00-00 00:00:00
+            [estado_prueba] => VENCIDA
+            [total_preguntas] => 5
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+)
+
+INFO - 2025-08-25 03:50:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-25 03:50:13 --> Grupo ID del estudiante: 11
+DEBUG - 2025-08-25 03:50:13 --> Pruebas encontradas: Array
+(
+)
+
+INFO - 2025-08-25 03:52:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-25 03:52:41 --> Grupo ID del estudiante: 11
+DEBUG - 2025-08-25 03:52:41 --> Pruebas encontradas: Array
+(
+)
+
+INFO - 2025-08-25 03:54:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-25 03:54:10 --> Grupo ID del estudiante: 11
+DEBUG - 2025-08-25 03:54:10 --> Pruebas encontradas: Array
+(
+    [0] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 7
+            [prueba_nombre] => PRUEBA DE COMPRENSIÓN LECTORA Y PREGUNTAS SUELTAS
+            [prueba_descripcion] => waerawerawer
+            [asignatura] => Español
+            [profesor] => MARVIN PEREZ
+            [email_profesor] => marvin.santos@soy.sena.edu.co
+            [fecha_asignacion] => 2025-08-24 21:59:40
+            [fecha_limite] => 2025-08-30 21:59:40
+            [estado_prueba] => ACTIVA
+            [total_preguntas] => 2
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+)
+
+INFO - 2025-08-25 03:54:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 03:54:18 --> Cargando prueba con ID: 7
+INFO - 2025-08-25 03:54:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-25 03:54:19 --> Grupo ID del estudiante: 11
+DEBUG - 2025-08-25 03:54:19 --> Pruebas encontradas: Array
+(
+    [0] => Array
+        (
+            [grupo_id] => 11
+            [grupo] => 9A
+            [grado] => Noveno
+            [jornada] => Mañana
+            [prueba_id] => 7
+            [prueba_nombre] => PRUEBA DE COMPRENSIÓN LECTORA Y PREGUNTAS SUELTAS
+            [prueba_descripcion] => waerawerawer
+            [asignatura] => Español
+            [profesor] => MARVIN PEREZ
+            [email_profesor] => marvin.santos@soy.sena.edu.co
+            [fecha_asignacion] => 2025-08-24 21:59:40
+            [fecha_limite] => 2025-08-30 21:59:40
+            [estado_prueba] => ACTIVA
+            [total_preguntas] => 2
+            [total_lecturas] => 1
+            [total_estudiantes_grupo] => 1
+            [estudiantes_participaron] => 0
+            [porcentaje_participacion] => 0.00
+        )
+
+)
+
+INFO - 2025-08-25 10:42:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 10:42:15 --> Usuario autenticado con role_id: 
+INFO - 2025-08-25 10:58:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 10:58:49 --> Usuario autenticado con role_id: 
+INFO - 2025-08-25 10:58:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 10:58:52 --> Usuario autenticado con role_id: 
+INFO - 2025-08-25 11:10:16 --> El método authenticate fue llamado
+INFO - 2025-08-25 11:10:16 --> Intento de inicio de sesión para el usuario: marvin.santos@soy.sena.edu.co
+INFO - 2025-08-25 11:10:16 --> Intento de inicio de sesión para el usuario: marvin.santos@soy.sena.edu.co
+INFO - 2025-08-25 11:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 11:10:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 11:10:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-25 11:10:24 --> Cargando prueba con ID: 7

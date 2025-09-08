@@ -38,6 +38,50 @@ public function getUsers($id = null)
     return $builder->findAll();
 }
 
+
+public function getProfesorConAsignaturas($documento)
+{
+    return $this->db->table('users u')
+        ->select("
+            u.id AS profesor_id,
+            u.name AS nombre_profesor,
+            u.last_name AS apellido_profesor,
+            u.documento,
+            u.email,
+            u.telefono,
+            GROUP_CONCAT(a.id ORDER BY a.nombre SEPARATOR ',') AS asignatura_ids,
+            GROUP_CONCAT(a.nombre ORDER BY a.nombre SEPARATOR ',') AS asignaturas
+        ")
+        ->join('profesor_asignaturas pa', 'u.id = pa.profesor_id')
+        ->join('asignaturas a', 'pa.asignatura_id = a.id')
+        ->where('u.documento', $documento)
+        ->groupBy('u.id, u.name, u.last_name, u.documento, u.email, u.telefono')
+        ->get()
+        ->getRow();
+}
+
+
+     public function buscarPorDocumento($documento)
+    {
+        return $this->db->table('users u')
+            ->select("
+                u.id AS profesor_id,
+                u.name AS nombre_profesor,
+                u.last_name AS apellido_profesor,
+                u.documento,
+                u.email,
+                u.telefono,
+                a.id AS asignatura_id,
+                a.nombre AS materia,
+                pa.created_at AS fecha_asignacion
+            ")
+            ->join('profesor_asignaturas pa', 'u.id = pa.profesor_id')
+            ->join('asignaturas a', 'pa.asignatura_id = a.id')
+            ->where('u.documento', $documento)
+            ->get()
+            ->getResult();
+    }
+
  public function getMatriculaByEstudiante($estudianteId)
     {
         return $this->db->table('matriculas m')
