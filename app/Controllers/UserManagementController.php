@@ -40,7 +40,7 @@ class UserManagementController extends BaseController
         $data['roles']    = $roleModel->getTableData('roles') ?? [];
 
         log_message('info', 'Datos del usuario: ' . json_encode($data['user']));
-        return view('administrador/UserManagement/update', $data);
+        return view('administrador/UserManagement/Update', $data);
     }
   public function detailUser($id)
     {
