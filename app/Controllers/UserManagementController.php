@@ -41,6 +41,7 @@ class UserManagementController extends BaseController
 
         log_message('info', 'Datos del usuario: ' . json_encode($data['user']));
         return view('administrador/UserManagement/Update', $data);
+        
     }
   public function detailUser($id)
     {
