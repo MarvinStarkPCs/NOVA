@@ -9,9 +9,7 @@
     </div>
     <div class="card-body">
         <div class="d-flex justify-content-end mb-3 gap-2">
-    <a href="<?= base_url('admin/usermanagement/excel') ?>" class="btn btn-success btn-sm mr-2" title="Exportar a Excel">
-        <i class="fas fa-file-excel"></i> Excel
-    </a>
+  
     <button type="button" id="openModalButtonUser" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addUserModal">
         <i class="fas fa-user-plus"></i> Agregar Usuario
     </button>
