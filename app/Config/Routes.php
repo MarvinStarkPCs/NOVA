@@ -67,7 +67,8 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->post('changepassword/update', 'ChangePasswordController::updatePassword');  // Enviar formulario
 
     $routes->get('asignaciones', 'AdminController::asignacion_academica');
-        $routes->post('asignaciones/buscar', 'AdminController::buscar_asignacion_academica');
+    $routes->post('asignaciones/buscar', 'AdminController::buscar_asignacion_academica');
+    $routes->post('asignaciones/guardarAsignaturas', 'AdminController::guardarAsignaturas');
 
 
 

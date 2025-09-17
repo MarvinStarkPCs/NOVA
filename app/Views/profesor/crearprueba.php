@@ -14,7 +14,7 @@
   <script src="<?= base_url('assets/sweetalert2/dist/sweetalert2.all.min.js') ?>"></script>
 
   <style>
-    :root { --verde-principal: #4A148C; }
+    :root { --verde-principal: #7c431c; }
     body { background-color: #f4f7f5; }
     h2, h5 { color: var(--verde-principal); }
     .btn-bloque { background-color: var(--verde-principal); color: #fff; border: none; }
@@ -159,7 +159,7 @@ function confirmarVolver() {
     text: 'Si vuelves atrás, se perderá toda la información ingresada.',
     icon: 'warning',
     showCancelButton: true,
-    confirmButtonColor: '#4A148C',
+    confirmButtonColor: '#7c431c',
     cancelButtonColor: '#d33',
     confirmButtonText: 'Sí, volver',
     cancelButtonText: 'Cancelar'
@@ -173,7 +173,7 @@ let contadorBloques = 0, contadorPreguntasGlobal = 0;
 function agregarBloque() {
   const asignatura = document.getElementById("asignatura").value;
   if (!asignatura) {
-    Swal.fire({ icon: "warning", title: "Selecciona una asignatura", confirmButtonColor: "#4A148C" });
+    Swal.fire({ icon: "warning", title: "Selecciona una asignatura", confirmButtonColor: "#7c431c" });
     return;
   }
   const tipo = document.getElementById("tipoBloque").value;
@@ -201,7 +201,7 @@ function agregarPregunta(bloque) {
 function reiniciarFormulario() {
   Swal.fire({
     title: '¿Reiniciar todo?', text: 'Se borrarán todos los bloques y preguntas.', icon: 'warning',
-    showCancelButton: true, confirmButtonColor: '#4A148C', cancelButtonColor: '#d33', confirmButtonText: 'Sí, reiniciar'
+    showCancelButton: true, confirmButtonColor: '#7c431c', cancelButtonColor: '#d33', confirmButtonText: 'Sí, reiniciar'
   }).then(result => {
     if (result.isConfirmed) {
       document.getElementById("bloques-container").innerHTML = "";
@@ -216,13 +216,13 @@ function guardarPrueba() {
   const nombrePrueba = document.getElementById("nombrePrueba").value.trim();
   const descripcionPrueba = document.getElementById("descripcionPrueba").value.trim();
   if (!nombrePrueba || !descripcionPrueba) {
-    Swal.fire({ icon: 'error', title: 'Datos incompletos', text: 'Completa el nombre y descripción de la prueba.', confirmButtonColor: '#4A148C' });
+    Swal.fire({ icon: 'error', title: 'Datos incompletos', text: 'Completa el nombre y descripción de la prueba.', confirmButtonColor: '#7c431c' });
     return;
   }
 
   const bloques = document.querySelectorAll(".bloque");
   if (bloques.length === 0) {
-    Swal.fire({ icon: "warning", title: "Agrega al menos un bloque", confirmButtonColor: "#4A148C" });
+    Swal.fire({ icon: "warning", title: "Agrega al menos un bloque", confirmButtonColor: "#7c431c" });
     return;
   }
 
@@ -234,13 +234,13 @@ function guardarPrueba() {
       titulo = bloque.querySelector(".input-titulo")?.value.trim();
       texto = bloque.querySelector(".input-texto")?.value.trim();
       if (!titulo || !texto) {
-        Swal.fire({ icon: 'error', title: `Bloque ${i + 1}`, text: 'Completa el título y texto de la lectura.', confirmButtonColor: '#4A148C' });
+        Swal.fire({ icon: 'error', title: `Bloque ${i + 1}`, text: 'Completa el título y texto de la lectura.', confirmButtonColor: '#7c431c' });
         error = true; return;
       }
     }
     const preguntas = bloque.querySelectorAll(".pregunta");
     if (preguntas.length === 0) {
-      Swal.fire({ icon: 'error', title: `Bloque ${i + 1}`, text: 'El bloque debe tener al menos una pregunta.', confirmButtonColor: '#4A148C' });
+      Swal.fire({ icon: 'error', title: `Bloque ${i + 1}`, text: 'El bloque debe tener al menos una pregunta.', confirmButtonColor: '#7c431c' });
       error = true; return;
     }
     const preguntasData = [];
@@ -251,7 +251,7 @@ function guardarPrueba() {
       const opciones = Array.from(opcionesInputs).map(i => i.value.trim());
       const correcta = preguntaElem.querySelector("input[type=radio]:checked")?.value;
       if (!enunciado || opciones.some(opt => !opt) || !correcta || !justificacion) {
-        Swal.fire({ icon: 'error', title: `Bloque ${i + 1} - Pregunta ${j + 1}`, text: 'Completa todos los campos y selecciona la respuesta correcta.', confirmButtonColor: '#4A148C' });
+        Swal.fire({ icon: 'error', title: `Bloque ${i + 1} - Pregunta ${j + 1}`, text: 'Completa todos los campos y selecciona la respuesta correcta.', confirmButtonColor: '#7c431c' });
         error = true; return;
       }
       preguntasData.push({ enunciado, opciones, correcta, justificacion });
@@ -273,7 +273,7 @@ function guardarPrueba() {
       icon: "success",
       title: "Prueba guardada correctamente",
       text: response.message || "Los datos se han guardado en la base de datos.",
-      confirmButtonColor: "#4A148C"
+      confirmButtonColor: "#7c431c"
     }).then(() => {
       window.location.href = "<?= base_url('profesor/home') ?>"; // ✅ Redirección
     });
@@ -283,7 +283,7 @@ function guardarPrueba() {
       icon: "error",
       title: "Error al guardar",
       text: "Hubo un problema al guardar la prueba.",
-      confirmButtonColor: "#4A148C"
+      confirmButtonColor: "#7c431c"
     });
   }
 });

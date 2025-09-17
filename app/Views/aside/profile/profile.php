@@ -15,7 +15,7 @@
     }
 
     .profile-header {
-        background: linear-gradient(135deg, #4A148C, #8771afff);
+        background: linear-gradient(135deg, #7c431c, #8771afff);
         padding: 30px;
         text-align: center;
         color: white;
@@ -117,7 +117,7 @@
 
     /* Estilo para los inputs en modo edición */
     .input-edit .form-control {
-        border: 2px solid #4A148C;
+        border: 2px solid #7c431c;
         border-radius: 8px;
         transition: all 0.3s ease;
         background: rgba(254, 198, 89, 0.05);
@@ -133,7 +133,7 @@
     .edit-btn,
     .save-btn,
     .cancel-btn {
-        background: #4A148C;
+        background: #7c431c;
         border: none;
         color: white;
         padding: 10px 20px;
@@ -193,7 +193,7 @@
 
     /* Indicador visual de modo edición */
     .profile-card.edit-mode {
-        border: 2px solid #4A148C;
+        border: 2px solid #7c431c;
         box-shadow: 0 6px 12px rgba(254, 198, 89, 0.3);
     }
 

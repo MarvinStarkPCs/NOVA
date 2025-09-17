@@ -26,7 +26,7 @@ $calificacion = round($calificacion, 2);
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
     body { font-family: 'Quicksand', sans-serif; margin: 0; background: #f9fafb; color: #333; }
-    nav { background: linear-gradient(90deg, #4A148C, #8771afff); color: white; padding: 15px 20px; font-size: 1.2rem; font-weight: bold; display: flex; align-items: center; gap: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.15);}
+    nav { background: linear-gradient(90deg, #7c431c, #8771afff); color: white; padding: 15px 20px; font-size: 1.2rem; font-weight: bold; display: flex; align-items: center; gap: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.15);}
     .volver-container { max-width: 900px; margin: 15px auto 0 auto; padding: 0 20px; text-align: left; }
     .btn-volver { background: #6b7280; color: white; border: none; padding: 10px 16px; border-radius: 10px; cursor: pointer; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 8px; transition: 0.3s; }
     .btn-volver:hover { background: #4b5563; }

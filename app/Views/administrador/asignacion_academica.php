@@ -113,7 +113,7 @@ $(document).ready(function() {
   $('#btnBuscar').on('click', function () {
     const documento = $('#documento').val().trim();
     if (!documento) {
-      alert('Por favor ingrese el número de documento.');
+      mostrarAlerta('warning','Por favor ingrese el número de documento.');
       return;
     }
 
@@ -145,7 +145,7 @@ $(document).ready(function() {
             ]);
           });
         } else {
-          alert('No se encontraron resultados.');
+          mostrarAlerta('warning','No se encontraron resultados.');
         }
         tabla.draw();
       }
@@ -178,18 +178,24 @@ $(document).ready(function() {
   $('#formAsignaturas').on('submit', function (e) {
     e.preventDefault();
 
-    $.ajax({
-      url: "./asignaciones/guardarAsignaturas",
-      type: "POST",
-      data: $(this).serialize() + "&<?= csrf_token() ?>=<?= csrf_hash() ?>",
-      success: function () {
-        alert('Asignaturas actualizadas correctamente');
-        $('#modalAsignaturas').modal('hide');
-      },
-      error: function () {
-        alert('Error al guardar las asignaturas');
-      }
-    });
+   $.ajax({
+  url: "./asignaciones/guardarAsignaturas",
+  type: "POST",
+  data: $(this).serialize() + "&<?= csrf_token() ?>=<?= csrf_hash() ?>",
+  success: function () {
+    mostrarAlerta('success', 'Asignaturas actualizadas correctamente');
+    $('#modalAsignaturas').modal('hide');
+
+       setTimeout(() => {
+      location.reload();
+    }, 3000);
+
+  },
+  error: function () {
+    mostrarAlerta('error', 'Error al guardar las asignaturas');
+  }
+});
+
   });
 });
 </script>

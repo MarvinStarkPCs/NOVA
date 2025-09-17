@@ -105,5 +105,40 @@ public function asignacion_academica()
         }
     }
 
+ public function guardarAsignaturas()
+{
+    log_message('debug', 'Entrando a guardarAsignaturas');
+
+
+    $profesorId = $this->request->getPost('profesor_id');
+    $asignaturas = $this->request->getPost('asignatura_id'); // array[]
+
+    $db = \Config\Database::connect();
+    $builder = $db->table('profesor_asignaturas'); // cambia por el nombre real de tu tabla
+
+    // ✅ Borrar asignaciones actuales del profesor
+    $builder->where('profesor_id', $profesorId)->delete();
+
+    // ✅ Insertar nuevas asignaciones
+    if (!empty($asignaturas)) {
+        $data = [];
+        foreach ($asignaturas as $asignaturaId) {
+            $data[] = [
+                'profesor_id'  => $profesorId,
+                'asignatura_id'=> $asignaturaId,
+                'created_at'   => date('Y-m-d H:i:s'),
+                'updated_at'   => date('Y-m-d H:i:s'),
+            ];
+        }
+        $builder->insertBatch($data);
+    }
+
+    return $this->response->setJSON([
+        'status'  => 'success',
+        'message' => 'Asignaturas actualizadas correctamente'
+    ]);
+}
+
+
 
 }

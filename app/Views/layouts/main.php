@@ -33,7 +33,7 @@
 
     <style>
          .table thead th {
-            background-color: #4A148C; /* Color de fondo para las celdas del encabezado */
+            background-color: #7c431c; /* Color de fondo para las celdas del encabezado */
             color: white; /* Color del texto para contraste */
         }
         /* Style for the scrollbar track */
@@ -80,8 +80,7 @@
         }
 
         .sidebar-brand-icon img {
-            width: 84%;
-            height: 84%;
+            width: 100%;
             object-fit: cover;
         }
 
@@ -167,6 +166,9 @@
 
     <!-- Custom alerts -->
     <script src="<?= base_url('js/demo/alert_custom.js') ?>"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <script>
         // Tu código que usa jQuery aquí

@@ -2,7 +2,7 @@
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('dashboard'); ?>">
         <div class="sidebar-brand-icon">
-            <img src="<?= base_url('img/icons/reading-kid.png'); ?>" alt="">
+            <img src="<?= base_url('img/icons/logo_redondo.png') ?>" alt="">
         </div>
     </a>
 
@@ -15,7 +15,7 @@
         <li class="nav-item active">
             <a class="nav-link" href="<?= base_url('profesor/home'); ?>">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Home</span></a>
+                <span>Casa</span></a>
         </li>
 
         <!-- Divider -->
@@ -26,7 +26,7 @@
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSystem" aria-expanded="true"
                 aria-controls="collapseSystem">
                 <i class="fas fa-fw fa-cog"></i>
-                <span>System</span>
+                <span>Sistema</span>
             </a>
             <div id="collapseSystem" class="collapse" aria-labelledby="headingSystem" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
@@ -54,7 +54,7 @@
             </a>
             <div id="collapseSecurity" class="collapse" aria-labelledby="headingSecurity" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">SECURITY SETTINGS:</h6>
+                    <h6 class="collapse-header">Seguridad:</h6>
                     <a class="collapse-item" href="<?= base_url('profesor/changepassword'); ?>">
                         <i class="fas fa-key"></i> Cambiar Contraseña
                     </a>
@@ -70,7 +70,7 @@
         <li class="nav-item active">
             <a class="nav-link" href="<?= base_url('estudiante/home'); ?>">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
-                <span>Home</span></a>
+                <span>Casa</span></a>
         </li>
 
         <!-- Divider -->
@@ -83,11 +83,11 @@
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSecurity"
                 aria-expanded="true" aria-controls="collapseSecurity">
                 <i class="fas fa-fw fa-shield-alt"></i>
-                <span>Security</span>
+                <span>Seguridad</span>
             </a>
             <div id="collapseSecurity" class="collapse" aria-labelledby="headingSecurity" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">SECURITY SETTINGS:</h6>
+                    <h6 class="collapse-header">Seguridad:</h6>
                     <a class="collapse-item" href="<?= base_url('estudiante/changepassword'); ?>">
                         <i class="fas fa-key"></i> Cambiar Contraseña
                     </a>
@@ -114,7 +114,7 @@
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSystem" aria-expanded="true"
                 aria-controls="collapseSystem">
                 <i class="fas fa-fw fa-cog"></i>
-                <span>System</span>
+                <span>Sistema</span>
             </a>
             <div id="collapseSystem" class="collapse" aria-labelledby="headingSystem" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
@@ -137,11 +137,11 @@
             <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseSecurity"
                 aria-expanded="true" aria-controls="collapseSecurity">
                 <i class="fas fa-fw fa-shield-alt"></i>
-                <span>Security</span>
+                <span>Seguridad</span>
             </a>
             <div id="collapseSecurity" class="collapse" aria-labelledby="headingSecurity" data-parent="#accordionSidebar">
                 <div class="bg-white py-2 collapse-inner rounded">
-                    <h6 class="collapse-header">SECURITY SETTINGS:</h6>
+                    <h6 class="collapse-header">Seguridad</h6>
                     <a class="collapse-item" href="<?= base_url('admin/changepassword'); ?>">
                         <i class="fas fa-key"></i> Cambiar Contraseña
                     </a>

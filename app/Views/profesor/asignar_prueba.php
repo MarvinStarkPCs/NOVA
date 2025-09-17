@@ -23,7 +23,7 @@ TÍTULO PRINCIPAL DE LA PÁGINA
 ------------------------------------------
 */
 h2 {
-    color: #4A148C;  /* Color verde institucional */
+    color: #7c431c;  /* Color verde institucional */
 }
 
 /* 
@@ -32,7 +32,7 @@ CÍRCULO CON ICONO EN LAS TARJETAS
 ------------------------------------------
 */
 .icon-circle {
-    background-color: #4A148C;  /* Fondo verde */
+    background-color: #7c431c;  /* Fondo verde */
     color: white;               /* Texto blanco */
     width: 60px;                /* Ancho del círculo */
     height: 60px;               /* Alto del círculo */
@@ -69,7 +69,7 @@ ESTILOS DE BOTONES
 ------------------------------------------
 */
 .btn-ver {
-    background-color: #4A148C;  /* Fondo verde */
+    background-color: #7c431c;  /* Fondo verde */
     color: #fff;                /* Texto blanco */
     border: none;               /* Sin bordes */
     font-weight: bold;          /* Texto en negrita */
@@ -78,7 +78,7 @@ ESTILOS DE BOTONES
 
 /* Efecto hover del botón */
 .btn-ver:hover {
-    background-color: #1e4d1a;  /* Verde más oscuro */
+    background-color: #f0af84ff;  /* Verde más oscuro */
     color: #fff;                /* Mantener texto blanco */
 }
 
@@ -104,14 +104,14 @@ CONTENEDORES DE SELECT Y INPUT
     top: 50%;                 /* Centrar verticalmente */
     left: 12px;               /* Posición desde la izquierda */
     transform: translateY(-50%); /* Centrar exactamente */
-    color: #4A148C;           /* Color verde */
+    color: #7c431c;           /* Color verde */
     z-index: 10;              /* Por encima del input */
 }
 
 /* Estilos para select e input */
 .form-select, .form-control {
     padding-left: 35px;       /* Espacio para el icono */
-    border: 2px solid #4A148C; /* Borde verde */
+    border: 2px solid #7c431c; /* Borde verde */
     border-radius: 8px;       /* Bordes redondeados */
     font-size: 16px;          /* Tamaño de fuente */
 }
@@ -142,21 +142,11 @@ ESTILOS DEL MODAL
 ------------------------------------------
 */
 .modal-header {
-    background-color: #4A148C;  /* Fondo verde en el header */
+    background-color: #7c431c;  /* Fondo verde en el header */
     color: white;               /* Texto blanco */
 }
 
-/* Botón primario del modal */
-.modal-footer .btn-primary {
-    background-color: #4A148C;  /* Fondo verde */
-    border-color: #4A148C;      /* Borde verde */
-}
 
-/* Hover del botón primario */
-.modal-footer .btn-primary:hover {
-    background-color: #1e4d1a;  /* Verde más oscuro */
-    border-color: #1e4d1a;      /* Borde más oscuro */
-}
 
 /* 
 ------------------------------------------
@@ -548,7 +538,7 @@ $(document).ready(function() {
                 icon: 'warning',
                 title: 'Seleccione un grado',
                 text: 'Debe seleccionar un grado antes de asignar la prueba.',
-                confirmButtonColor: '#4A148C'
+                confirmButtonColor: '#7c431c'
             });
             return;
         }
@@ -559,7 +549,7 @@ $(document).ready(function() {
                 icon: 'warning',
                 title: 'Seleccione un grupo',
                 text: 'Debe seleccionar un grupo antes de asignar la prueba.',
-                confirmButtonColor: '#4A148C'
+                confirmButtonColor: '#7c431c'
             });
             return;
         }
@@ -621,7 +611,7 @@ console.log(fechaLimite);
                 icon: 'warning',
                 title: 'Fecha límite requerida',
                 text: 'Debe establecer una fecha límite para la prueba.',
-                confirmButtonColor: '#4A148C'
+                confirmButtonColor: '#7c431c'
             });
             return false;
         }
@@ -635,7 +625,7 @@ console.log(fechaLimite);
                 icon: 'warning',
                 title: 'Fecha inválida',
                 text: 'La fecha límite debe ser posterior a la fecha actual.',
-                confirmButtonColor: '#4A148C'
+                confirmButtonColor: '#7c431c'
             });
             return false;
         }
@@ -649,7 +639,7 @@ console.log(fechaLimite);
             text: `Se asignará la prueba con fecha límite: ${fechaSeleccionada.toLocaleString('es-ES')}`,
             icon: 'question',
             showCancelButton: true,
-            confirmButtonColor: '#4A148C',
+            confirmButtonColor: '#7c431c',
             cancelButtonColor: '#6c757d',
             confirmButtonText: 'Sí, asignar',
             cancelButtonText: 'Cancelar'
