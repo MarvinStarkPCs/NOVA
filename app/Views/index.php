@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -16,7 +16,7 @@
 
     body {
       font-family: 'Baloo 2', cursive;
-      background: linear-gradient(135deg, #2E1A47, #4B2C20, #F2A65A, #FFD580);
+      background: linear-gradient(135deg, #B3C69B, #A2B887, #E6EAD5, #C9DABF);
       background-size: 400% 400%;
       animation: gradientBG 12s ease infinite;
       display: flex;
@@ -26,7 +26,9 @@
       min-height: 100vh;
       padding: 40px 20px;
       text-align: center;
-      color: white;
+      color: #2E2E2E;
+      position: relative;
+      overflow: hidden;
     }
 
     @keyframes gradientBG {
@@ -35,36 +37,65 @@
       100% { background-position: 0% 50%; }
     }
 
+    .logos-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      margin-bottom: 25px;
+      flex-wrap: wrap;
+    }
+
+    .logos-container img {
+      height: 80px;
+      border-radius: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      background: #fff;
+      padding: 5px;
+    }
+
+    .logos-container img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    }
+
     h1 {
       font-size: 3rem;
-      color: #FFD700;
-      text-shadow: 0 0 10px #FFA500, 0 0 20px #FF8C00;
+      color: #2E4029;
+      text-shadow: 0 0 8px rgba(0,0,0,0.1);
       margin-bottom: 10px;
     }
 
     h1 i {
-      color: #FF8C00;
+      color: #6D8A4A;
       margin-right: 10px;
     }
 
     p {
       font-size: 1.4rem;
-      color: #FFEBCD;
+      color: #3A4B2E;
       max-width: 650px;
       margin-bottom: 30px;
-      text-shadow: 0 0 5px rgba(0,0,0,0.6);
+      text-shadow: 0 0 4px rgba(255,255,255,0.5);
     }
 
     .main-image {
       width: 250px;
       margin-bottom: 30px;
       border-radius: 20px;
-      box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+      box-shadow: 0 0 20px rgba(109, 138, 74, 0.6);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
     }
 
     .play-btn {
-      background: linear-gradient(45deg, #FF8C00, #FFD700);
-      color: #2E1A1A;
+      background: linear-gradient(45deg, #6D8A4A, #B3C69B);
+      color: #fff;
       font-size: 1.4rem;
       padding: 16px 36px;
       border-radius: 40px;
@@ -74,12 +105,12 @@
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      box-shadow: 0 4px 15px rgba(255, 140, 0, 0.6);
+      box-shadow: 0 4px 15px rgba(109, 138, 74, 0.6);
     }
 
     .play-btn:hover {
       transform: scale(1.08);
-      box-shadow: 0 6px 20px rgba(255, 215, 0, 0.9);
+      box-shadow: 0 6px 20px rgba(74, 94, 45, 0.8);
     }
 
     .decor {
@@ -95,7 +126,7 @@
 
     .decor img {
       position: absolute;
-      opacity: 0.15;
+      opacity: 0.1;
     }
 
     .decor .star { top: 15%; left: 8%; width: 100px; }
@@ -103,6 +134,7 @@
     .decor .book { top: 40%; left: 55%; width: 110px; }
   </style>
 </head>
+
 <body>
 
   <div class="decor">
@@ -111,8 +143,15 @@
     <img src="<?= base_url('img/icons/book.png') ?>" class="book" alt="Libro">
   </div>
 
-  <h1><i class="fas fa-child"></i> ¡Bienvenid@s!</h1>
-  <p>Explora divertidas historias y demuestra cuánto comprendes. ¡Aquí aprender es una aventura!</p>
+  <!-- Logos superiores -->
+  <div class="logos-container">
+    <img src="https://www.sena.edu.co/es-co/Noticias/PublishingImages/Comunicado15marzo.jpg" alt="Logo SENA">
+    <img src="https://scontent.feoh2-1.fna.fbcdn.net/v/t39.30808-6/244633764_10157257316813039_4235800969585275176_n.png?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHRr3ZkmSPatN9r9Ea-bYx3FOWLWIw7TJkU5YtYjDtMmdp-0Ated1QMkOqpppKa4uNiPyiPgu4GFgaAQYbdY326&_nc_ohc=uxdNPCwCMNUQ7kNvwEU91uL&_nc_oc=AdlBTylMpvAVfZLWP6bwHIb-OA-giMcxsY6GbD3chrCnF_K_bskU-MvCzKCXaKW9bCglKsamDIVR4ieVQWUy75Cg&_nc_zt=23&_nc_ht=scontent.feoh2-1.fna&_nc_gid=KFeMmGm5Y5pRXbq4jFXTFw&oh=00_Aff7hUjwTnS5iLh-nsBv1v3nnhozNeYm0mJdxYmpvM6b_g&oe=68F883A7" alt="Logo Industrial">
+  </div>
+
+  <h1><i class="fas fa-child"></i> ¡Bienvenid@s a Luminia!</h1>
+  <p>Explora divertidas historias y demuestra cuánto comprendes.<br>  
+  ¡Aquí aprender es una aventura verde y luminosa!</p>
 
   <img src="<?= base_url('img/icons/logo.png') ?>" alt="Niño leyendo" class="main-image">
 

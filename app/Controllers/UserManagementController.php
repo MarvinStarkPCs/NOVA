@@ -30,6 +30,8 @@ class UserManagementController extends BaseController
         return view('administrador/UserManagement/UserManagement', $data);
     }
 
+    
+
    public function editUser($id)
     {
         $roleModel = new ComboBoxModel();

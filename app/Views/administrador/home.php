@@ -7,7 +7,7 @@
   <div class="text-center p-5 rounded-3 shadow-lg" 
        style="background: #ffffff; 
               max-width: 420px; 
-              color: #7c431c; 
+              color: #B3C69B; 
               border: 1px solid rgba(127, 76, 175, 0.1);
               box-shadow: 0 8px 32px rgba(127, 76, 175, 0.1);
               transition: transform 0.4s ease, box-shadow 0.4s ease;">
@@ -31,7 +31,7 @@
                 border-radius: 20px; 
                 margin-bottom: 20px; 
                 font-weight: 500;
-                color: #7c431c;
+                color: #B3C69B;
                 transition: all 0.5s ease;">
       ✅ Sistema funcionando correctamente
     </div>

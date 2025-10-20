@@ -16,7 +16,7 @@
     }
 
     .input-group-text {
-        background: #7c431c; /* Verde institucional */
+        background: #B3C69B; /* Verde institucional */
         border: none;
         color: #fff; /* Ícono blanco */
         font-size: 1.1rem;
@@ -34,12 +34,12 @@
 
     .form-control:focus {
         background: rgba(0, 0, 0, 0.08);
-        border: 1px solid #7c431c; /* Verde en foco */
+        border: 1px solid #B3C69B; /* Verde en foco */
         box-shadow: none;
     }
 
     .btn-primary {
-        background: #7c431c; /* Verde institucional */
+        background: #B3C69B; /* Verde institucional */
         border: none;
         color: #fff;
         font-weight: bold;
@@ -73,7 +73,7 @@
 
 <div class="container d-flex justify-content-center align-items-start">
     <div class="card shadow-lg p-4" style="max-width: 400px; width: 100%;">
-        <h4 class="text-center mb-4" style="color: #7c431c;">
+        <h4 class="text-center mb-4" style="color: #B3C69B;">
             <i class="fas fa-key"></i> Cambiar contraseña
         </h4>
         <form id="changePasswordForm" method="POST" action="./changepassword/update">

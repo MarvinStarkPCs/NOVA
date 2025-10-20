@@ -33,7 +33,7 @@
 
     <style>
          .table thead th {
-            background-color: #7c431c; /* Color de fondo para las celdas del encabezado */
+            background-color: #B3C69B; /* Color de fondo para las celdas del encabezado */
             color: white; /* Color del texto para contraste */
         }
         /* Style for the scrollbar track */
