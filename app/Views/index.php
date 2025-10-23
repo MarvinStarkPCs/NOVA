@@ -156,7 +156,7 @@
   <img src="<?= base_url('img/icons/logo.png') ?>" alt="Niño leyendo" class="main-image">
 
   <a href="<?= base_url('login') ?>" class="play-btn">
-    <i class="fas fa-play"></i> Empezar Prueba
+    <i class="fas fa-play"></i> Iniciar Sesión 
   </a>
 
 </body>
