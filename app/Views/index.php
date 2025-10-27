@@ -146,7 +146,7 @@
   <!-- Logos superiores -->
   <div class="logos-container">
     <img src="https://www.sena.edu.co/es-co/Noticias/PublishingImages/Comunicado15marzo.jpg" alt="Logo SENA">
-    <img src="https://scontent.feoh2-1.fna.fbcdn.net/v/t39.30808-6/244633764_10157257316813039_4235800969585275176_n.png?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHRr3ZkmSPatN9r9Ea-bYx3FOWLWIw7TJkU5YtYjDtMmdp-0Ated1QMkOqpppKa4uNiPyiPgu4GFgaAQYbdY326&_nc_ohc=uxdNPCwCMNUQ7kNvwEU91uL&_nc_oc=AdlBTylMpvAVfZLWP6bwHIb-OA-giMcxsY6GbD3chrCnF_K_bskU-MvCzKCXaKW9bCglKsamDIVR4ieVQWUy75Cg&_nc_zt=23&_nc_ht=scontent.feoh2-1.fna&_nc_gid=KFeMmGm5Y5pRXbq4jFXTFw&oh=00_Aff7hUjwTnS5iLh-nsBv1v3nnhozNeYm0mJdxYmpvM6b_g&oe=68F883A7" alt="Logo Industrial">
+    <img src="https://siares.itilpn.edu.co/img/logo%20colegio.png" alt="Logo Industrial">
   </div>
 
   <h1><i class="fas fa-child"></i> ¡Bienvenid@s a Luminia!</h1>
